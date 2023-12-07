@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<cd:Record xmlns="http://c-core.ca/BCT" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="TRPxxx_META_Internal_Calibration" format="xml" namexml="TRPxxx_META_Internal_Calibration" last-modified="2023-04-24">
+  <cd:Field name="Initiation_Time" real_name="http://c-core.ca/BCT Initiation_Time">
+    <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSSS|'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSS|'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSS|'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSS|'UTC='yyyy-MM-dd'T'HH:mm:ss.SSS|'UTC='yyyy-MM-dd'T'HH:mm:ss.SS|'UTC='yyyy-MM-dd'T'HH:mm:ss.S|'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+      <cd:Text/>
+    </cd:Time>
+  </cd:Field>
+  <cd:Field name="Sampling_Rate" real_name="http://c-core.ca/BCT Sampling_Rate">
+    <cd:Float format="ascii">
+      <cd:Attribute name="unit"/>
+      <cd:NativeType>double</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="HH_Loopback_Data" real_name="http://c-core.ca/BCT HH_Loopback_Data">
+    <cd:Record>
+      <cd:Field name="List_of_Input_Signal_Values" real_name="http://c-core.ca/BCT List_of_Input_Signal_Values">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Array>
+            <cd:Optional/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="List_of_Output_Signal_Values" real_name="http://c-core.ca/BCT List_of_Output_Signal_Values">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Array>
+            <cd:Optional/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="Receiver_Gain" real_name="http://c-core.ca/BCT Receiver_Gain">
+        <cd:Float format="ascii">
+          <cd:Attribute name="unit"/>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="Transmitter_Gain" real_name="http://c-core.ca/BCT Transmitter_Gain">
+        <cd:Float format="ascii">
+          <cd:Attribute name="unit"/>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="HV_Loopback_Data" real_name="http://c-core.ca/BCT HV_Loopback_Data">
+    <cd:Record>
+      <cd:Field name="List_of_Input_Signal_Values" real_name="http://c-core.ca/BCT List_of_Input_Signal_Values">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Array>
+            <cd:Optional/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="List_of_Output_Signal_Values" real_name="http://c-core.ca/BCT List_of_Output_Signal_Values">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Array>
+            <cd:Optional/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="Receiver_Gain" real_name="http://c-core.ca/BCT Receiver_Gain">
+        <cd:Float format="ascii">
+          <cd:Attribute name="unit"/>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="Transmitter_Gain" real_name="http://c-core.ca/BCT Transmitter_Gain">
+        <cd:Float format="ascii">
+          <cd:Attribute name="unit"/>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="VH_Loopback_Data" real_name="http://c-core.ca/BCT VH_Loopback_Data">
+    <cd:Record>
+      <cd:Field name="List_of_Input_Signal_Values" real_name="http://c-core.ca/BCT List_of_Input_Signal_Values">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Array>
+            <cd:Optional/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="List_of_Output_Signal_Values" real_name="http://c-core.ca/BCT List_of_Output_Signal_Values">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Array>
+            <cd:Optional/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="Receiver_Gain" real_name="http://c-core.ca/BCT Receiver_Gain">
+        <cd:Float format="ascii">
+          <cd:Attribute name="unit"/>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="Transmitter_Gain" real_name="http://c-core.ca/BCT Transmitter_Gain">
+        <cd:Float format="ascii">
+          <cd:Attribute name="unit"/>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="VV_Loopback_Data" real_name="http://c-core.ca/BCT VV_Loopback_Data">
+    <cd:Record>
+      <cd:Field name="List_of_Input_Signal_Values" real_name="http://c-core.ca/BCT List_of_Input_Signal_Values">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Array>
+            <cd:Optional/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="List_of_Output_Signal_Values" real_name="http://c-core.ca/BCT List_of_Output_Signal_Values">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Array>
+            <cd:Optional/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="Receiver_Gain" real_name="http://c-core.ca/BCT Receiver_Gain">
+        <cd:Float format="ascii">
+          <cd:Attribute name="unit"/>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="Transmitter_Gain" real_name="http://c-core.ca/BCT Transmitter_Gain">
+        <cd:Float format="ascii">
+          <cd:Attribute name="unit"/>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="List_of_HH_Compensation_Filter_Coeffs" real_name="http://c-core.ca/BCT List_of_HH_Compensation_Filter_Coeffs">
+    <cd:Record>
+      <cd:Attribute name="count">
+        <cd:Text/>
+      </cd:Attribute>
+      <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+        <cd:Array>
+          <cd:Dimension/>
+          <cd:Text>
+            </cd:Text>
+        </cd:Array>
+        <cd:Optional/>
+      </cd:Field>
+    </cd:Record>
+    <cd:Optional/>
+  </cd:Field>
+  <cd:Field name="List_of_HV_Compensation_Filter_Coeffs" real_name="http://c-core.ca/BCT List_of_HV_Compensation_Filter_Coeffs">
+    <cd:Record>
+      <cd:Attribute name="count">
+        <cd:Integer format="ascii">
+          <cd:NativeType>uint32</cd:NativeType>
+        </cd:Integer>
+      </cd:Attribute>
+      <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+        <cd:Array>
+          <cd:Dimension/>
+          <cd:Float format="ascii">
+            <cd:NativeType>float</cd:NativeType>
+          </cd:Float>
+        </cd:Array>
+        <cd:Optional/>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="List_of_VH_Compensation_Filter_Coeffs" real_name="http://c-core.ca/BCT List_of_VH_Compensation_Filter_Coeffs">
+    <cd:Record>
+      <cd:Attribute name="count">
+        <cd:Integer format="ascii">
+          <cd:NativeType>uint32</cd:NativeType>
+        </cd:Integer>
+      </cd:Attribute>
+      <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+        <cd:Array>
+          <cd:Dimension/>
+          <cd:Float format="ascii">
+            <cd:NativeType>float</cd:NativeType>
+          </cd:Float>
+        </cd:Array>
+        <cd:Optional/>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="List_of_VV_Compensation_Filter_Coeffs" real_name="http://c-core.ca/BCT List_of_VV_Compensation_Filter_Coeffs">
+    <cd:Record>
+      <cd:Attribute name="count">
+        <cd:Integer format="ascii">
+          <cd:NativeType>uint32</cd:NativeType>
+        </cd:Integer>
+      </cd:Attribute>
+      <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+        <cd:Array>
+          <cd:Dimension/>
+          <cd:Float format="ascii">
+            <cd:NativeType>float</cd:NativeType>
+          </cd:Float>
+        </cd:Array>
+        <cd:Optional/>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="List_of_Off_Nominal_Conditions" real_name="http://c-core.ca/BCT List_of_Off_Nominal_Conditions">
+    <cd:Record>
+      <cd:Attribute name="count">
+        <cd:Integer format="ascii">
+          <cd:NativeType>uint32</cd:NativeType>
+        </cd:Integer>
+      </cd:Attribute>
+      <cd:Field name="Off_Nominal_Condition" real_name="http://c-core.ca/BCT Off_Nominal_Condition">
+        <cd:Array>
+          <cd:Dimension/>
+          <cd:Text/>
+        </cd:Array>
+        <cd:Optional/>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="Scu_Power_Sensor_Cal_Info" real_name="http://c-core.ca/BCT Scu_Power_Sensor_Cal_Info">
+    <cd:Record>
+      <cd:Field name="Date" real_name="http://c-core.ca/BCT Date">
+        <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+          <cd:Text/>
+        </cd:Time>
+      </cd:Field>
+      <cd:Field name="Location" real_name="http://c-core.ca/BCT Location">
+        <cd:Text/>
+      </cd:Field>
+      <cd:Field name="Serial_Num" real_name="http://c-core.ca/BCT Serial_Num">
+        <cd:Text/>
+      </cd:Field>
+      <cd:Field name="Sensor_Type" real_name="http://c-core.ca/BCT Sensor_Type">
+        <cd:Text/>
+      </cd:Field>
+    </cd:Record>
+    <cd:Optional/>
+  </cd:Field>
+</cd:Record>

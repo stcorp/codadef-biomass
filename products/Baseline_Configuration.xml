@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="Baseline_Configuration" format="xml" last-modified="2023-03-16">
+  <cd:Record>
+    <cd:Field name="Earth_Explorer_File">
+      <cd:Record>
+        <cd:Field name="Earth_Explorer_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header">
+              <cd:Record/>
+            </cd:Field>
+          </cd:Record>
+          <cd:Optional/>
+        </cd:Field>
+        <cd:Field name="Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Field name="List_of_Processors">
+              <cd:Record>
+                <cd:Field name="Processor">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Field name="Processor_Name">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="Processor_Version">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="List_of_Baseline_Configurations">
+                        <cd:Record>
+                          <cd:Field name="Baseline_Configuration">
+                            <cd:Record>
+                              <cd:Field name="Creation_Date">
+                                <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                                  <cd:Text/>
+                                </cd:Time>
+                              </cd:Field>
+                              <cd:Field name="List_of_Inputs">
+                                <cd:Record>
+                                  <cd:Field name="Input">
+                                    <cd:Array>
+                                      <cd:Dimension/>
+                                      <cd:Record>
+                                        <cd:Field name="Product_Type">
+                                          <cd:Text/>
+                                        </cd:Field>
+                                        <cd:Field name="Valid_Baselines">
+                                          <cd:Text/>
+                                        </cd:Field>
+                                      </cd:Record>
+                                    </cd:Array>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Field>
+                              <cd:Field name="List_of_Outputs">
+                                <cd:Record>
+                                  <cd:Field name="Output">
+                                    <cd:Array>
+                                      <cd:Dimension/>
+                                      <cd:Record>
+                                        <cd:Field name="Product_Type">
+                                          <cd:Text/>
+                                        </cd:Field>
+                                        <cd:Field name="Baseline">
+                                          <cd:Text/>
+                                        </cd:Field>
+                                      </cd:Record>
+                                    </cd:Array>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

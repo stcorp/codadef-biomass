@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_ATT" format="xml" last-modified="2023-12-04">
+  <cd:Record>
+    <cd:Field name="Earth_Observation_File">
+      <cd:Record>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+          <cd:Optional/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Observation_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header_EOFFS_version"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header">
+              <cd:Record/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type"/>
+            <cd:Attribute name="schemaVersion">
+              <cd:Text/>
+              <cd:Optional/>
+            </cd:Attribute>
+            <cd:Field name="Attitude_File_Type">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="Attitude_Data_Type">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="Max_Gap">
+              <cd:Float format="ascii">
+                <cd:NativeType>double</cd:NativeType>
+                <cd:Attribute name="unit"/>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="Quaternion_Data">
+              <cd:Record>
+                <cd:Field name="Reference_Frame">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="List_of_Quaternions">
+                  <cd:Record>
+                    <cd:Attribute name="count"/>
+                    <cd:Field name="Quaternions">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Record>
+                          <cd:Field name="Time">
+                            <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
+                              <cd:Attribute name="ref">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:Text/>
+                            </cd:Time>
+                          </cd:Field>
+                          <cd:Field name="Q1">
+                            <cd:Float format="ascii">
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="Q2">
+                            <cd:Float format="ascii">
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="Q3">
+                            <cd:Float format="ascii">
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="Q4">
+                            <cd:Float format="ascii">
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Array>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

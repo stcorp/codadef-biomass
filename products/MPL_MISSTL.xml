@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="MPL_MISSTL" format="xml" last-modified="2023-03-06">
+  <cd:Record>
+    <cd:Field name="Earth_Explorer_File">
+      <cd:Record>
+        <cd:Attribute name="noNamespaceSchemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance noNamespaceSchemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Explorer_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header">
+              <cd:Record>
+                <cd:Field name="Phase">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type"/>
+            <cd:Field name="List_of_Global_Coverages">
+              <cd:Record>
+                <cd:Attribute name="count"/>
+                <cd:Field name="Global_Coverage">
+                  <cd:Record>
+                    <cd:Attribute name="id"/>
+                    <cd:Field name="Start_Time">
+                      <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                        <cd:Text/>
+                      </cd:Time>
+                    </cd:Field>
+                    <cd:Field name="Stop_Time">
+                      <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                        <cd:Text/>
+                      </cd:Time>
+                    </cd:Field>
+                    <cd:Field name="List_of_Major_Cycles">
+                      <cd:Record>
+                        <cd:Attribute name="count"/>
+                        <cd:Field name="Major_Cycle">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Record>
+                              <cd:Attribute name="id"/>
+                              <cd:Field name="Start_Time">
+                                <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                                  <cd:Text/>
+                                </cd:Time>
+                              </cd:Field>
+                              <cd:Field name="Stop_Time">
+                                <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                                  <cd:Text/>
+                                </cd:Time>
+                              </cd:Field>
+                              <cd:Field name="Status">
+                                <cd:Text/>
+                                <cd:Optional/>
+                              </cd:Field>
+                              <cd:Field name="List_of_Swaths">
+                                <cd:Record>
+                                  <cd:Attribute name="count"/>
+                                  <cd:Field name="Swath">
+                                    <cd:Array>
+                                      <cd:Dimension/>
+                                      <cd:Record>
+                                        <cd:Attribute name="id"/>
+                                        <cd:Field name="Start_Time">
+                                          <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                                            <cd:Text/>
+                                          </cd:Time>
+                                        </cd:Field>
+                                        <cd:Field name="Stop_Time">
+                                          <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                                            <cd:Text/>
+                                          </cd:Time>
+                                        </cd:Field>
+                                        <cd:Field name="List_of_Repeat_Cycles">
+                                          <cd:Record>
+                                            <cd:Attribute name="count"/>
+                                            <cd:Field name="Repeat_Cycle">
+                                              <cd:Array>
+                                                <cd:Dimension/>
+                                                <cd:Record>
+                                                  <cd:Attribute name="id"/>
+                                                  <cd:Field name="Start_Time">
+                                                    <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                                                      <cd:Text/>
+                                                    </cd:Time>
+                                                  </cd:Field>
+                                                  <cd:Field name="Stop_Time">
+                                                    <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                                                      <cd:Text/>
+                                                    </cd:Time>
+                                                  </cd:Field>
+                                                  <cd:Field name="First_Absolute_Orbit">
+                                                    <cd:Integer format="ascii">
+                                                      <cd:NativeType>uint64</cd:NativeType>
+                                                    </cd:Integer>
+                                                  </cd:Field>
+                                                  <cd:Field name="Last_Absolute_Orbit">
+                                                    <cd:Integer format="ascii">
+                                                      <cd:NativeType>uint64</cd:NativeType>
+                                                    </cd:Integer>
+                                                  </cd:Field>
+                                                </cd:Record>
+                                              </cd:Array>
+                                            </cd:Field>
+                                          </cd:Record>
+                                        </cd:Field>
+                                      </cd:Record>
+                                    </cd:Array>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Array>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

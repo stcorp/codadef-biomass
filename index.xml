@@ -1,0 +1,687 @@
+<?xml version="1.0"?>
+<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2023-12-07">
+  <cd:Description>BIOMASS products</cd:Description>
+
+  <!-- Generic Product Header -->
+  <cd:ProductType name="Biomass_MPH">
+    <cd:Description>Main product header for BIOMASS products and ADFs</cd:Description>
+    <cd:ProductDefinition id="Biomass_MPH" format="xml" version="0">
+      <cd:Description>This definition is based on v2.3 of the BIOMASS Main Product Header Definition - BIO-ESA-EOPG-EEGS-TN-0051</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="80">.xml</cd:MatchFilename>
+        <cd:MatchData path="/{http://earth.esa.int/biomass/1.0}EarthObservation"/>
+      </cd:DetectionRule>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.xml</cd:MatchFilename>
+        <cd:MatchData path="/{http://earth.esa.int/biomass/1.0}EarthObservation"/>
+      </cd:DetectionRule>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="44">.xml</cd:MatchFilename>
+        <cd:MatchData path="/{http://earth.esa.int/biomass/1.0}EarthObservation"/>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+
+  <!-- L0 Product files -->
+  <cd:ProductType name="L0_Measurement_Data">
+    <cd:Description>L0 Measurement Data Component</cd:Description>
+    <cd:ProductDefinition id="L0_Measurement_Data" format="binary" version="0">
+      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and version 5.1 of BIOMASS SAR Data ICD (L0 ISP) - BIO-ICD-ADSF-SY-1000563385</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_rxh.dat</cd:MatchFilename>
+      </cd:DetectionRule>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_rxv.dat</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="L0_Index_Data">
+    <cd:Description>L0 Index Data Component</cd:Description>
+    <cd:ProductDefinition id="L0_Index_Data" format="binary" version="0">
+      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and version 5.1 of BIOMASS SAR Data ICD (L0 ISP) - BIO-ICD-ADSF-SY-1000563385</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_idx_rxh.dat</cd:MatchFilename>
+      </cd:DetectionRule>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_idx_rxv.dat</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="L0_Instrument_Ancillary_Data">
+    <cd:Description>L0 Instrument Ancillary Data Component</cd:Description>
+    <cd:ProductDefinition id="L0_Instrument_Ancillary_Data" format="binary" version="0">
+      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and version 5.1 of BIOMASS SAR Data ICD (L0 ISP) - BIO-ICD-ADSF-SY-1000563385</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_ia_rxh.dat</cd:MatchFilename>
+      </cd:DetectionRule>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_ia_rxv.dat</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="L0_Platform_Ancillary_Data">
+    <cd:Description>L0 Platform Ancillary Data Component</cd:Description>
+    <cd:ProductDefinition id="L0_Platform_Ancillary_Data" format="binary" version="0">
+      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and version 8.0 of BIOMASS Satellite to Ground Segment ICD - BIO-ICD-ASU-SY-00003</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">.dat</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+
+  <!-- L1 Product files -->
+  <cd:ProductType name="L1A_Main_ADS">
+    <cd:Description>Main Annotation Data Set for BIOMASS L1A products</cd:Description>
+    <cd:ProductDefinition id="L1A_Main_ADS" format="xml" version="0">
+      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="6">_scs_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_annot.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="6">_sta_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_annot.xml</cd:MatchFilename>
+        <cd:MatchData path="/mainAnnotation/acquisitionInformation/productType">SCS</cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="L1C_Main_ADS">
+    <cd:Description>Main Annotation Data Set for BIOMASS L1C Coregistered products</cd:Description>
+    <cd:ProductDefinition id="L1C_Main_ADS" format="xml" version="0">
+      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="6">_sta_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_annot.xml</cd:MatchFilename>
+        <cd:MatchData path="/mainAnnotation/acquisitionInformation/productType">STA</cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="L1A_LUT_ADS">
+    <cd:Description>LookUp Table Annotation Data Set for BIOMASS L1A products</cd:Description>
+    <cd:ProductDefinition id="L1A_LUT_ADS" format="hdf5" version="0">
+      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="6">_scs_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_lut.nc</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="L1C_LUT_ADS">
+    <cd:Description>LookUp Table Annotation Data Set for BIOMASS L1C coregistered products</cd:Description>
+    <cd:ProductDefinition id="L1C_LUT_ADS" format="hdf5" version="0">
+      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="6">_sta_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_lut.nc</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="L1_Attitude_ADS">
+    <cd:Description>Attitude Annotation Data Set for BIOMASS L1A products</cd:Description>
+    <cd:ProductDefinition id="AUX_ATT" format="xml" version="0">
+      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_att.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="L1_Orbit_ADS">
+    <cd:Description>Orbit Annotation Data Set for BIOMASS L1A products</cd:Description>
+    <cd:ProductDefinition id="AUX_ORB" format="xml" version="0">
+      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_orb.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+
+  <!-- L2 Product files -->
+  <cd:ProductType name="FP_FD_L2A_Main_ADS">
+    <cd:Description>L2A Forest Disturbance Main ADS</cd:Description>
+    <cd:ProductDefinition id="FP_FD_L2A_Main_ADS" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Forest Disturbance Products Format Specifications - BIO-BPS-FDPFD-ARE-010258</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">fp_fd__l2a</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_annot.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="FP_FH_L2A_Main_ADS">
+    <cd:Description>L2A Forest Height Main ADS</cd:Description>
+    <cd:ProductDefinition id="FP_FH_L2A_Main_ADS" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Forest Height Products Format Specifications - BIO-BPS-FHPFD-ARE-010256</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">fp_fh__l2a</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_annot.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="FP_GN_L2A_Main_ADS">
+    <cd:Description>L2A GN Main ADS</cd:Description>
+    <cd:ProductDefinition id="FP_GN_L2A_Main_ADS" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Above Ground Biomass Products Format Specifications - BIO-BPS-AGBPFD-ARE-010257</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">fp_gn__l2a</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_annot.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="FP_FD_L2A_LUT_ADS">
+    <cd:Description>L2A Forest Disturbance LookUp Table ADS</cd:Description>
+    <cd:ProductDefinition id="FP_FD_L2A_LUT_ADS" format="hdf5" version="0">
+      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Forest Disturbance Products Format Specifications - BIO-BPS-FDPFD-ARE-010258</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">fp_fd__l2a</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_lut.nc</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="FP_FH_L2A_LUT_ADS">
+    <cd:Description>L2A Forest Height LookUp Table ADS</cd:Description>
+    <cd:ProductDefinition id="FP_FH_L2A_LUT_ADS" format="hdf5" version="0">
+      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Forest Height Products Format Specifications - BIO-BPS-FHPFD-ARE-010256</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">fp_fh__l2a</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_lut.nc</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="FP_GN_L2A_LUT_ADS">
+    <cd:Description>L2A Above-Ground Biomass Product LookUp Table ADS</cd:Description>
+    <cd:ProductDefinition id="FP_GN_L2A_LUT_ADS" format="hdf5" version="0">
+      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Above-Ground Products Format Specifications - BIO-BPS-AGBPFD-ARE-010257</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">fp_gn__l2a</cd:MatchFilename>
+        <cd:MatchFilename offset="70">_lut.nc</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="FP_FD_L2B_Main_ADS">
+    <cd:Description>L2B Forest Disturbance Main ADS</cd:Description>
+    <cd:ProductDefinition id="FP_FD_L2B_Main_ADS" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Forest Disturbance Products Format Specifications - BIO-BPS-FDPFD-ARE-010258</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">fp_fd__l2b</cd:MatchFilename>
+        <cd:MatchFilename offset="34">_annot.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="FP_FH_L2B_Main_ADS">
+    <cd:Description>L2B Forest Height Main ADS</cd:Description>
+    <cd:ProductDefinition id="FP_FH_L2B_Main_ADS" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Forest Height Products Format Specifications - BIO-BPS-FHPFD-ARE-010256</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">fp_fh__l2b</cd:MatchFilename>
+        <cd:MatchFilename offset="34">_annot.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="FP_GN_L2B_Main_ADS">
+    <cd:Description>L2B GN Main ADS</cd:Description>
+    <cd:ProductDefinition id="FP_GN_L2B_Main_ADS" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Above Ground Biomass Products Format Specifications - BIO-BPS-AGBPFD-ARE-010257</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">fp_gn__l2b</cd:MatchFilename>
+        <cd:MatchFilename offset="34">_annot.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+
+  <!-- AUX Product files -->
+  <cd:ProductType name="AUX_PP0___">
+    <cd:Description>Auxiliary L0 Processing Parameters</cd:Description>
+    <cd:ProductDefinition id="AUX_PP0" format="xml" version="0">
+      <cd:Description>This definition is based on version 1.8 of the BIOMASS L-0, OA Processors Specific ICD - BIO-FLEX-L0PF-OAPF</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_pp0</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_config.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="AUX_PP1___">
+    <cd:Description>Auxiliary L1 Processing Parameters</cd:Description>
+    <cd:ProductDefinition id="AUX_PP1" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_pp1</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_pp1.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="AUX_PPS___">
+    <cd:Description>Auxiliary Stack Processing Parameters</cd:Description>
+    <cd:ProductDefinition id="AUX_PPS" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_pps</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_pps.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="AUX_INS___">
+    <cd:Description>Auxiliary Instrument Parameters</cd:Description>
+    <cd:ProductDefinition id="AUX_INS" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_ins</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_ins.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="Antenna_Patterns">
+    <cd:Description>Antenna Patterns files</cd:Description>
+    <cd:ProductDefinition id="Antenna_Patterns" format="hdf5" version="0">
+      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_ins</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_antenna_patterns.nc</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="Chirp_Replicas">
+    <cd:Description>Internal Chirp Database files</cd:Description>
+    <cd:ProductDefinition id="Chirp_Replicas" format="hdf5" version="0">
+      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_ins</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_chirp_replicas</cd:MatchFilename>
+        <cd:MatchFilename offset="68">.nc</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="AUX_ATT___">
+    <cd:Description>Auxiliary Attitude Data for BIOMASS</cd:Description>
+    <cd:ProductDefinition id="AUX_ATT" format="xml" version="0">
+      <cd:Description>This definition is based on v1.6 of the Earth Observation Mission Software File Format Specification - PE-ID-ESA-GS-584</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_att</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_att.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="AUX_ORB___">
+    <cd:Description>Auxiliary Orbit Data for BIOMASS</cd:Description>
+    <cd:ProductDefinition id="AUX_ORB" format="xml" version="0">
+      <cd:Description>This definition is based on v1.6 of the Earth Observation Mission Software File Format Specification - PE-ID-ESA-GS-584</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_orb</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_orb.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="AUX_PP2_2A">
+    <cd:Description>Auxiliary L2A Processing Parameters</cd:Description>
+    <cd:ProductDefinition id="AUX_PP2_2A" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_pp2_2a</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_pp2_2a.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="AUX_PP2_FD">
+    <cd:Description>Auxiliary L2b Processing Parameters for Forest Disturbance</cd:Description>
+    <cd:ProductDefinition id="AUX_PP2_FD" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.1.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_pp2_fd</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_pp2_fd.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="AUX_PP2_FH">
+    <cd:Description>Auxiliary L2b Processing Parameters for Forest Height</cd:Description>
+    <cd:ProductDefinition id="AUX_PP2_FH" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_pp2_fh</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_pp2_fh.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+
+  <!-- MPL Product files -->
+  <cd:ProductType name="MPL_ORBREF">
+    <cd:Description>Reference orbit file provided by FOS</cd:Description>
+    <cd:ProductDefinition id="MPL_ORB" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS FOS File Format Specification - BIO-ICD-ESC-FS-6005</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">MPL_ORBREF</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="MPL_ORBPRE">
+    <cd:Description>Predicted orbit file provided by FOS</cd:Description>
+    <cd:ProductDefinition id="MPL_ORB" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS FOS File Format Specification - BIO-ICD-ESC-FS-6005</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">MPL_ORBPRE</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="MPL_PPF_x_">
+    <cd:Description>Payload Planning File Interface</cd:Description>
+    <cd:ProductDefinition id="MPL_PPF" format="xml" version="0">
+      <cd:Description>This definition is based on the draft of v2.5 of the BIOMASS PDGS MPF Mission Planning File Format Specification - BIO-ESA-EOPG-EEGS-ID-0079</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">MPL_PPF_</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="MPL_TRPINP">
+    <cd:Description>Transponder Input File Interface</cd:Description>
+    <cd:ProductDefinition id="MPL_TRPINP" format="xml" version="0">
+      <cd:Description>This definition is based on the draft of v2.5 of the BIOMASS PDGS MPF Mission Planning File Format Specification - BIO-ESA-EOPG-EEGS-ID-0079</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">MPL_TRPINP</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="MPL_MISSTL">
+    <cd:Description>Mission Timeline File Interface</cd:Description>
+    <cd:ProductDefinition id="MPL_MISSTL" format="xml" version="0">
+      <cd:Description>This definition is based on the draft of v2.5 of the BIOMASS PDGS MPF Mission Planning File Format Specification - BIO-ESA-EOPG-EEGS-ID-0079</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">MPL_MISSTL</cd:MatchFilename>
+        <cd:MatchFilename offset="65">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+
+  <!-- Processing files -->
+  <cd:ProductType name="CFG_PF_BC_">
+    <cd:Description>Baseline Configuration file</cd:Description>
+    <cd:ProductDefinition id="Baseline_Configuration" format="xml" version="0">
+      <cd:Description>This definition is based on version 1.1 of the BIOMASS PDGS Processing Files Specifications - BIO-ESA-EOPG-EEGS-ID-0112</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">CFG_PF_BC</cd:MatchFilename>
+        <cd:MatchFilename offset="48">.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+
+  <!-- SMF Report files -->
+  <cd:ProductType name="REP_NOB_IN">
+    <cd:Description>Ingestion Report</cd:Description>
+    <cd:ProductDefinition id="REP_NOB_IN" format="xml" version="0">
+      <cd:Description>This definition is based on version 1.3 of the BIOMASS PDGS Internal Monitoring Reports Format Specification - BIO-ESA-EOPG-EEGS-ID-0072</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_NOB_IN</cd:MatchFilename>
+        <cd:MatchFilename offset="65">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_NOBOUT">
+    <cd:Description>Dissemination Report</cd:Description>
+    <cd:ProductDefinition id="REP_NOBOUT" format="xml" version="0">
+      <cd:Description>This definition is based on version 1.3 of the BIOMASS PDGS Internal Monitoring Reports Format Specification - BIO-ESA-EOPG-EEGS-ID-0072</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_NOBOUT</cd:MatchFilename>
+        <cd:MatchFilename offset="65">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+
+  <!-- Disclaimer files -->
+  <cd:ProductType name="REP_DISCLM">
+    <cd:Description>Quality Disclaimer Metadata file</cd:Description>
+    <cd:ProductDefinition id="REP_DISCLM" format="xml" version="0">
+      <cd:Description>This definition is based on version 1.1 of the BIOMASS MPMF File Format Specifications - ST-ESA-MPMF-FFS-001</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_DISCLM</cd:MatchFilename>
+        <cd:MatchFilename offset="51">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+
+  <!-- Transponder files -->
+  <cd:ProductType name="CFG_TRPCCF">
+    <cd:Description>Transponder Input File Interface</cd:Description>
+    <cd:ProductDefinition id="CFG_TRPCCF" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">CFG_TRPCCF</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.EOF</cd:MatchFilename>
+        <cd:MatchData path="/Earth_Observation_File/Earth_Observation_Header/Fixed_Header/File_Type">CFG_TRPCCF</cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPSCR">
+    <cd:Description>Calibration Transponder Schedule Report file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPSCR" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPSCR</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="LOG_TRPDLF">
+    <cd:Description>Calibration Transponder Daily Log file</cd:Description>
+    <cd:ProductDefinition id="LOG_TRPDLF" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">LOG_TRPDLF</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.EOF</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPACQ_HDR">
+    <cd:Description>Calibration Transponder Acquisition Report - Header file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_HDR" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPACQ</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.HDR</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPACQ_METR">
+    <cd:Description>Calibration Transponder Acquisition Report - Metrics file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_METR" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPACQ</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.METR.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPACQ_META">
+    <cd:Description>Calibration Transponder Acquisition Report - Metadata file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPACQ_META" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPACQ</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.META.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPACQ_LOGS">
+    <cd:Description>Calibration Transponder Acquisition Report - Logs file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_LOGS" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPACQ</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.LOGS.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPACQ_FAUL">
+    <cd:Description>Calibration Transponder Acquisition Report - Faults file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_FAUL" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPACQ</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.FAUL.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPCAL_HDR">
+    <cd:Description>Calibration Transponder External Calibration Report - Header file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_HDR" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPCAL</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.HDR</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPCAL_META">
+    <cd:Description>Calibration Transponder External Calibration Report - Metadata file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPCAL_META" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPCAL</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.META.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPCAL_METR">
+    <cd:Description>Calibration Transponder External Calibration Report - Metrics file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_METR" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPCAL</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.METR.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPCAL_LOGS">
+    <cd:Description>Calibration Transponder External Calibration Report - Logs file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_LOGS" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPCAL</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.LOGS.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPCAL_FAUL">
+    <cd:Description>Calibration Transponder External Calibration Report - Faults file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_FAUL" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPCAL</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.FAUL.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPICR_HDR">
+    <cd:Description>Calibration Transponder Internal Calibration Report - Header file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_HDR" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPICR</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.HDR</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPICR_META">
+    <cd:Description>Calibration Transponder Internal Calibration Report - Metadata file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPICR_META" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPICR</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.META.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPICR_METR">
+    <cd:Description>Calibration Transponder Internal Calibration Report - Metrics file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_METR" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPICR</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.METR.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPICR_LOGS">
+    <cd:Description>Calibration Transponder Internal Calibration Report - Logs file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_LOGS" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPICR</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.LOGS.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPICR_FAUL">
+    <cd:Description>Calibration Transponder Internal Calibration Report - Faults file</cd:Description>
+    <cd:ProductDefinition id="REP_TRPxxx_FAUL" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPICR</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.FAUL.XML</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+</cd:ProductClass>

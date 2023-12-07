@@ -1,0 +1,597 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" xmlns:ct="http://www.stcorp.nl/coda/test/2008/10" name="L0_Ancillary_ISP" format="binary" last-modified="2023-03-07">
+  <cd:Description>Instrument Source Packet</cd:Description>
+  <cd:Field name="packetHeader">
+    <cd:NamedType id="Packet_Header"/>
+  </cd:Field>
+  <cd:Field name="dataFieldHeader">
+    <cd:NamedType id="Data_Field_Header"/>
+  </cd:Field>
+  <cd:Field name="FineTime">
+    <cd:Integer>
+      <cd:Description>Fine Time</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="informationBlock">
+    <cd:Raw>
+      <cd:Description>Information Block</cd:Description>
+      <!-- Fixed length: 16 bytes -->
+      <cd:BitSize><![CDATA[ 16 * 8 ]]></cd:BitSize>
+    </cd:Raw>
+  </cd:Field>
+  <cd:Field name="rawGPM">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="GPMTemperatureMonitoring">
+    <cd:Integer>
+      <cd:Description>GPM Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawTXTG">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="TXTGTemperatureMonitoring">
+    <cd:Integer>
+      <cd:Description>TXTG Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawFRG">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="FRGTemperatureMonitoring">
+    <cd:Integer>
+      <cd:Description>FRG Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawRXM">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="RXMTemperatureMonitoring">
+    <cd:Integer>
+      <cd:Description>RXM (H or V) Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawCDN">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="CDNTemperatureMonitoring">
+    <cd:Integer>
+      <cd:Description>CDN Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASAmplifierTMHN1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASAmplifierTMHN1">
+    <cd:Integer>
+      <cd:Description>PAS Amplifier Temperature Monitoring HN1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASAmplifierTMHN2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASAmplifierTMHN2">
+    <cd:Integer>
+      <cd:Description>PAS Amplifier Temperature Monitoring HN2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASAmplifierTMHR">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASAmplifierTMHR">
+    <cd:Integer>
+      <cd:Description>PAS Amplifier Temperature Monitoring HR</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASAmplifierTMVN1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASAmplifierTMVN1">
+    <cd:Integer>
+      <cd:Description>PAS Amplifier Temperature Monitoring VN1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASAmplifierTMVN2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASAmplifierTMVN2">
+    <cd:Integer>
+      <cd:Description>PAS Amplifier Temperature Monitoring VN2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASAmplifierTMVR">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASAmplifierTMVR">
+    <cd:Integer>
+      <cd:Description>PAS Amplifier Temperature Monitoring VR</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASEPCTMHN1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASEPCTMHN1">
+    <cd:Integer>
+      <cd:Description>PAS PEC Temperature Monitoring HN1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASEPCTMHN2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASEPCTMHN2">
+    <cd:Integer>
+      <cd:Description>PAS PEC Temperature Monitoring HN2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASEPCTMHR">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASEPCTMHR">
+    <cd:Integer>
+      <cd:Description>PAS PEC Temperature Monitoring HR</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASEPCTMVN1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASEPCTMVN1">
+    <cd:Integer>
+      <cd:Description>PAS PEC Temperature Monitoring VN1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASEPCTMVN2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASEPCTMVN2">
+    <cd:Integer>
+      <cd:Description>PAS PEC Temperature Monitoring VN2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASEPCTMVR">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASEPCTMVR">
+    <cd:Integer>
+      <cd:Description>PAS PEC Temperature Monitoring VR</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPNZ1Therm1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PNZ1Therm1">
+    <cd:Integer>
+      <cd:Description>Passive Network Zone 1_Thermistor 1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPNZ1Therm2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PNZ1Therm2">
+    <cd:Integer>
+      <cd:Description>Passive Network Zone 1_Thermistor 2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPNZ2Therm1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PNZ2Therm1">
+    <cd:Integer>
+      <cd:Description>Passive Network Zone 2_Thermistor 1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPNZ2Therm2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PNZ2Therm2">
+    <cd:Integer>
+      <cd:Description>Passive Network Zone 2_Thermistor 2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPNZ3Therm1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PNZ3Therm1">
+    <cd:Integer>
+      <cd:Description>Passive Network Zone 3_Thermistor 1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPNZ3Therm2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PNZ3Therm2">
+    <cd:Integer>
+      <cd:Description>Passive Network Zone 3_Thermistor 2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASHSSPAN1Thermistor">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASHSSPAN1Thermistor">
+    <cd:Integer>
+      <cd:Description>PAS_H SSPA_N1 Thermistor</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASHSSPAN2Thermistor">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASHSSPAN2Thermistor">
+    <cd:Integer>
+      <cd:Description>PAS_H SSPA_N2 Thermistor</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASHSSPARThermistor">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASHSSPARThermistor">
+    <cd:Integer>
+      <cd:Description>PAS_H SSPA_R Thermistor</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASVSSPAN1Thermistor">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASVSSPAN1Thermistor">
+    <cd:Integer>
+      <cd:Description>PAS_V SSPA_N1 Thermistor</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASVSSPAN2Thermistor">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASVSSPAN2Thermistor">
+    <cd:Integer>
+      <cd:Description>PAS_V SSPA_N2 Thermistor</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASVSSPARThermistor">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASVSSPARThermistor">
+    <cd:Integer>
+      <cd:Description>PAS_V SSPA_R Thermistor</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASHCirc1Therm1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASHCirc1Therm1">
+    <cd:Integer>
+      <cd:Description>PAS_H Cirlulator1_Thermistor 1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASHCirc1Therm2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASHCirc1Therm2">
+    <cd:Integer>
+      <cd:Description>PAS_H Cirlulator1_Thermistor 2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASHCirc2Therm1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASHCirc2Therm1">
+    <cd:Integer>
+      <cd:Description>PAS_H Cirlulator2_Thermistor 1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASHCirc2Therm2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASHCirc2Therm2">
+    <cd:Integer>
+      <cd:Description>PAS_H Cirlulator2_Thermistor 2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASVCirc1Therm1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASVCirc1Therm1">
+    <cd:Integer>
+      <cd:Description>PAS_V Cirlulator1_Thermistor 1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASVCirc1Therm2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASVCirc1Therm2">
+    <cd:Integer>
+      <cd:Description>PAS_V Cirlulator1_Thermistor 2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASVCirc2Therm1">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASVCirc2Therm1">
+    <cd:Integer>
+      <cd:Description>PAS_V Cirlulator2_Thermistor 1</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawPASVCirc2Therm2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="PASVCirc2Therm2">
+    <cd:Integer>
+      <cd:Description>PAS_V Cirlulator2_Thermistor 2</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawRASnomEPCTM">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="RASnomEPCTM">
+    <cd:Integer>
+      <cd:Description>RAS-(H or V) nom EPC Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawRASnomLimiterTM">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="RASnomLimiterTM">
+    <cd:Integer>
+      <cd:Description>RAS-(H or V) nom Limiter Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawRASnomLNATM">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="RASnomLNATM">
+    <cd:Integer>
+      <cd:Description>RAS-(H or V) nom LNA Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawRASredEPCTM">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="RASredEPCTM">
+    <cd:Integer>
+      <cd:Description>RAS-(H or V) red EPC Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawRASredLimiterTM">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="RASredLimiterTM">
+    <cd:Integer>
+      <cd:Description>RAS-(H or V) red Limiter Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rawRASredLNATM">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="RASredLNATM">
+    <cd:Integer>
+      <cd:Description>RAS-(H or V) red LNA Temperature Monitoring</cd:Description>
+      <cd:BitSize>12</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="remainderSourceData">
+    <cd:Raw>
+      <cd:Description>Remainder of the Source Data Field</cd:Description>
+      <!-- Fixed length: 50 bytes -->
+      <cd:BitSize><![CDATA[ 50 * 8 ]]></cd:BitSize>
+    </cd:Raw>
+  </cd:Field>
+  <cd:Field name="PEC">
+    <cd:Integer>
+      <cd:Description>Packet Error Control</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+</cd:Record>

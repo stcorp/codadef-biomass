@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="Chirp_Replicas" format="hdf5" last-modified="2023-12-07">
+  <cd:Record>
+    <cd:Attribute name="description">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="swath">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="missionPhase">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="fileOriginator">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="fileOriginationDate">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="NCProperties" real_name="_NCProperties">
+      <cd:Text/>
+      <cd:Hidden/>
+      <cd:Optional/>
+    </cd:Attribute>
+    <cd:Field name="chirpReplicas">
+      <cd:Record>
+        <cd:Field name="chirpReplicaHH">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>1</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$slantRangeTime]]></cd:Dimension>
+            <cd:Record>
+              <cd:Field name="real">
+                <cd:Float>
+                  <cd:NativeType>double</cd:NativeType>
+                </cd:Float>
+              </cd:Field>
+              <cd:Field name="imag">
+                <cd:Float>
+                  <cd:NativeType>double</cd:NativeType>
+                </cd:Float>
+              </cd:Field>
+            </cd:Record>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="chirpReplicaHV">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>1</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$slantRangeTime]]></cd:Dimension>
+            <cd:Record>
+              <cd:Field name="real">
+                <cd:Float>
+                  <cd:NativeType>double</cd:NativeType>
+                </cd:Float>
+              </cd:Field>
+              <cd:Field name="imag">
+                <cd:Float>
+                  <cd:NativeType>double</cd:NativeType>
+                </cd:Float>
+              </cd:Field>
+            </cd:Record>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="chirpReplicaVH">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>1</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$slantRangeTime]]></cd:Dimension>
+            <cd:Record>
+              <cd:Field name="real">
+                <cd:Float>
+                  <cd:NativeType>double</cd:NativeType>
+                </cd:Float>
+              </cd:Field>
+              <cd:Field name="imag">
+                <cd:Float>
+                  <cd:NativeType>double</cd:NativeType>
+                </cd:Float>
+              </cd:Field>
+            </cd:Record>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="chirpReplicaVV">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>1</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$slantRangeTime]]></cd:Dimension>
+            <cd:Record>
+              <cd:Field name="real">
+                <cd:Float>
+                  <cd:NativeType>double</cd:NativeType>
+                </cd:Float>
+              </cd:Field>
+              <cd:Field name="imag">
+                <cd:Float>
+                  <cd:NativeType>double</cd:NativeType>
+                </cd:Float>
+              </cd:Field>
+            </cd:Record>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="pixelType">
+          <cd:Array>
+            <cd:Text/>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="noDataValue">
+          <cd:Array>
+            <cd:Float>
+              <cd:NativeType>double</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+    <cd:Field name="slantRangeTime">
+      <cd:Array>
+        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+          <cd:Array>
+            <cd:Dimension>1</cd:Dimension>
+            <cd:Integer>
+              <cd:NativeType>int32</cd:NativeType>
+              <cd:LittleEndian/>
+            </cd:Integer>
+          </cd:Array>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="units">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Dimension/>
+        <cd:Float>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+  </cd:Record>
+  <cd:ProductVariable name="slantRangeTime">
+    <cd:Init><![CDATA[$slantRangeTime = dim(/slantRangeTime, 0)]]></cd:Init>
+  </cd:ProductVariable>
+</cd:ProductDefinition>

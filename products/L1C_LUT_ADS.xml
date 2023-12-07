@@ -1,0 +1,881 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_LUT_ADS" format="hdf5" last-modified="2023-12-04">
+  <cd:Record>
+    <cd:Attribute name="mission">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="swath">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="productType">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="polarisationList">
+      <cd:Array>
+        <cd:Dimension/>
+        <cd:Text/>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="startTime">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="stopTime">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="missionPhaseID">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="driftPhaseFlag">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="sensorMode">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="globalCoverageID">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Integer>
+          <cd:NativeType>uint16</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Integer>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="majorCycleID">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Integer>
+          <cd:NativeType>uint16</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Integer>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="repeatCycleID">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Integer>
+          <cd:NativeType>uint16</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Integer>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="absoluteOrbitNumber">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Integer>
+          <cd:NativeType>uint16</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Integer>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="relativeOrbitNumber">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Integer>
+          <cd:NativeType>uint16</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Integer>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="orbitPass">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="platformHeading">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Float>
+          <cd:NativeType>double</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Float>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="dataTakeID">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Integer>
+          <cd:NativeType>uint16</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Integer>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="frame">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Integer>
+          <cd:NativeType>uint16</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Integer>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="productComposition">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="noDataValueBool">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="noDataValueFloat">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Float>
+          <cd:NativeType>double</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Float>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="referenceAzimuthTime">
+      <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="NCProperties" real_name="_NCProperties">
+      <cd:Text/>
+      <cd:Hidden/>
+      <cd:Optional/>
+    </cd:Attribute>
+    <cd:Field name="slantRangeTime">
+      <cd:Array>
+        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+          <cd:Array>
+            <cd:Dimension>1</cd:Dimension>
+            <cd:Integer>
+              <cd:NativeType>int32</cd:NativeType>
+              <cd:LittleEndian/>
+            </cd:Integer>
+          </cd:Array>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="units">
+          <cd:FixedValue>s</cd:FixedValue>
+        </cd:Attribute>
+        <cd:Dimension/>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="relativeAzimuthTime">
+      <cd:Array>
+        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+          <cd:Array>
+            <cd:Dimension>1</cd:Dimension>
+            <cd:Integer>
+              <cd:NativeType>int32</cd:NativeType>
+              <cd:LittleEndian/>
+            </cd:Integer>
+          </cd:Array>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="units">
+          <cd:FixedValue>s</cd:FixedValue>
+        </cd:Attribute>
+        <cd:Dimension/>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="ionosphereRelativeRangeTime">
+      <cd:Array>
+        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+          <cd:Array>
+            <cd:Dimension>1</cd:Dimension>
+            <cd:Integer>
+              <cd:NativeType>int32</cd:NativeType>
+              <cd:LittleEndian/>
+            </cd:Integer>
+          </cd:Array>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="units">
+          <cd:FixedValue>s</cd:FixedValue>
+        </cd:Attribute>
+        <cd:Dimension/>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="ionosphereCenteredAzimuthTime">
+      <cd:Array>
+        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+          <cd:Array>
+            <cd:Dimension>1</cd:Dimension>
+            <cd:Integer>
+              <cd:NativeType>int32</cd:NativeType>
+              <cd:LittleEndian/>
+            </cd:Integer>
+          </cd:Array>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="units">
+          <cd:FixedValue>s</cd:FixedValue>
+        </cd:Attribute>
+        <cd:Dimension/>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="radiometry">
+      <cd:Record>
+        <cd:Field name="sigmaNought">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="gammaNought">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+    <cd:Field name="denoising">
+      <cd:Record>
+        <cd:Field name="denoisingHH">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="denoisingXX">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="denoisingVV">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+    <cd:Field name="geometry">
+      <cd:Record>
+        <cd:Field name="latitude">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="longitude">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="height">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+          <cd:Optional/>
+        </cd:Field>
+        <cd:Field name="incidenceAngle">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="elevationAngle">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="terrainSlope">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+    <cd:Field name="coregistration">
+      <cd:Record>
+        <cd:Field name="rangeCoregistrationShifts">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="azimuthCoregistrationShifts">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="coregistrationShiftsQuality">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="flatteningPhasesScreen">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="waveNumbers">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+    <cd:Field name="fastIonosphereRemoval">
+      <cd:Record>
+        <cd:Field name="fastIonospherePhasesScreen">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$ionosphere_centered_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$ionosphere_relative_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="fastIonospherePhasesScreenQuality">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$ionosphere_centered_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$ionosphere_relative_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+      </cd:Record>
+      <cd:Optional/>
+    </cd:Field>
+    <cd:Field name="skpPhaseCalibration">
+      <cd:Record>
+        <cd:Field name="groundPhasesScreen">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="groundPhasesScreenQuality">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+      </cd:Record>
+      <cd:Optional/>
+    </cd:Field>
+  </cd:Record>
+  <cd:ProductVariable name="slant_range_time">
+    <cd:Init><![CDATA[$slant_range_time = dim(/slantRangeTime, 0)]]></cd:Init>
+  </cd:ProductVariable>
+  <cd:ProductVariable name="relative_azimuth_time">
+    <cd:Init><![CDATA[$relative_azimuth_time = dim(/relativeAzimuthTime, 0)]]></cd:Init>
+  </cd:ProductVariable>
+  <cd:ProductVariable name="ionosphere_relative_range_time">
+    <cd:Init><![CDATA[$ionosphere_relative_range_time = dim(/ionosphereRelativeRangeTime, 0)]]></cd:Init>
+  </cd:ProductVariable>
+  <cd:ProductVariable name="ionosphere_centered_azimuth_time">
+    <cd:Init><![CDATA[$ionosphere_centered_azimuth_time = dim(/ionosphereCenteredAzimuthTime, 0)]]></cd:Init>
+  </cd:ProductVariable>
+</cd:ProductDefinition>

@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_DISCLM" format="xml" last-modified="2023-05-03">
+  <cd:Record>
+    <cd:Field name="Earth_Observation_File" real_name="Earth_Observation_File">
+      <!-- TODO: Update namespace once the namespace is defined -->
+      <cd:Record>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Observation_Header" real_name="Earth_Observation_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header" real_name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header_EOFFS_version"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header" real_name="Variable_Header">
+              <cd:Text/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block" real_name="Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type"/>
+            <cd:Field name="Disclaimer" real_name="Disclaimer">
+              <cd:Record>
+                <cd:Field name="Identifier" real_name="Identifier">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+                <cd:Field name="Description" real_name="Description">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="Product_Quality_Status" real_name="Product_Quality_Status">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="List_of_Degradations" real_name="List_of_Degradations">
+                  <cd:Record>
+                    <cd:Attribute name="count">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Attribute>
+                    <cd:Field name="Degradation" real_name="Degradation">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Text/>
+                      </cd:Array>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="Degradation_Percentage" real_name="Degradation_Percentage">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="unit"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="Reference" real_name="Reference">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="List_of_Product_Groups" real_name="List_of_Product_Groups">
+                  <cd:Record>
+                    <cd:Attribute name="count">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Attribute>
+                    <cd:Field name="Product_Group" real_name="Product_Group">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Record>
+                          <cd:Field name="Product_Type" real_name="Product_Type">
+                            <cd:Text/>
+                            <cd:Optional/>
+                          </cd:Field>
+                          <cd:Field name="Processing_Facillity" real_name="Processing_Facillity">
+                            <cd:Text/>
+                            <cd:Optional/>
+                          </cd:Field>
+                          <cd:Field name="Processor_Name" real_name="Processor_Name">
+                            <cd:Text/>
+                            <cd:Optional/>
+                          </cd:Field>
+                          <cd:Field name="Processor_Version" real_name="Processor_Version">
+                            <cd:Text/>
+                            <cd:Optional/>
+                          </cd:Field>
+                          <cd:Field name="Baseline" real_name="Baseline">
+                            <cd:Text/>
+                            <cd:Optional/>
+                          </cd:Field>
+                          <cd:Field name="Mission_Phase" real_name="Mission_Phase">
+                            <cd:Text/>
+                            <cd:Optional/>
+                          </cd:Field>
+                          <cd:Field name="Operational_Scenario" real_name="Operational_Scenario">
+                            <cd:Text/>
+                            <cd:Optional/>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Array>
+                      <cd:Optional/>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

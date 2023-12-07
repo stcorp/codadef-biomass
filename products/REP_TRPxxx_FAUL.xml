@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_TRPxxx_FAUL" format="xml" last-modified="2023-04-21">
+  <cd:Record>
+    <cd:Field name="Faults" real_name="http://c-core.ca/BCT Faults">
+      <cd:Record>
+        <cd:Attribute name="schemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance schemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="List_of_Fault_Readings" real_name="http://c-core.ca/BCT List_of_Fault_Readings">
+          <cd:Record>
+            <cd:Attribute name="count">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint32</cd:NativeType>
+              </cd:Integer>
+            </cd:Attribute>
+            <cd:Field name="Fault_Reading" real_name="http://c-core.ca/BCT Fault_Reading">
+              <cd:Array>
+                <cd:Dimension/>
+                <cd:Record>
+                  <cd:Attribute name="name">
+                    <cd:Text/>
+                  </cd:Attribute>
+                  <cd:Attribute name="source">
+                    <cd:Text/>
+                  </cd:Attribute>
+                  <cd:Attribute name="severity">
+                    <cd:Text/>
+                  </cd:Attribute>
+                  <cd:Attribute name="overridable">
+                    <cd:Integer format="ascii">
+                      <cd:NativeType>uint8</cd:NativeType>
+                      <cd:Mapping string="FALSE" value="0"/>
+                      <cd:Mapping string="False" value="0"/>
+                      <cd:Mapping string="false" value="0"/>
+                      <cd:Mapping string="TRUE" value="1"/>
+                      <cd:Mapping string="True" value="1"/>
+                      <cd:Mapping string="true" value="1"/>
+                    </cd:Integer>
+                    <cd:Optional/>
+                  </cd:Attribute>
+                  <cd:Field name="Timestamp" real_name="http://c-core.ca/BCT Timestamp">
+                    <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                      <cd:Text/>
+                    </cd:Time>
+                  </cd:Field>
+                  <cd:Field name="Overridden" real_name="http://c-core.ca/BCT Overridden">
+                    <cd:Integer format="ascii">
+                      <cd:NativeType>uint8</cd:NativeType>
+                      <cd:Mapping string="FALSE" value="0"/>
+                      <cd:Mapping string="False" value="0"/>
+                      <cd:Mapping string="false" value="0"/>
+                      <cd:Mapping string="TRUE" value="1"/>
+                      <cd:Mapping string="True" value="1"/>
+                      <cd:Mapping string="true" value="1"/>
+                    </cd:Integer>
+                    <cd:Optional/>
+                  </cd:Field>
+                  <cd:Field name="Active" real_name="http://c-core.ca/BCT Active">
+                    <cd:Integer format="ascii">
+                      <cd:NativeType>uint8</cd:NativeType>
+                      <cd:Mapping string="FALSE" value="0"/>
+                      <cd:Mapping string="False" value="0"/>
+                      <cd:Mapping string="false" value="0"/>
+                      <cd:Mapping string="TRUE" value="1"/>
+                      <cd:Mapping string="True" value="1"/>
+                      <cd:Mapping string="true" value="1"/>
+                    </cd:Integer>
+                  </cd:Field>
+                </cd:Record>
+              </cd:Array>
+              <cd:Optional/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

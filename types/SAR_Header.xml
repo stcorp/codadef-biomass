@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" xmlns:ct="http://www.stcorp.nl/coda/test/2008/10" name="SAR_Header" format="binary" last-modified="2023-03-08">
+  <!-- <cd:Field name="fineTimeEnhanced">
+    <cd:Integer>
+      <cd:Description>Fine Time Enhanced</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field> -->
+  <cd:Field name="obtSynchronisationStatus">
+    <cd:Record>
+      <cd:Field name="NPE">
+        <cd:Integer>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="NLE">
+        <cd:Integer>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="MSS">
+        <cd:Integer>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="TTY">
+        <cd:Integer>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="TMR">
+        <cd:Integer>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="SMT">
+        <cd:Integer>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="SST">
+        <cd:Integer>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="SEN">
+        <cd:Integer>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="syncMarker">
+    <cd:Integer>
+      <cd:Description>Synchronisation Marker</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="SARPacketCount">
+    <cd:Integer>
+      <cd:Description>SAR Packet Count</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="PRICount">
+    <cd:Integer>
+      <cd:Description>PRI Count</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="BlLgth">
+    <cd:Integer>
+      <cd:Description>BAQ Block Length</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="decBp">
+    <cd:Integer>
+      <cd:Description>Decimation Bypassed</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>int8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="instrumentconfigurationID">
+    <cd:Integer>
+      <cd:Description>Instrument Configuration ID</cd:Description>
+      <cd:BitSize>30</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="dataTakeID">
+    <cd:Integer>
+      <cd:Description>Data Take ID</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="groundUserAnnotation">
+    <cd:Integer>
+      <cd:Description>Ground User Annotation</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="GSTLIndex">
+    <cd:Integer>
+      <cd:Description>GSTL Index</cd:Description>
+      <cd:BitSize>6</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="warm">
+    <cd:Integer>
+      <cd:Description>Warmup</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="PreEn">
+    <cd:Integer>
+      <cd:Description>Preamble Enabled</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="GPREIdx">
+    <cd:Integer>
+      <cd:Description>GPRE Index</cd:Description>
+      <cd:BitSize>2</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="PosEn">
+    <cd:Integer>
+      <cd:Description>Postamble Enabled</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="GPOSIdx">
+    <cd:Integer>
+      <cd:Description>GPOS Index</cd:Description>
+      <cd:BitSize>2</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="CalEn">
+    <cd:Integer>
+      <cd:Description>Calibration Enabled</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="GCALIdx">
+    <cd:Integer>
+      <cd:Description>GCAL Index</cd:Description>
+      <cd:BitSize>2</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="pulseRepetitionInterval">
+    <cd:Integer>
+      <cd:Description>Pulse Repetition Interval</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="samplingWindowPosition">
+    <cd:Integer>
+      <cd:Description>Sampling Window Position</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="samplingWindowLength">
+    <cd:Integer>
+      <cd:Description>Sampling Window Length</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="BITSEL">
+    <cd:Integer>
+      <cd:Description>Bit Selection</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="BAQMode">
+    <cd:Integer>
+      <cd:Description>BAQ Mode</cd:Description>
+      <cd:BitSize>3</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="signalType">
+    <cd:Integer>
+      <cd:Description>Signal Type</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="TXPIDX">
+    <cd:Integer>
+      <cd:Description>Tx Pulse Index</cd:Description>
+      <cd:BitSize>6</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="rank">
+    <cd:Integer>
+      <cd:Description>Rank</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="temperatureCompensation">
+    <cd:Integer>
+      <cd:Description>Temperature Compensation</cd:Description>
+      <cd:BitSize>2</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="spareRTPS1">
+    <cd:Raw>
+      <cd:BitSize>3</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="TXPL">
+    <cd:Integer>
+      <cd:Description>Tx Pulse Length</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="SSPAMessages">
+    <cd:Record>
+      <cd:Field name="SSPAVMessage0">
+        <!-- <cd:Description>SSPA-V Control Message 0</cd:Description> -->
+        <cd:NamedType id="SSPAMessage"/>
+      </cd:Field>
+      <cd:Field name="SSPAVMessage1">
+        <!-- <cd:Description>SSPA-V Control Message 1</cd:Description> -->
+        <cd:NamedType id="SSPAMessage"/>
+      </cd:Field>
+      <cd:Field name="SSPAVMessage2">
+        <!-- <cd:Description>SSPA-V Control Message 2</cd:Description> -->
+        <cd:NamedType id="SSPAMessage"/>
+      </cd:Field>
+      <cd:Field name="SSPAHMessage3">
+        <!-- <cd:Description>SSPA-H Control Message 3</cd:Description> -->
+        <cd:NamedType id="SSPAMessage"/>
+      </cd:Field>
+      <cd:Field name="SSPAHMessage4">
+        <!-- <cd:Description>SSPA-H Control Message 4</cd:Description> -->
+        <cd:NamedType id="SSPAMessage"/>
+      </cd:Field>
+      <cd:Field name="SSPAHMessage5">
+        <!-- <cd:Description>SSPA-H Control Message 5</cd:Description> -->
+        <cd:NamedType id="SSPAMessage"/>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="RASControlMessages">
+    <cd:Record>
+      <cd:Field name="RASVControlMessage">
+        <cd:Record>
+          <cd:Description>RAS-V Control Message</cd:Description>
+          <cd:Field name="RxGain">
+            <cd:Integer>
+              <cd:Description>Rx Gain</cd:Description>
+              <cd:BitSize>8</cd:BitSize>
+              <cd:NativeType>uint8</cd:NativeType>
+            </cd:Integer>
+          </cd:Field>
+          <cd:Field name="emptyRASCM">
+            <cd:Raw>
+              <cd:Description>Bits set to 0 in RAS Control Message</cd:Description>
+              <cd:BitSize>8</cd:BitSize>
+            </cd:Raw>
+            <cd:Hidden/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="RASHControlMessage">
+        <cd:Record>
+          <cd:Description>RAS-H Control Message</cd:Description>
+          <cd:Field name="RxGain">
+            <cd:Integer>
+              <cd:Description>Rx Gain</cd:Description>
+              <cd:BitSize>8</cd:BitSize>
+              <cd:NativeType>uint8</cd:NativeType>
+            </cd:Integer>
+          </cd:Field>
+          <cd:Field name="emptyRASCM">
+            <cd:Raw>
+              <cd:Description>Bits set to 0 in RAS Control Message</cd:Description>
+              <cd:BitSize>8</cd:BitSize>
+            </cd:Raw>
+            <cd:Hidden/>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="emptySSPAMessageIndexBits0">
+    <cd:Raw>
+      <cd:Description>Empty bits at the beginning of each byte of SSPA Message index</cd:Description>
+      <cd:BitSize>3</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="SSPAMessageIndex0">
+    <cd:Integer>
+      <cd:Description>SSPA Message Index 0</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="emptySSPAMessageIndexBits1">
+    <cd:Raw>
+      <cd:Description>Empty bits at the beginning of each byte of SSPA Message index</cd:Description>
+      <cd:BitSize>3</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="SSPAMessageIndex1">
+    <cd:Integer>
+      <cd:Description>SSPA Message Index 1</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="emptySSPAMessageIndexBits2">
+    <cd:Raw>
+      <cd:Description>Empty bits at the beginning of each byte of SSPA Message index</cd:Description>
+      <cd:BitSize>3</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="SSPAMessageIndex2">
+    <cd:Integer>
+      <cd:Description>SSPA Message Index 2</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="emptySSPAMessageIndexBits3">
+    <cd:Raw>
+      <cd:Description>Empty bits at the beginning of each byte of SSPA Message index</cd:Description>
+      <cd:BitSize>3</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="SSPAMessageIndex3">
+    <cd:Integer>
+      <cd:Description>SSPA Message Index 3</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="emptySSPAMessageIndexBits4">
+    <cd:Raw>
+      <cd:Description>Empty bits at the beginning of each byte of SSPA Message index</cd:Description>
+      <cd:BitSize>3</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="SSPAMessageIndex4">
+    <cd:Integer>
+      <cd:Description>SSPA Message Index 4</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="emptySSPAMessageIndexBits5">
+    <cd:Raw>
+      <cd:Description>Empty bits at the beginning of each byte of SSPA Message index</cd:Description>
+      <cd:BitSize>3</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="SSPAMessageIndex5">
+    <cd:Integer>
+      <cd:Description>SSPA Message Index 5</cd:Description>
+      <cd:BitSize>5</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="spareRTPS2">
+    <cd:Raw>
+      <cd:BitSize>16</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+</cd:Record>

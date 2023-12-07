@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_TRPxxx_HDR" format="xml" last-modified="2023-05-03">
+  <cd:Record>
+    <cd:Field name="Earth_Observation_Header" real_name="http://c-core.ca/BCT Earth_Observation_Header">
+      <cd:Record>
+        <cd:Attribute name="schemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance schemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Fixed_Header" real_name="http://c-core.ca/BCT Fixed_Header">
+          <cd:NamedType id="Fixed_Header_EOFFS_version"/>
+        </cd:Field>
+        <cd:Field name="Variable_Header" real_name="http://c-core.ca/BCT Variable_Header">
+          <cd:Record>
+            <cd:Field name="List_of_Data_Block_Files" real_name="http://c-core.ca/BCT List_of_Data_Block_Files">
+              <cd:Record>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="Data_Block_File" real_name="http://c-core.ca/BCT Data_Block_File">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Field name="File_Name" real_name="http://c-core.ca/BCT File_Name">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="Format" real_name="http://c-core.ca/BCT Format">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="Format_Version" real_name="http://c-core.ca/BCT Format_Version">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="Schema_Reference" real_name="http://c-core.ca/BCT Schema_Reference">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="Byte_Order" real_name="http://c-core.ca/BCT Byte_Order">
+                        <cd:Text/>
+                        <cd:Optional/>
+                      </cd:Field>
+                      <cd:Field name="Dss_Rx_Board" real_name="http://c-core.ca/BCT Dss_Rx_Board">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint8</cd:NativeType>
+                        </cd:Integer>
+                        <cd:Optional/>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="System_Settings" real_name="http://c-core.ca/BCT System_Settings">
+              <cd:Record>
+                <cd:Field name="User_File_Contents" real_name="http://c-core.ca/BCT User_File_Contents">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="Static_File_Contents" real_name="http://c-core.ca/BCT Static_File_Contents">
+                  <cd:Text/>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

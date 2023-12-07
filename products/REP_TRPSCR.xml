@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_TRPSCR" format="xml" last-modified="2023-05-03">
+  <cd:Record>
+    <cd:Field name="Earth_Observation_File" real_name="http://c-core.ca/BCT Earth_Observation_File">
+      <cd:Record>
+        <cd:Attribute name="schemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance schemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Observation_Header" real_name="http://c-core.ca/BCT Earth_Observation_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header" real_name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header_EOFFS_version"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header" real_name="Variable_Header">
+              <cd:Text/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block" real_name="http://c-core.ca/BCT Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Field name="List_of_Scheduled_Operations" real_name="http://c-core.ca/BCT List_of_Scheduled_Operations">
+              <cd:Record>
+                <cd:Attribute name="count">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Field name="Scheduled_Operation" real_name="http://c-core.ca/BCT Scheduled_Operation">
+                  <cd:Record>
+                    <cd:Field name="Operation_ID" real_name="http://c-core.ca/BCT Operation_ID">
+                      <cd:Text/>
+                    </cd:Field>
+                    <cd:Field name="Operation_Type" real_name="http://c-core.ca/BCT Operation_Type">
+                      <cd:Text/>
+                    </cd:Field>
+                    <cd:Field name="Start_Time" real_name="http://c-core.ca/BCT Start_Time">
+                      <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSSS&quot;)">
+                        <cd:Text/>
+                      </cd:Time>
+                    </cd:Field>
+                    <cd:Field name="Stop_Time" real_name="http://c-core.ca/BCT Stop_Time">
+                      <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSSS&quot;)">
+                        <cd:Text/>
+                      </cd:Time>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

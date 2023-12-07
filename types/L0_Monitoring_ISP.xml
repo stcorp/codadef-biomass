@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" xmlns:ct="http://www.stcorp.nl/coda/test/2008/10" name="L0_Monitoring_ISP" format="binary" last-modified="2023-03-07">
+  <cd:Description>Instrument Source Packet</cd:Description>
+  <cd:Field name="packetHeader">
+    <cd:NamedType id="Packet_Header"/>
+  </cd:Field>
+  <cd:Field name="dataFieldHeader">
+    <cd:NamedType id="Data_Field_Header"/>
+  </cd:Field>
+  <cd:Field name="FineTimeEnhanced">
+    <cd:Integer>
+      <cd:Description>Fine Time (enhanced for SAR packets)</cd:Description>
+      <cd:BitSize>24</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="sarHeader">
+    <cd:NamedType id="SAR_Header"/>
+  </cd:Field>
+  <cd:Field name="userData">
+    <cd:Raw>
+      <cd:Description>User Data Field</cd:Description>
+      <!-- UserData = packetDataFieldLength - dataFieldHeader - sarHeader - packetErrorControl -->
+      <!-- <cd:BitSize><![CDATA[ (int(../packetHeader/packetDataFieldLength) - 75 - 10 - 2) * 8  ]]></cd:BitSize> -->
+      <cd:BitSize><![CDATA[ (int(../packetHeader/packetDataFieldLength) - bytesize(../sarHeader) - 10 - 2) * 8  ]]></cd:BitSize>
+    </cd:Raw>
+  </cd:Field>
+  <cd:Field name="PEC">
+    <cd:Integer>
+      <cd:Description>Packet Error Control</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+</cd:Record>

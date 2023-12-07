@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="LOG_TRPDLF" format="xml" last-modified="2023-05-03">
+  <cd:Record>
+    <cd:Field name="Earth_Observation_File" real_name="http://c-core.ca/BCT Earth_Observation_File">
+      <cd:Record>
+        <cd:Attribute name="schemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance schemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Observation_Header" real_name="http://c-core.ca/BCT Earth_Observation_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header" real_name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header_EOFFS_version"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header" real_name="Variable_Header">
+              <cd:Text/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block" real_name="http://c-core.ca/BCT Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Field name="List_of_Logs" real_name="http://c-core.ca/BCT List_of_Logs">
+              <cd:Record>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="Log" real_name="http://c-core.ca/BCT Log">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Field name="Timestamp" real_name="http://c-core.ca/BCT Timestamp">
+                        <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                          <cd:Text/>
+                        </cd:Time>
+                      </cd:Field>
+                      <cd:Field name="Level" real_name="http://c-core.ca/BCT Level">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="Source" real_name="http://c-core.ca/BCT Source">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="Message" real_name="http://c-core.ca/BCT Message">
+                        <cd:Text/>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="List_of_Fault_Readings" real_name="http://c-core.ca/BCT List_of_Fault_Readings">
+              <cd:Record>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="Fault_Reading" real_name="http://c-core.ca/BCT Fault_Reading">
+                  <cd:Record>
+                    <cd:Attribute name="name">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:Attribute name="source">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:Attribute name="severity">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:Attribute name="overridable">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                      <cd:Optional/>
+                    </cd:Attribute>
+                    <cd:Field name="Timestamp" real_name="http://c-core.ca/BCT Timestamp">
+                      <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                        <cd:Text/>
+                      </cd:Time>
+                    </cd:Field>
+                    <cd:Field name="Overridden" real_name="http://c-core.ca/BCT Overridden">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                      <cd:Optional/>
+                    </cd:Field>
+                    <cd:Field name="Active" real_name="http://c-core.ca/BCT Active">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="List_of_Metric_Readings" real_name="http://c-core.ca/BCT List_of_Metric_Readings">
+              <cd:Record>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="Metric_Reading" real_name="http://c-core.ca/BCT Metric_Reading">
+                  <cd:Record>
+                    <cd:Attribute name="name">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:Attribute name="source">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:Attribute name="type">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:Attribute name="unit">
+                      <cd:Text/>
+                      <cd:Optional/>
+                    </cd:Attribute>
+                    <cd:Field name="Timestamp" real_name="http://c-core.ca/BCT Timestamp">
+                      <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                        <cd:Text/>
+                      </cd:Time>
+                    </cd:Field>
+                    <cd:Field name="Value" real_name="http://c-core.ca/BCT Value">
+                      <cd:Text/>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

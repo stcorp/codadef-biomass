@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" xmlns:ct="http://www.stcorp.nl/coda/test/2008/10" name="Fixed_Header_EOFFS_version" format="xml" namexml="Fixed_Header" last-modified="2023-05-03">
+  <cd:Field name="File_Name">
+    <cd:Text/>
+  </cd:Field>
+  <cd:Field name="File_Description">
+    <cd:Text/>
+  </cd:Field>
+  <cd:Field name="Notes">
+    <cd:Text/>
+  </cd:Field>
+  <cd:Field name="Mission">
+    <cd:Text/>
+  </cd:Field>
+  <cd:Field name="File_Class">
+    <cd:Text/>
+  </cd:Field>
+  <cd:Field name="File_Type">
+    <cd:Text/>
+  </cd:Field>
+  <cd:Field name="Validity_Period">
+    <cd:Record>
+      <cd:Field name="Validity_Start">
+        <cd:Time timeformat="if(str(., 23) == &quot;UTC=9999-99-99T99:99:99&quot;, +inf, if(str(., 23) == &quot;UTC=0000-00-00T00:00:00&quot;, -inf, time(str(.), &quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)))">
+          <cd:Description>This is the UTC Validity Start Time, coherent with the Validity Start Time in the File Name, but in CCSDS ASCII format with time reference. Note that this can have the special value indicating "beginning of mission" (without an absolute time specified)</cd:Description>
+          <cd:Text/>
+        </cd:Time>
+      </cd:Field>
+      <cd:Field name="Validity_Stop">
+        <cd:Time timeformat="if(str(., 23) == &quot;UTC=9999-99-99T99:99:99&quot;, +inf, if(str(., 23) == &quot;UTC=0000-00-00T00:00:00&quot;, -inf, time(str(.), &quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)))">
+          <cd:Description>This is the UTC Validity Stop Time, coherent with the Validity Stop Time in the File Name, but in CCSDS ASCII format with time reference. Note that this can have the special value indicating "end of mission" (without an absolute time specified)</cd:Description>
+          <cd:Text/>
+        </cd:Time>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="File_Version">
+    <cd:Integer format="ascii">
+      <cd:ByteSize>4</cd:ByteSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="EOFFS_Version">
+    <cd:Text/>
+  </cd:Field>
+  <cd:Field name="Source">
+    <cd:Record>
+      <cd:Field name="System">
+        <cd:Text>
+        </cd:Text>
+      </cd:Field>
+      <cd:Field name="Creator">
+        <cd:Text>
+        </cd:Text>
+      </cd:Field>
+      <cd:Field name="Creator_Version">
+        <cd:Text>
+        </cd:Text>
+      </cd:Field>
+      <cd:Field name="Creation_Date">
+        <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+          <cd:Text/>
+        </cd:Time>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+</cd:Record>

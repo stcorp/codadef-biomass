@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_NOB_IN" format="xml" last-modified="2023-04-03">
+  <cd:Record>
+    <cd:Field name="Earth_Explorer_File">
+      <cd:Record>
+        <cd:Field name="Earth_Explorer_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header">
+              <cd:Text/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type"/>
+            <cd:Field name="List_of_Received_Files">
+              <cd:Record>
+                <cd:Attribute name="count"/>
+                <cd:Field name="Received_File">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Text/>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

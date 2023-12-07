@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L0_Platform_Ancillary_Data" format="binary" last-modified="2023-05-09">
+  <cd:Array>
+    <cd:Dimension><![CDATA[$num_dsr]]></cd:Dimension>
+    <cd:Record>
+      <cd:Field name="packetHeader">
+        <cd:NamedType id="Packet_Header"/>
+      </cd:Field>
+      <cd:Field name="dataFieldHeader">
+        <cd:NamedType id="Data_Field_Header"/>
+      </cd:Field>
+      <cd:Field name="FineTime">
+        <cd:Integer>
+          <cd:Description>Fine Time</cd:Description>
+          <cd:BitSize>16</cd:BitSize>
+          <cd:NativeType>uint16</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="L0PlatformAncillaryData">
+        <cd:Raw>
+          <cd:BitSize>2432</cd:BitSize>
+        </cd:Raw>
+      </cd:Field>
+      <cd:Field name="PEC">
+        <cd:Integer>
+          <cd:Description>Packet Error Control</cd:Description>
+          <cd:BitSize>16</cd:BitSize>
+          <cd:NativeType>uint16</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+    </cd:Record>
+  </cd:Array>
+  <cd:ProductVariable name="num_dsr">
+    <cd:Init><![CDATA[$num_dsr = unboundindex(/, byteoffset(.) >= filesize())]]></cd:Init>
+  </cd:ProductVariable>
+</cd:ProductDefinition>

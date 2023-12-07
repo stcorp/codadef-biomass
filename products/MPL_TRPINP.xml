@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="MPL_TRPINP" format="xml" last-modified="2023-12-04">
+  <cd:Record>
+    <cd:Field name="Earth_Explorer_File">
+      <cd:Record>
+        <cd:Attribute name="noNamespaceSchemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance noNamespaceSchemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Explorer_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header">
+              <cd:Record>
+                <cd:Field name="List_of_Input_Files">
+                  <cd:Record>
+                    <cd:Attribute name="count"/>
+                    <cd:Field name="Input_File">
+                      <cd:Text/>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="Transponder_Location">
+                  <cd:Record>
+                    <cd:Field name="Lon">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="unit"/>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Lat">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="unit"/>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Alt">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="unit"/>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type"/>
+            <cd:Field name="Calibration">
+              <cd:Record>
+                <cd:Field name="GSTL_Table_Index">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint64</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+                <cd:Field name="Calibration_Start_Time">
+                  <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSS&quot;)">
+                    <cd:Text/>
+                  </cd:Time>
+                </cd:Field>
+                <cd:Field name="Calibration_Duration">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="unit"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="List_of_Antenna_Pointing_Angles">
+                  <cd:Record>
+                    <cd:Attribute name="count"/>
+                    <cd:Field name="Antenna_Pointing_Angle">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Record>
+                          <cd:Field name="Time">
+                            <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSS&quot;)">
+                              <cd:Text/>
+                            </cd:Time>
+                          </cd:Field>
+                          <cd:Field name="Time_from_ANX">
+                            <cd:Float format="ascii">
+                              <cd:Attribute name="unit"/>
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="OPS_Angle">
+                            <cd:Float format="ascii">
+                              <cd:Attribute name="unit"/>
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="Azimuth">
+                            <cd:Float format="ascii">
+                              <cd:Attribute name="unit"/>
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="Elevation">
+                            <cd:Float format="ascii">
+                              <cd:Attribute name="unit"/>
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Array>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

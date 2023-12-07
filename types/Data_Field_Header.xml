@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" xmlns:ct="http://www.stcorp.nl/coda/test/2008/10" name="Data_Field_Header" format="binary" last-modified="2023-03-08">
+  <cd:Field name="fillerDFH1">
+    <cd:Raw>
+      <cd:BitSize>1</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="pusVersionNumber">
+    <cd:Integer>
+      <cd:Description>PUS Version Number</cd:Description>
+      <cd:BitSize>3</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="fillerDFP2">
+    <cd:Raw>
+      <cd:BitSize>4</cd:BitSize>
+    </cd:Raw>
+    <cd:Hidden/>
+  </cd:Field>
+  <cd:Field name="serviceType">
+    <cd:Integer>
+      <cd:Description>Service Type</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="serviceSubtype">
+    <cd:Integer>
+      <cd:Description>Service Subtype</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="destinationID">
+    <cd:Integer>
+      <cd:Description>Destination ID</cd:Description>
+      <cd:BitSize>8</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="coarseTime">
+    <cd:Integer>
+      <cd:Description>Coarse Time</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <!-- <cd:Field name="fineTime">
+    <cd:Integer>
+      <cd:Description>Fine Time</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field> -->
+</cd:Record>

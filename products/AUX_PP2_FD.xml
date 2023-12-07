@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_FD" format="xml" last-modified="2023-12-04">
+  <cd:Record>
+    <cd:Field name="auxiliaryL2bFDProcessingParameters">
+      <cd:Record>
+        <cd:Field name="l2bFDProductDOI">
+          <cd:Text/>
+        </cd:Field>
+        <cd:Field name="minimumL2aCoverage">
+          <cd:Float format="ascii">
+            <cd:NativeType>float</cd:NativeType>
+          </cd:Float>
+        </cd:Field>
+        <cd:Field name="compressionOptions">
+          <cd:Record>
+            <cd:Field name="MDS">
+              <cd:Record>
+                <cd:Field name="FD">
+                  <cd:Record>
+                    <cd:Field name="compressionFactor">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="CFM">
+                  <cd:Record>
+                    <cd:Field name="compressionFactor">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="probabilityOfChange">
+                  <cd:Record>
+                    <cd:Field name="compressionFactor">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="MAX_Z_ERROR">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="HeatMap">
+                  <cd:Record>
+                    <cd:Field name="compressionFactor">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="acquisitionIdImage">
+                  <cd:Record>
+                    <cd:Field name="compressionFactor">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+              <cd:Optional/>
+            </cd:Field>
+            <cd:Field name="MDS_blockSize">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

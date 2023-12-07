@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP0" format="xml" last-modified="2023-03-21">
+  <cd:Record>
+    <cd:Field name="Configuration">
+      <cd:Record>
+        <cd:Attribute name="noNamespaceSchemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance noNamespaceSchemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Cfg_ID">
+          <cd:Text/>
+        </cd:Field>
+        <cd:Field name="BufferSize">
+          <cd:Integer format="ascii">
+            <cd:Attribute name="uom"/>
+            <cd:NativeType>uint64</cd:NativeType>
+          </cd:Integer>
+        </cd:Field>
+        <cd:Field name="CompactCreationDate">
+          <cd:Record>
+            <cd:Field name="ReferenceEpoch">
+              <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                <cd:Text/>
+              </cd:Time>
+            </cd:Field>
+          </cd:Record>
+          <cd:Optional/>
+        </cd:Field>
+        <cd:Field name="L0PF_Configuration">
+          <cd:Record>
+            <cd:Field name="L0RefDoc">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="SlicingGrid">
+              <cd:Record>
+                <cd:Field name="SliceDuration">
+                  <cd:Float format="ascii">
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <!-- <cd:Field name="MinSliceDuration">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field> -->
+                <cd:Field name="SliceStartOverlap">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+                <cd:Field name="SliceStopOverlap">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+                <cd:Field name="SliceMaxNumber">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="Doi">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="Products">
+              <cd:Record>
+                <cd:Field name="Standard">
+                  <cd:Record>
+                    <cd:Field name="IndexData">
+                      <cd:Record>
+                        <cd:Field name="Sampling">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint16</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="Monitoring">
+                  <cd:Record>
+                    <cd:Field name="ListOfSwl">
+                      <cd:Record>
+                        <cd:Field name="Swl">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Record>
+                              <cd:Field name="Gstl">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint8</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                              <cd:Field name="Begin">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint64</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                              <cd:Field name="End">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint64</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Array>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="PlatformAncillary">
+                  <cd:Record>
+                    <cd:Field name="InitialMargin">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="FinalMargin">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="OAPF_Configuration">
+          <cd:Record>
+            <cd:Field name="AuxRefDoc">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="Doi">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="AttitudeLaw">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="NavattModification">
+              <cd:Record>
+                <cd:Field name="Enabled">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                    <cd:Mapping string="FALSE" value="0"/>
+                    <cd:Mapping string="False" value="0"/>
+                    <cd:Mapping string="false" value="0"/>
+                    <cd:Mapping string="TRUE" value="1"/>
+                    <cd:Mapping string="True" value="1"/>
+                    <cd:Mapping string="true" value="1"/>
+                  </cd:Integer>
+                </cd:Field>
+                <cd:Field name="FeedAngle">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="uom"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="ReflectorFocalLength">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="uom"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="AntennaMispointingAngle">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="uom"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="AocsInMrf">
+                  <cd:Record>
+                    <cd:Field name="X">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Y">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Z">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="FeedInMrf">
+                  <cd:Record>
+                    <cd:Field name="X">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Y">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Z">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="SarInAnt">
+                  <cd:Record>
+                    <cd:Field name="X">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Y">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Z">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="FeedToMrf">
+                  <cd:Record>
+                    <cd:Field name="X1">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>int8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="X2">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>int8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="X3">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>int8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="Y1">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>int8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="Y2">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>int8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="Y3">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>int8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="Z1">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>int8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="Z2">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>int8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="Z3">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>int8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

@@ -1,0 +1,549 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_GN_L2B_Main_ADS" format="xml" last-modified="2023-12-01">
+  <cd:Record>
+    <cd:Field name="mainAnnotation">
+      <cd:Record>
+        <cd:Field name="product">
+          <cd:Record>
+            <cd:Field name="mission">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="tileID">
+              <cd:Array>
+                <cd:Dimension/>
+                <cd:Text/>
+              </cd:Array>
+            </cd:Field>
+            <cd:Field name="basinID">
+              <cd:Record>
+                <cd:Field name="ID">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Text/>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="productType">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="startTime">
+              <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
+                <cd:Text/>
+              </cd:Time>
+            </cd:Field>
+            <cd:Field name="stopTime">
+              <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
+                <cd:Text/>
+              </cd:Time>
+            </cd:Field>
+            <cd:Field name="radarCarrierFrequency">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units">
+                  <cd:FixedValue>Hz</cd:FixedValue>
+                </cd:Attribute>
+                <cd:NativeType>double</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="missionPhaseID">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="sensorMode">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="globalCoverageID">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint16</cd:NativeType>
+              </cd:Integer>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="rasterImage">
+          <cd:Record>
+            <cd:Field name="footprint">
+              <cd:Type>
+                <cd:Attribute name="count">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Attribute name="units">
+                  <cd:FixedValue>deg</cd:FixedValue>
+                </cd:Attribute>
+                <cd:Array format="ascii">
+                  <cd:Dimension>int(str(@count))</cd:Dimension>
+                  <cd:Float>
+                    <cd:NativeType>double</cd:NativeType>
+                  </cd:Float>
+                </cd:Array>
+              </cd:Type>
+            </cd:Field>
+            <cd:Field name="firstLatitudeValue">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units">
+                  <cd:FixedValue>deg</cd:FixedValue>
+                </cd:Attribute>
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="firstLongitudeValue">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units">
+                  <cd:FixedValue>deg</cd:FixedValue>
+                </cd:Attribute>
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="latitudeSpacing">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units">
+                  <cd:FixedValue>deg</cd:FixedValue>
+                </cd:Attribute>
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="longitudeSpacing">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units">
+                  <cd:FixedValue>deg</cd:FixedValue>
+                </cd:Attribute>
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="numberOfSamples">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint32</cd:NativeType>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="numberOfLines">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint32</cd:NativeType>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="projection">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="datum">
+              <cd:Record>
+                <cd:Field name="coordinateReferenceSystem">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="geodeticReferenceFrame">
+                  <cd:Text/>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="pixelRepresentation">
+              <cd:Record>
+                <cd:Field name="AGB">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="AGB_STANDARD_DEVIATION">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="AGB_heatMap">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="pixelType">
+              <cd:Record>
+                <cd:Field name="floatPixelType">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="intPixelType">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="noDataValue">
+              <cd:Record>
+                <cd:Field name="floatNoDataValue">
+                  <cd:Float format="ascii">
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="intNoDataValue">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="inputInformation">
+          <cd:Record>
+            <cd:Attribute name="count">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint32</cd:NativeType>
+              </cd:Integer>
+            </cd:Attribute>
+            <cd:Field name="L2aInputs">
+              <cd:Array>
+                <cd:Dimension/>
+                <cd:Record>
+                  <cd:Field name="L2aProductFolderName">
+                    <cd:Text/>
+                  </cd:Field>
+                  <cd:Field name="L2aProductDate">
+                    <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
+                      <cd:Text/>
+                    </cd:Time>
+                  </cd:Field>
+                  <cd:Field name="L1Inputs">
+                    <cd:Record>
+                      <cd:Field name="productType">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="polarisationList">
+                        <cd:Record>
+                          <cd:Attribute name="count">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Attribute>
+                          <cd:Field name="polarisation">
+                            <cd:Array>
+                              <cd:Dimension/>
+                              <cd:Text>
+                                <cd:Attribute name="rfiDecorrelation">
+                                  <cd:Text/>
+                                </cd:Attribute>
+                              </cd:Text>
+                            </cd:Array>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                      <cd:Field name="projection">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="footprint">
+                        <cd:Type>
+                          <cd:Attribute name="count">
+                            <cd:Text/>
+                          </cd:Attribute>
+                          <cd:Attribute name="units">
+                            <cd:FixedValue>deg</cd:FixedValue>
+                          </cd:Attribute>
+                          <cd:Array format="ascii">
+                            <cd:Dimension>int(str(@count))</cd:Dimension>
+                            <cd:Float>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Array>
+                        </cd:Type>
+                      </cd:Field>
+                      <cd:Field name="acquisitionList">
+                        <cd:Record>
+                          <cd:Attribute name="count">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Attribute>
+                          <cd:Field name="acquisitionFolderName">
+                            <cd:Array>
+                              <cd:Dimension/>
+                              <cd:Text>
+                                <cd:Attribute name="referenceImage">
+                                  <cd:Integer format="ascii">
+                                    <cd:NativeType>uint8</cd:NativeType>
+                                    <cd:Mapping string="FALSE" value="0"/>
+                                    <cd:Mapping string="False" value="0"/>
+                                    <cd:Mapping string="false" value="0"/>
+                                    <cd:Mapping string="TRUE" value="1"/>
+                                    <cd:Mapping string="True" value="1"/>
+                                    <cd:Mapping string="true" value="1"/>
+                                  </cd:Integer>
+                                </cd:Attribute>
+                                <cd:Attribute name="averageWavenumber">
+                                  <cd:Float format="ascii">
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Attribute>
+                              </cd:Text>
+                            </cd:Array>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Field>
+                </cd:Record>
+              </cd:Array>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="processingParameters">
+          <cd:Record>
+            <cd:Field name="processorVersion">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="productGenerationTime">
+              <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
+                <cd:Text/>
+              </cd:Time>
+            </cd:Field>
+            <cd:Field name="forestMaskingFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="minimumL2aCoverage">
+              <cd:Float format="ascii">
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="rejectedLandcoverClasses">
+              <cd:Type>
+                <cd:Attribute name="count">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Attribute name="units">
+                  <cd:FixedValue>deg</cd:FixedValue>
+                </cd:Attribute>
+                <cd:Array format="ascii">
+                  <cd:Dimension>int(str(@count))</cd:Dimension>
+                  <cd:Integer>
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Array>
+              </cd:Type>
+            </cd:Field>
+            <cd:Field name="backscatterLimits">
+              <cd:Array>
+                <cd:Dimension/>
+                <cd:Text/> <!-- MinMaxType is undefined -->
+              </cd:Array>
+            </cd:Field>
+            <cd:Field name="angleLimits">
+              <cd:Text/> <!-- MinMaxType is undefined -->
+            </cd:Field>
+            <cd:Field name="meanAGBLimits">
+              <cd:Text/> <!-- MinMaxType is undefined -->
+            </cd:Field>
+            <cd:Field name="stdAGBLimits">
+              <cd:Text/> <!-- MinMaxType is undefined -->
+            </cd:Field>
+            <cd:Field name="relativeAGBLimits">
+              <cd:Text/> <!-- MinMaxType is undefined -->
+            </cd:Field>
+            <cd:Field name="indexingL">
+              <cd:Text/> <!-- agbIndexingType is undefined -->
+            </cd:Field>
+            <cd:Field name="indexingA">
+              <cd:Text/> <!-- agbIndexingType is undefined -->
+            </cd:Field>
+            <cd:Field name="indexingN">
+              <cd:Text/> <!-- agbIndexingType is undefined -->
+            </cd:Field>
+            <cd:Field name="useConstantN">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="valuesConstantN">
+              <cd:Type>
+                <cd:Attribute name="count">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Attribute name="units">
+                  <cd:FixedValue>deg</cd:FixedValue>
+                </cd:Attribute>
+                <cd:Array format="ascii">
+                  <cd:Dimension>int(str(@count))</cd:Dimension>
+                  <cd:Float>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Array>
+              </cd:Type>
+            </cd:Field>
+            <cd:Field name="minimumPercentageOfFillableVoids">
+              <cd:Float format="ascii">
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="estimatedParameters">
+              <cd:Record>
+                <cd:Field name="Polarisation">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Attribute name="polarisation">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:Record>
+                      <cd:Field name="LCM">
+                        <cd:Array>
+                          <cd:Dimension/>
+                          <cd:Attribute name="classes">
+                            <cd:Text/>
+                          </cd:Attribute>
+                          <cd:Record>
+                            <cd:Field name="date">
+                              <cd:Array>
+                                <cd:Dimension/>
+                                <cd:Attribute name="dates">
+                                  <cd:Text/>
+                                </cd:Attribute>
+                                <cd:Record>
+                                  <cd:Field name="N">
+                                    <cd:Record>
+                                      <cd:Field name="mean">
+                                        <cd:Float format="ascii">
+                                          <cd:NativeType>float</cd:NativeType>
+                                        </cd:Float>
+                                      </cd:Field>
+                                      <cd:Field name="std">
+                                        <cd:Float format="ascii">
+                                          <cd:NativeType>float</cd:NativeType>
+                                        </cd:Float>
+                                      </cd:Field>
+                                    </cd:Record>
+                                  </cd:Field>
+                                  <cd:Field name="A">
+                                    <cd:Record>
+                                      <cd:Field name="mean">
+                                        <cd:Float format="ascii">
+                                          <cd:NativeType>float</cd:NativeType>
+                                        </cd:Float>
+                                      </cd:Field>
+                                      <cd:Field name="std">
+                                        <cd:Float format="ascii">
+                                          <cd:NativeType>float</cd:NativeType>
+                                        </cd:Float>
+                                      </cd:Field>
+                                    </cd:Record>
+                                  </cd:Field>
+                                  <cd:Field name="L">
+                                    <cd:Record>
+                                      <cd:Field name="mean">
+                                        <cd:Float format="ascii">
+                                          <cd:NativeType>float</cd:NativeType>
+                                        </cd:Float>
+                                      </cd:Field>
+                                      <cd:Field name="std">
+                                        <cd:Float format="ascii">
+                                          <cd:NativeType>float</cd:NativeType>
+                                        </cd:Float>
+                                      </cd:Field>
+                                    </cd:Record>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Array>
+                            </cd:Field>
+                          </cd:Record>
+                        </cd:Array>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="compressionOptions">
+              <cd:Record>
+                <cd:Field name="MDS">
+                  <cd:Record>
+                    <cd:Field name="AGB">
+                      <cd:Record>
+                        <cd:Field name="compressionFactor">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint8</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                        <cd:Field name="MAX_Z_ERROR">
+                          <cd:Float format="ascii">
+                            <cd:NativeType>float</cd:NativeType>
+                          </cd:Float>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                    <cd:Field name="AGBStandardDeviation">
+                      <cd:Record>
+                        <cd:Field name="compressionFactor">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint8</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                        <cd:Field name="MAX_Z_ERROR">
+                          <cd:Float format="ascii">
+                            <cd:NativeType>float</cd:NativeType>
+                          </cd:Float>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                    <cd:Field name="BPS_FNF">
+                      <cd:Record>
+                        <cd:Field name="compressionFactor">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint8</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                    <cd:Field name="HeatMap">
+                      <cd:Record>
+                        <cd:Field name="compressionFactor">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint8</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                        <cd:Field name="MAX_Z_ERROR">
+                          <cd:Float format="ascii">
+                            <cd:NativeType>float</cd:NativeType>
+                          </cd:Float>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                    <cd:Field name="acquisitionIdImage">
+                      <cd:Record>
+                        <cd:Field name="compressionFactor">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint8</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="MDS_blockSize">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="annotationLUT">
+          <cd:Record>
+            <cd:Attribute name="count">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint32</cd:NativeType>
+              </cd:Integer>
+            </cd:Attribute>
+            <cd:Field name="layer">
+              <cd:Array>
+                <cd:Dimension/>
+                <cd:Text/>
+              </cd:Array>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

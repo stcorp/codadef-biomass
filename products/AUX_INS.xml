@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_INS" format="xml" last-modified="2023-12-04">
+  <cd:Record>
+    <cd:Field name="auxiliaryInstrumentParameters">
+      <cd:Record>
+        <cd:Attribute name="noNamespaceSchemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance noNamespaceSchemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="radarFrequency">
+          <cd:Float format="ascii">
+            <cd:Attribute name="units"/>
+            <cd:NativeType>float</cd:NativeType>
+          </cd:Float>
+        </cd:Field>
+        <cd:Field name="rollBias">
+          <cd:Float format="ascii">
+            <cd:Attribute name="units"/>
+            <cd:NativeType>float</cd:NativeType>
+          </cd:Float>
+        </cd:Field>
+        <cd:Field name="acquisitionModeList">
+          <cd:Record>
+            <cd:Attribute name="count">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Field name="acquisitionMode">
+              <cd:Array>
+                <cd:Dimension/>
+                <cd:Record>
+                  <cd:Field name="acquisitionMode">
+                    <cd:Text/>
+                  </cd:Field>
+                  <cd:Field name="gstlIndex">
+                    <cd:Integer format="ascii">
+                      <cd:NativeType>uint64</cd:NativeType>
+                    </cd:Integer>
+                  </cd:Field>
+                  <cd:Field name="swath">
+                    <cd:Text/>
+                  </cd:Field>
+                  <cd:Field name="swathParameters">
+                    <cd:Record>
+                      <cd:Field name="txPulseParameters">
+                        <cd:Record>
+                          <cd:Field name="txPulseAmplitude">
+                            <cd:Float format="ascii">
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="txPulseBandwidth">
+                            <cd:Float format="ascii">
+                              <cd:Attribute name="units"/>
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="txPulseLength">
+                            <cd:Float format="ascii">
+                              <cd:Attribute name="units"/>
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Field>
+                  <cd:Field name="intCalParametersList">
+                    <cd:Record>
+                      <cd:Attribute name="count">
+                        <cd:Text/>
+                      </cd:Attribute>
+                      <cd:Field name="intCalParameters">
+                        <cd:Array>
+                          <cd:Dimension/>
+                          <cd:Record>
+                            <cd:Field name="polarisation">
+                              <cd:Text/>
+                            </cd:Field>
+                            <cd:Field name="modelDrift">
+                              <cd:Record>
+                                <cd:Field name="modelInterval">
+                                  <cd:Float format="ascii">
+                                    <cd:Attribute name="units"/>
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                                <cd:Field name="modelValues">
+                                  <cd:Text>
+                                    <cd:Attribute name="count"/>
+                                  </cd:Text>
+                                </cd:Field>
+                              </cd:Record>
+                            </cd:Field>
+                            <cd:Field name="referenceDrift">
+                              <cd:Record>
+                                <cd:Field name="re">
+                                  <cd:Float format="ascii">
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                                <cd:Field name="im">
+                                  <cd:Float format="ascii">
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                              </cd:Record>
+                            </cd:Field>
+                            <cd:Field name="internalDelay">
+                              <cd:Float format="ascii">
+                                <cd:Attribute name="units"/>
+                                <cd:NativeType>float</cd:NativeType>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="txChannelImbalance">
+                              <cd:Record>
+                                <cd:Field name="re">
+                                  <cd:Float format="ascii">
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                                <cd:Field name="im">
+                                  <cd:Float format="ascii">
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                              </cd:Record>
+                            </cd:Field>
+                            <cd:Field name="rxChannelImbalance">
+                              <cd:Record>
+                                <cd:Field name="re">
+                                  <cd:Float format="ascii">
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                                <cd:Field name="im">
+                                  <cd:Float format="ascii">
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                              </cd:Record>
+                            </cd:Field>
+                            <cd:Field name="txPowerTracking">
+                              <cd:Record>
+                                <cd:Field name="re">
+                                  <cd:Float format="ascii">
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                                <cd:Field name="im">
+                                  <cd:Float format="ascii">
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                              </cd:Record>
+                            </cd:Field>
+                            <cd:Field name="noisePower">
+                              <cd:Float format="ascii">
+                                <cd:Attribute name="units"/>
+                                <cd:NativeType>float</cd:NativeType>
+                              </cd:Float>
+                            </cd:Field>
+                          </cd:Record>
+                        </cd:Array>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Field>
+                  <cd:Field name="timelineParametersOddRank">
+                    <cd:Record>
+                      <cd:Attribute name="count">
+                        <cd:Text/>
+                      </cd:Attribute>
+                      <cd:Field name="section">
+                        <cd:Record>
+                          <cd:Field name="name">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="repeatFlag">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint8</cd:NativeType>
+                              <cd:Mapping string="FALSE" value="0"/>
+                              <cd:Mapping string="False" value="0"/>
+                              <cd:Mapping string="false" value="0"/>
+                              <cd:Mapping string="TRUE" value="1"/>
+                              <cd:Mapping string="True" value="1"/>
+                              <cd:Mapping string="true" value="1"/>
+                            </cd:Integer>
+                          </cd:Field>
+                          <cd:Field name="ispList">
+                            <cd:Record>
+                              <cd:Attribute name="count">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:Field name="isp">
+                                <cd:Array>
+                                  <cd:Dimension/>
+                                  <cd:Record>
+                                    <cd:Field name="signalType">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                    <cd:Field name="priNumber">
+                                      <cd:Integer format="ascii">
+                                        <cd:NativeType>int32</cd:NativeType>
+                                      </cd:Integer>
+                                    </cd:Field>
+                                  </cd:Record>
+                                </cd:Array>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Field>
+                  <cd:Field name="timelineParametersEvenRank">
+                    <cd:Record>
+                      <cd:Attribute name="count">
+                        <cd:Text/>
+                      </cd:Attribute>
+                      <cd:Field name="section">
+                        <cd:Record>
+                          <cd:Field name="name">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="repeatFlag">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint8</cd:NativeType>
+                              <cd:Mapping string="FALSE" value="0"/>
+                              <cd:Mapping string="False" value="0"/>
+                              <cd:Mapping string="false" value="0"/>
+                              <cd:Mapping string="TRUE" value="1"/>
+                              <cd:Mapping string="True" value="1"/>
+                              <cd:Mapping string="true" value="1"/>
+                            </cd:Integer>
+                          </cd:Field>
+                          <cd:Field name="ispList">
+                            <cd:Record>
+                              <cd:Attribute name="count">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:Field name="isp">
+                                <cd:Array>
+                                  <cd:Dimension/>
+                                  <cd:Record>
+                                    <cd:Field name="signalType">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                    <cd:Field name="priNumber">
+                                      <cd:Integer format="ascii">
+                                        <cd:NativeType>int32</cd:NativeType>
+                                      </cd:Integer>
+                                    </cd:Field>
+                                  </cd:Record>
+                                </cd:Array>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Field>
+                </cd:Record>
+              </cd:Array>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="rawDataDecodingParameters">
+          <cd:Record>
+            <cd:Field name="unBAQLUT">
+              <cd:Record>
+                <cd:Field name="baqCode">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="magnitudeCode">
+                  <cd:Text>
+                    <cd:Attribute name="count"/>
+                  </cd:Text>
+                </cd:Field>
+                <cd:Field name="normalizedIQ">
+                  <cd:Text>
+                    <cd:Attribute name="count"/>
+                  </cd:Text>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="unBAQSmallASMLUT">
+              <cd:Record>
+                <cd:Field name="baqCode">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="asmValue">
+                  <cd:Text>
+                    <cd:Attribute name="count"/>
+                  </cd:Text>
+                </cd:Field>
+                <cd:Field name="uncompressedIQ">
+                  <cd:Text>
+                    <cd:Attribute name="count"/>
+                  </cd:Text>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="temperatureLUT">
+              <cd:Record>
+                <cd:Field name="temperatureCode">
+                  <cd:Text>
+                    <cd:Attribute name="count"/>
+                  </cd:Text>
+                </cd:Field>
+                <cd:Field name="temperatureValue">
+                  <cd:Text>
+                    <cd:Attribute name="count"/>
+                    <cd:Attribute name="units"/>
+                  </cd:Text>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

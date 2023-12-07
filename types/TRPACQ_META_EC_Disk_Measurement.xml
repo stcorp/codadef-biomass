@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<cd:Record xmlns="http://c-core.ca/BCT" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="TRPACQ_META_EC_Disk_Measurement" format="xml" namexml="TRPACQ_META_EC_Disk_Measurement" last-modified="2023-04-24">
+  <cd:Field name="Antenna_Position" real_name="http://c-core.ca/BCT Antenna_Position">
+    <cd:Record>
+      <cd:Field name="Pointing_Angle" real_name="http://c-core.ca/BCT Pointing_Angle">
+        <cd:Record>
+          <cd:Field name="Azimuth" real_name="http://c-core.ca/BCT Azimuth">
+            <cd:Float format="ascii">
+              <cd:Attribute name="unit"/>
+              <cd:NativeType>double</cd:NativeType>
+            </cd:Float>
+          </cd:Field>
+          <cd:Field name="Elevation" real_name="http://c-core.ca/BCT Elevation">
+            <cd:Float format="ascii">
+              <cd:Attribute name="unit"/>
+              <cd:NativeType>double</cd:NativeType>
+            </cd:Float>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="Timestamp" real_name="http://c-core.ca/BCT Timestamp">
+        <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+          <cd:Text/>
+        </cd:Time>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="Cal_Disk_Position" real_name="http://c-core.ca/BCT Cal_Disk_Position">
+    <cd:Record>
+      <cd:Field name="Pointing_Angle" real_name="http://c-core.ca/BCT Pointing_Angle">
+        <cd:Record>
+          <cd:Field name="Azimuth" real_name="http://c-core.ca/BCT Azimuth">
+            <cd:Float format="ascii">
+              <cd:Attribute name="unit"/>
+              <cd:NativeType>double</cd:NativeType>
+            </cd:Float>
+          </cd:Field>
+          <cd:Field name="Elevation" real_name="http://c-core.ca/BCT Elevation">
+            <cd:Float format="ascii">
+              <cd:Attribute name="unit"/>
+              <cd:NativeType>double</cd:NativeType>
+            </cd:Float>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+      <cd:Field name="Timestamp" real_name="http://c-core.ca/BCT Timestamp">
+        <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+          <cd:Text/>
+        </cd:Time>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="HH_Rx_Signal" real_name="http://c-core.ca/BCT HH_Rx_Signal">
+    <cd:Record>
+      <cd:Field name="List_of_Pulses" real_name="http://c-core.ca/BCT List_of_Pulses">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Pulse" real_name="http://c-core.ca/BCT Pulse">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Record>
+                <cd:Field name="List_of_Signal_Values" real_name="http://c-core.ca/BCT List_of_Signal_Values">
+                  <cd:Record>
+                    <cd:Attribute name="count">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Attribute>
+                    <cd:Field name="Signal_Value" real_name="http://c-core.ca/BCT Signal_Value">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint16</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Array>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Array>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="VV_Rx_Signal" real_name="http://c-core.ca/BCT VV_Rx_Signal">
+    <cd:Record>
+      <cd:Field name="List_of_Pulses" real_name="http://c-core.ca/BCT List_of_Pulses">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Pulse" real_name="http://c-core.ca/BCT Pulse">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Record>
+                <cd:Field name="List_of_Signal_Values" real_name="http://c-core.ca/BCT List_of_Signal_Values">
+                  <cd:Record>
+                    <cd:Attribute name="count">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Attribute>
+                    <cd:Field name="Signal_Value" real_name="http://c-core.ca/BCT Signal_Value">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint16</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Array>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Array>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="HV_Rx_Signal" real_name="http://c-core.ca/BCT HV_Rx_Signal">
+    <cd:Record>
+      <cd:Field name="List_of_Pulses" real_name="http://c-core.ca/BCT List_of_Pulses">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Pulse" real_name="http://c-core.ca/BCT Pulse">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Record>
+                <cd:Field name="List_of_Signal_Values" real_name="http://c-core.ca/BCT List_of_Signal_Values">
+                  <cd:Record>
+                    <cd:Attribute name="count">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Attribute>
+                    <cd:Field name="Signal_Value" real_name="http://c-core.ca/BCT Signal_Value">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint16</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Array>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Array>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="VH_Rx_Signal" real_name="http://c-core.ca/BCT VH_Rx_Signal">
+    <cd:Record>
+      <cd:Field name="List_of_Pulses" real_name="http://c-core.ca/BCT List_of_Pulses">
+        <cd:Record>
+          <cd:Attribute name="count">
+            <cd:Integer format="ascii">
+              <cd:NativeType>uint32</cd:NativeType>
+            </cd:Integer>
+          </cd:Attribute>
+          <cd:Field name="Pulse" real_name="http://c-core.ca/BCT Pulse">
+            <cd:Array>
+              <cd:Dimension/>
+              <cd:Record>
+                <cd:Field name="List_of_Signal_Values" real_name="http://c-core.ca/BCT List_of_Signal_Values">
+                  <cd:Record>
+                    <cd:Attribute name="count">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Attribute>
+                    <cd:Field name="Signal_Value" real_name="http://c-core.ca/BCT Signal_Value">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint16</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Array>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Array>
+          </cd:Field>
+        </cd:Record>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+</cd:Record>

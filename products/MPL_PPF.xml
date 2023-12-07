@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="MPL_PPF" format="xml" last-modified="2023-03-06">
+  <cd:Record>
+    <cd:Field name="Earth_Explorer_File">
+      <cd:Record>
+        <cd:Attribute name="noNamespaceSchemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance noNamespaceSchemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Explorer_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header">
+              <cd:Record>
+                <cd:Field name="List_of_Input_Files">
+                  <cd:Record>
+                    <cd:Attribute name="count"/>
+                    <cd:Field name="Input_File">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Text/>
+                      </cd:Array>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type"/>
+            <cd:Field name="List_of_EVRQs">
+              <cd:Record>
+                <cd:Attribute name="count"/>
+                <cd:Field name="EVRQ">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Field name="EVRQ_Header">
+                        <cd:Record>
+                          <cd:Field name="EVRQ_Time">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="EVRQ_Type">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="EVRQ_Description">
+                            <cd:Record/>
+                          </cd:Field>
+                        </cd:Record>
+                        <cd:Optional/>
+                      </cd:Field>
+                      <cd:Field name="RQ">
+                        <cd:Record>
+                          <cd:Field name="RQ_Name">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="RQ_Description">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="RQ_Source">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="RQ_Destination">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="RQ_Type">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="RQ_Execution_Time">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="RQ_Absolute_orbit">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint64</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Field>
+                          <cd:Field name="RQ_Deg_from_ANX">
+                            <cd:Float format="ascii">
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="List_of_RQ_Parameters">
+                            <cd:Record>
+                              <cd:Attribute name="count"/>
+                              <cd:Field name="RQ_Parameter">
+                                <cd:Array>
+                                  <cd:Dimension/>
+                                  <cd:Record>
+                                    <cd:Field name="RQ_Parameter_Name">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                    <cd:Field name="RQ_Parameter_Description">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                    <cd:Field name="RQ_Parameter_Representation">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                    <cd:Field name="RQ_Parameter_Radix">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                    <cd:Field name="RQ_Parameter_Unit">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                    <cd:Field name="RQ_Parameter_Value">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                  </cd:Record>
+                                </cd:Array>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                          <cd:Field name="List_of_RQ_Attributes">
+                            <cd:Record>
+                              <cd:Attribute name="count"/>
+                              <cd:Field name="RQ_Attribute">
+                                <cd:Array>
+                                  <cd:Dimension/>
+                                  <cd:Record>
+                                    <cd:Field name="RQ_Attribute_Name">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                    <cd:Field name="RQ_Attribute_Value">
+                                      <cd:Text/>
+                                    </cd:Field>
+                                  </cd:Record>
+                                </cd:Array>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                        </cd:Record>
+                        <cd:Optional/>
+                      </cd:Field>
+                      <cd:Field name="EV">
+                        <cd:Record>
+                          <cd:Field name="EV_Name">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="EV_Description">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="EV_Type">
+                            <cd:Text/>
+                          </cd:Field>
+                          <cd:Field name="EV_Time">
+                            <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSS&quot;)">
+                              <cd:Text/>
+                            </cd:Time>
+                          </cd:Field>
+                          <cd:Field name="EV_Absolute_orbit">
+                            <cd:Text/>
+                            <cd:Optional/>
+                          </cd:Field>
+                          <cd:Field name="EV_Deg_from_ANX">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint64</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Field>
+                          <cd:Field name="List_of_EV_Parameters">
+                            <cd:Record>
+                              <cd:Attribute name="count"/>
+                              <cd:Field name="EV_Parameter">
+                                <cd:Record>
+                                  <cd:Field name="EV_Parameter_Name">
+                                    <cd:Text/>
+                                  </cd:Field>
+                                  <cd:Field name="EV_Parameter_Description">
+                                    <cd:Text/>
+                                  </cd:Field>
+                                  <cd:Field name="EV_Parameter_Type">
+                                    <cd:Record/>
+                                  </cd:Field>
+                                  <cd:Field name="EV_Parameter_Unit">
+                                    <cd:Record/>
+                                  </cd:Field>
+                                  <cd:Field name="EV_Parameter_Value">
+                                    <cd:Text/>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                        </cd:Record>
+                        <cd:Optional/>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_ORB" format="xml" last-modified="2023-12-04">
+  <cd:Record>
+    <cd:Field name="Earth_Observation_File">
+      <cd:Record>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+          <cd:Optional/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Observation_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header">
+              <cd:NamedType id="Fixed_Header_EOFFS_version"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header">
+              <cd:Record>
+                <cd:Field name="Ref_Frame">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="Time_Reference">
+                  <cd:Text/>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block">
+          <cd:Record>
+            <cd:Attribute name="type"/>
+            <cd:Attribute name="schemaVersion">
+              <cd:Text/>
+              <cd:Optional/>
+            </cd:Attribute>
+            <cd:Field name="List_of_OSVs">
+              <cd:Record>
+                <cd:Attribute name="count"/>
+                <cd:Field name="OSV">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Field name="TAI" real_name="TAI">
+                        <cd:Time timeformat="time(str(.),&quot;'TAI='yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
+                          <cd:Text/>
+                        </cd:Time>
+                      </cd:Field>
+                      <cd:Field name="UTC">
+                        <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
+                          <cd:Text/>
+                        </cd:Time>
+                      </cd:Field>
+                      <cd:Field name="UT1">
+                        <cd:Time timeformat="time(str(.),&quot;'UT1='yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
+                          <cd:Text/>
+                        </cd:Time>
+                      </cd:Field>
+                      <cd:Field name="Absolute_Orbit">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>int64</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Field>
+                      <cd:Field name="X">
+                        <cd:Float format="ascii">
+                          <cd:NativeType>float</cd:NativeType>
+                          <cd:Attribute name="unit"/>
+                        </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="Y">
+                        <cd:Float format="ascii">
+                          <cd:NativeType>float</cd:NativeType>
+                          <cd:Attribute name="unit"/>
+                        </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="Z">
+                        <cd:Float format="ascii">
+                          <cd:NativeType>float</cd:NativeType>
+                          <cd:Attribute name="unit"/>
+                        </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="VX">
+                        <cd:Float format="ascii">
+                          <cd:NativeType>float</cd:NativeType>
+                          <cd:Attribute name="unit"/>
+                        </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="VY">
+                        <cd:Float format="ascii">
+                          <cd:NativeType>float</cd:NativeType>
+                          <cd:Attribute name="unit"/>
+                        </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="VZ">
+                        <cd:Float format="ascii">
+                          <cd:NativeType>float</cd:NativeType>
+                          <cd:Attribute name="unit"/>
+                        </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="Quality">
+                        <cd:Text/>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

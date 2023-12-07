@@ -1,0 +1,660 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="Biomass_MPH" format="xml" last-modified="2023-03-08">
+  <cd:Record>
+    <cd:Field name="EarthObservation" real_name="http://earth.esa.int/biomass/1.0 EarthObservation">
+      <cd:Record>
+        <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+          <cd:Text/>
+          <cd:Optional/>
+        </cd:Attribute>
+        <cd:Field name="phenomenonTime" real_name="http://www.opengis.net/om/2.0 phenomenonTime">
+          <cd:Record>
+            <cd:Field name="TimePeriod" real_name="http://www.opengis.net/gml/3.2 TimePeriod">
+              <cd:Record>
+                <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Field name="beginPosition" real_name="http://www.opengis.net/gml/3.2 beginPosition">
+                  <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;)">
+                    <cd:Text/>
+                  </cd:Time>
+                </cd:Field>
+                <cd:Field name="endPosition" real_name="http://www.opengis.net/gml/3.2 endPosition">
+                  <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;)">
+                    <cd:Text/>
+                  </cd:Time>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="resultTime" real_name="http://www.opengis.net/om/2.0 resultTime">
+          <cd:Record>
+            <cd:Field name="TimeInstant" real_name="http://www.opengis.net/gml/3.2 TimeInstant">
+              <cd:Record>
+                <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Field name="timePosition" real_name="http://www.opengis.net/gml/3.2 timePosition">
+                  <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;)">
+                    <cd:Text/>
+                  </cd:Time>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="validTime" real_name="http://www.opengis.net/om/2.0 validTime">
+          <cd:Record>
+            <cd:Field name="TimePeriod" real_name="http://www.opengis.net/gml/3.2 TimePeriod">
+              <cd:Record>
+                <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Field name="beginPosition" real_name="http://www.opengis.net/gml/3.2 beginPosition">
+                  <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;)">
+                    <cd:Text/>
+                  </cd:Time>
+                </cd:Field>
+                <cd:Field name="endPosition" real_name="http://www.opengis.net/gml/3.2 endPosition">
+                  <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;)">
+                    <cd:Text/>
+                  </cd:Time>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="procedure" real_name="http://www.opengis.net/om/2.0 procedure">
+          <cd:Record>
+            <cd:Field name="EarthObservationEquipment" real_name="http://www.opengis.net/eop/2.1 EarthObservationEquipment">
+              <cd:Record>
+                <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Field name="platform" real_name="http://www.opengis.net/eop/2.1 platform">
+                  <cd:Record>
+                    <cd:Field name="Platform" real_name="http://www.opengis.net/eop/2.1 Platform">
+                      <cd:Record>
+                        <cd:Field name="shortName" real_name="http://www.opengis.net/eop/2.1 shortName">
+                          <cd:Text>
+                          </cd:Text>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="instrument" real_name="http://www.opengis.net/eop/2.1 instrument">
+                  <cd:Record>
+                    <cd:Field name="Instrument" real_name="http://www.opengis.net/eop/2.1 Instrument">
+                      <cd:Record>
+                        <cd:Field name="shortName" real_name="http://www.opengis.net/eop/2.1 shortName">
+                          <cd:Text>
+                          </cd:Text>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="sensor" real_name="http://www.opengis.net/eop/2.1 sensor">
+                  <cd:Record>
+                    <cd:Field name="Sensor" real_name="http://www.opengis.net/eop/2.1 Sensor">
+                      <cd:Record>
+                        <cd:Field name="sensorType" real_name="http://www.opengis.net/eop/2.1 sensorType">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="operationalMode" real_name="http://www.opengis.net/eop/2.1 operationalMode">
+                          <cd:Text>
+                            <cd:Attribute name="codeSpace">
+                              <cd:Text/>
+                            </cd:Attribute>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="swathIdentifier" real_name="http://www.opengis.net/eop/2.1 swathIdentifier">
+                          <cd:Text>
+                            <cd:Attribute name="codeSpace">
+                              <cd:Text/>
+                            </cd:Attribute>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                      </cd:Record>
+                      <cd:Optional/>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="acquisitionParameters" real_name="http://www.opengis.net/eop/2.1 acquisitionParameters">
+                  <cd:Record>
+                    <cd:Field name="Acquisition" real_name="http://earth.esa.int/biomass/1.0 Acquisition">
+                      <cd:Record>
+                        <cd:Field name="orbitNumber" real_name="http://www.opengis.net/eop/2.1 orbitNumber">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>int64</cd:NativeType>
+                          </cd:Integer>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="lastOrbitNumber" real_name="http://www.opengis.net/eop/2.1 lastOrbitNumber">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>int64</cd:NativeType>
+                          </cd:Integer>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="orbitDirection" real_name="http://www.opengis.net/eop/2.1 orbitDirection">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="wrsLongitudeGrid" real_name="http://www.opengis.net/eop/2.1 wrsLongitudeGrid">
+                          <cd:Text>
+                            <cd:Attribute name="codeSpace">
+                              <cd:Text/>
+                            </cd:Attribute>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="wrsLatitudeGrid" real_name="http://www.opengis.net/eop/2.1 wrsLatitudeGrid">
+                          <cd:Text>
+                            <cd:Attribute name="codeSpace">
+                              <cd:Text/>
+                            </cd:Attribute>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="ascendingNodeDate" real_name="http://www.opengis.net/eop/2.1 ascendingNodeDate">
+                          <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;)">
+                            <cd:Text/>
+                          </cd:Time>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="startTimeFromAscendingNode" real_name="http://www.opengis.net/eop/2.1 startTimeFromAscendingNode">
+                          <cd:Float format="ascii">
+                            <cd:Attribute name="uom"/>
+                            <cd:NativeType>double</cd:NativeType>
+                          </cd:Float>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="completionTimeFromAscendingNode" real_name="http://www.opengis.net/eop/2.1 completionTimeFromAscendingNode">
+                          <cd:Float format="ascii">
+                            <cd:NativeType>double</cd:NativeType>
+                            <cd:Attribute name="uom"/>
+                          </cd:Float>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="polarisationMode" real_name="http://www.opengis.net/sar/2.1 polarisationMode">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="polarisationChannels" real_name="http://www.opengis.net/sar/2.1 polarisationChannels">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="antennaLookDirection" real_name="http://www.opengis.net/sar/2.1 antennaLookDirection">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="missionPhase" real_name="http://earth.esa.int/biomass/1.0 missionPhase">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="instrumentConfID" real_name="http://earth.esa.int/biomass/1.0 instrumentConfID">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>int64</cd:NativeType>
+                          </cd:Integer>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="dataTakeID" real_name="http://earth.esa.int/biomass/1.0 dataTakeID">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>int64</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Array>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="orbitDriftFlag" real_name="http://earth.esa.int/biomass/1.0 orbitDriftFlag">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint8</cd:NativeType>
+                            <cd:Mapping string="FALSE" value="0"/>
+                            <cd:Mapping string="False" value="0"/>
+                            <cd:Mapping string="false" value="0"/>
+                            <cd:Mapping string="TRUE" value="1"/>
+                            <cd:Mapping string="True" value="1"/>
+                            <cd:Mapping string="true" value="1"/>
+                          </cd:Integer>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="globalCoverageID" real_name="http://earth.esa.int/biomass/1.0 globalCoverageID">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="majorCycleID" real_name="http://earth.esa.int/biomass/1.0 majorCycleID">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="repeatCycleID" real_name="http://earth.esa.int/biomass/1.0 repeatCycleID">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="tileID" real_name="http://earth.esa.int/biomass/1.0 tileID">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Text/>
+                          </cd:Array>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="basinID" real_name="http://earth.esa.int/biomass/1.0 basinID">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Text/>
+                          </cd:Array>
+                          <cd:Optional/>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="observedProperty" real_name="http://www.opengis.net/om/2.0 observedProperty">
+          <cd:Record>
+            <cd:Attribute name="nil" real_name="http://www.w3.org/2001/XMLSchema-instance nil">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Attribute name="nilReason">
+              <cd:Text/>
+            </cd:Attribute>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="featureOfInterest" real_name="http://www.opengis.net/om/2.0 featureOfInterest">
+          <cd:Record>
+            <cd:Field name="Footprint" real_name="http://www.opengis.net/eop/2.1 Footprint">
+              <cd:Record>
+                <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Field name="multiExtentOf" real_name="http://www.opengis.net/eop/2.1 multiExtentOf">
+                  <cd:Record>
+                    <cd:Field name="MultiSurface" real_name="http://www.opengis.net/gml/3.2 MultiSurface">
+                      <cd:Record>
+                        <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+                          <cd:Text/>
+                        </cd:Attribute>
+                        <cd:Field name="surfaceMember" real_name="http://www.opengis.net/gml/3.2 surfaceMember">
+                          <cd:Record>
+                            <cd:Field name="Polygon" real_name="http://www.opengis.net/gml/3.2 Polygon">
+                              <cd:Record>
+                                <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+                                  <cd:Text/>
+                                </cd:Attribute>
+                                <cd:Field name="exterior" real_name="http://www.opengis.net/gml/3.2 exterior">
+                                  <cd:Record>
+                                    <cd:Field name="LinearRing" real_name="http://www.opengis.net/gml/3.2 LinearRing">
+                                      <cd:Record>
+                                        <cd:Field name="posList" real_name="http://www.opengis.net/gml/3.2 posList">
+                                          <cd:Text>
+                                          </cd:Text>
+                                          <cd:Optional/>
+                                        </cd:Field>
+                                      </cd:Record>
+                                      <cd:Optional/>
+                                    </cd:Field>
+                                  </cd:Record>
+                                  <cd:Optional/>
+                                </cd:Field>
+                              </cd:Record>
+                              <cd:Optional/>
+                            </cd:Field>
+                          </cd:Record>
+                          <cd:Optional/>
+                        </cd:Field>
+                      </cd:Record>
+                      <cd:Optional/>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="centerOf" real_name="http://www.opengis.net/eop/2.1 centerOf">
+                  <cd:Record>
+                    <cd:Field name="Point" real_name="http://www.opengis.net/gml/3.2 Point">
+                      <cd:Record>
+                        <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+                          <cd:Text/>
+                        </cd:Attribute>
+                        <cd:Field name="pos" real_name="http://www.opengis.net/gml/3.2 pos">
+                          <cd:Array format="ascii">
+                            <cd:Dimension>2</cd:Dimension>
+                            <cd:Float format="ascii">
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Array>
+                          <cd:Optional/>
+                        </cd:Field>
+                      </cd:Record>
+                      <cd:Optional/>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+              </cd:Record>
+              <cd:Optional/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="result" real_name="http://www.opengis.net/om/2.0 result">
+          <cd:Record>
+            <cd:Field name="EarthObservationResult" real_name="http://www.opengis.net/eop/2.1 EarthObservationResult">
+              <cd:Record>
+                <cd:Attribute name="id" real_name="http://www.opengis.net/gml/3.2 id">
+                  <cd:Text/>
+                </cd:Attribute>
+                <cd:Field name="browse" real_name="http://www.opengis.net/eop/2.1 browse">
+                  <cd:Record>
+                    <cd:Field name="BrowseInformation" real_name="http://www.opengis.net/eop/2.1 BrowseInformation">
+                      <cd:Record>
+                        <cd:Field name="type" real_name="http://www.opengis.net/eop/2.1 type">
+                          <cd:Text>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="referenceSystemIdentifier" real_name="http://www.opengis.net/eop/2.1 referenceSystemIdentifier">
+                          <cd:Text>
+                            <cd:Attribute name="codeSpace">
+                              <cd:Text/>
+                            </cd:Attribute>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="fileName" real_name="http://www.opengis.net/eop/2.1 fileName">
+                          <cd:Record>
+                            <cd:Field name="ServiceReference" real_name="http://www.opengis.net/ows/2.0 ServiceReference">
+                              <cd:Record>
+                                <cd:Attribute name="href" real_name="http://www.w3.org/1999/xlink href">
+                                  <cd:Text/>
+                                </cd:Attribute>
+                                <cd:Field name="RequestMessage" real_name="http://www.opengis.net/ows/2.0 RequestMessage">
+                                  <cd:Record>
+                                  </cd:Record>
+                                </cd:Field>
+                              </cd:Record>
+                              <cd:Optional/>
+                            </cd:Field>
+                          </cd:Record>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="product" real_name="http://www.opengis.net/eop/2.1 product">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Field name="ProductInformation" real_name="http://earth.esa.int/biomass/1.0 ProductInformation">
+                        <cd:Record>
+                          <cd:Field name="fileName" real_name="http://www.opengis.net/eop/2.1 fileName">
+                            <cd:Record>
+                              <cd:Field name="ServiceReference" real_name="http://www.opengis.net/ows/2.0 ServiceReference">
+                                <cd:Record>
+                                  <cd:Attribute name="href" real_name="http://www.w3.org/1999/xlink href">
+                                    <cd:Text/>
+                                  </cd:Attribute>
+                                  <cd:Field name="RequestMessage" real_name="http://www.opengis.net/ows/2.0 RequestMessage">
+                                    <cd:Record>
+                                    </cd:Record>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                          <cd:Field name="version" real_name="http://www.opengis.net/eop/2.1 version">
+                            <cd:Text>
+                            </cd:Text>
+                            <cd:Optional/>
+                          </cd:Field>
+                          <cd:Field name="size" real_name="http://www.opengis.net/eop/2.1 size">
+                            <cd:Integer format="ascii">
+                              <cd:Attribute name="uom"/>
+                              <cd:NativeType>int64</cd:NativeType>
+                            </cd:Integer>
+                            <cd:Optional/>
+                          </cd:Field>
+                          <cd:Field name="rds" real_name="http://earth.esa.int/biomass/1.0 rds">
+                            <cd:Text>
+                            </cd:Text>
+                            <cd:Optional/>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="metaDataProperty" real_name="http://www.opengis.net/eop/2.1 metaDataProperty">
+          <cd:Record>
+            <cd:Field name="EarthObservationMetaData" real_name="http://earth.esa.int/biomass/1.0 EarthObservationMetaData">
+              <cd:Record>
+                <cd:Field name="identifier" real_name="http://www.opengis.net/eop/2.1 identifier">
+                  <cd:Text>
+                  </cd:Text>
+                </cd:Field>
+                <cd:Field name="doi" real_name="http://www.opengis.net/eop/2.1 doi">
+                  <cd:Text>
+                  </cd:Text>
+                </cd:Field>
+                <cd:Field name="acquisitionType" real_name="http://www.opengis.net/eop/2.1 acquisitionType">
+                  <cd:Text>
+                  </cd:Text>
+                </cd:Field>
+                <cd:Field name="productType" real_name="http://www.opengis.net/eop/2.1 productType">
+                  <cd:Text>
+                  </cd:Text>
+                </cd:Field>
+                <cd:Field name="status" real_name="http://www.opengis.net/eop/2.1 status">
+                  <cd:Text>
+                  </cd:Text>
+                </cd:Field>
+                <cd:Field name="downlinkedTo" real_name="http://www.opengis.net/eop/2.1 downlinkedTo">
+                  <cd:Record>
+                    <cd:Field name="downlinkInformation" real_name="http://www.opengis.net/eop/2.1 DownlinkInformation">
+                      <cd:Record>
+                        <cd:Field name="acquisitionStation" real_name="http://www.opengis.net/eop/2.1 acquisitionStation">
+                          <cd:Text>
+                            <cd:Attribute name="codeSpace">
+                              <cd:Text/>
+                            </cd:Attribute>
+                          </cd:Text>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="acquisitionDate" real_name="http://www.opengis.net/eop/2.1 acquisitionDate">
+                          <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;)">
+                            <cd:Text/>
+                          </cd:Time>
+                          <cd:Optional/>
+                        </cd:Field>
+                      </cd:Record>
+                      <cd:Optional/>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="processing" real_name="http://www.opengis.net/eop/2.1 processing">
+                  <cd:Record>
+                    <cd:Field name="ProcessingInformation" real_name="http://earth.esa.int/biomass/1.0 ProcessingInformation">
+                      <cd:Record>
+                        <cd:Field name="processingCenter" real_name="http://www.opengis.net/eop/2.1 processingCenter">
+                          <cd:Text>
+                            <cd:Attribute name="codeSpace">
+                              <cd:Text/>
+                            </cd:Attribute>
+                          </cd:Text>
+                        </cd:Field>
+                        <cd:Field name="processingDate" real_name="http://www.opengis.net/eop/2.1 processingDate">
+                          <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss'Z'&quot;)">
+                            <cd:Text/>
+                          </cd:Time>
+                        </cd:Field>
+                        <cd:Field name="processorName" real_name="http://www.opengis.net/eop/2.1 processorName">
+                          <cd:Text>
+                          </cd:Text>
+                        </cd:Field>
+                        <cd:Field name="processorVersion" real_name="http://www.opengis.net/eop/2.1 processorVersion">
+                          <cd:Text>
+                          </cd:Text>
+                        </cd:Field>
+                        <cd:Field name="processingLevel" real_name="http://www.opengis.net/eop/2.1 processingLevel">
+                          <cd:Text>
+                          </cd:Text>
+                        </cd:Field>
+                        <cd:Field name="auxiliaryDataSetFileName" real_name="http://www.opengis.net/eop/2.1 auxiliaryDataSetFileName">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Text>
+                            </cd:Text>
+                          </cd:Array>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="processingMode" real_name="http://www.opengis.net/eop/2.1 processingMode">
+                          <cd:Text>
+                            <cd:Attribute name="codeSpace">
+                              <cd:Text/>
+                            </cd:Attribute>
+                          </cd:Text>
+                        </cd:Field>
+                        <cd:Field name="sourceProduct" real_name="http://earth.esa.int/biomass/1.0 sourceProduct">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Text>
+                              </cd:Text>
+                          </cd:Array>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="TAI_UTC" real_name="http://earth.esa.int/biomass/1.0 TAI-UTC">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint16</cd:NativeType>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="numOfTFs" real_name="http://earth.esa.int/biomass/1.0 numOfTFs">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint64</cd:NativeType>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="numOfTFsWithErrors" real_name="http://earth.esa.int/biomass/1.0 numOfTFsWithErrors">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint64</cd:NativeType>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="numOfCorruptedTFs" real_name="http://earth.esa.int/biomass/1.0 numOfCorruptedTFs">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint64</cd:NativeType>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="numOfISPs" real_name="http://earth.esa.int/biomass/1.0 numOfISPs">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint64</cd:NativeType>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="numOfISPsWithErrors" real_name="http://earth.esa.int/biomass/1.0 numOfISPsWithErrors">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint64</cd:NativeType>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="numOfCorruptedISPs" real_name="http://earth.esa.int/biomass/1.0 numOfCorruptedISPs">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint64</cd:NativeType>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="numOfLines" real_name="http://earth.esa.int/biomass/1.0 numOfLines">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="numOfMissingLines" real_name="http://earth.esa.int/biomass/1.0 numOfMissingLines">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="numOfCorruptedLines" real_name="http://earth.esa.int/biomass/1.0 numOfCorruptedLines">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="isIncomplete" real_name="http://earth.esa.int/biomass/1.0 isIncomplete">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                    <cd:Mapping string="FALSE" value="0"/>
+                    <cd:Mapping string="False" value="0"/>
+                    <cd:Mapping string="false" value="0"/>
+                    <cd:Mapping string="TRUE" value="1"/>
+                    <cd:Mapping string="True" value="1"/>
+                    <cd:Mapping string="true" value="1"/>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="isPartial" real_name="http://earth.esa.int/biomass/1.0 isPartial">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                    <cd:Mapping string="FALSE" value="0"/>
+                    <cd:Mapping string="False" value="0"/>
+                    <cd:Mapping string="false" value="0"/>
+                    <cd:Mapping string="TRUE" value="1"/>
+                    <cd:Mapping string="True" value="1"/>
+                    <cd:Mapping string="true" value="1"/>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="isMerged" real_name="http://earth.esa.int/biomass/1.0 isMerged">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                    <cd:Mapping string="FALSE" value="0"/>
+                    <cd:Mapping string="False" value="0"/>
+                    <cd:Mapping string="false" value="0"/>
+                    <cd:Mapping string="TRUE" value="1"/>
+                    <cd:Mapping string="True" value="1"/>
+                    <cd:Mapping string="true" value="1"/>
+                  </cd:Integer>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="framesList" real_name="http://earth.esa.int/biomass/1.0 framesList">
+                  <cd:Text>
+                  </cd:Text>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="refDoc" real_name="http://earth.esa.int/biomass/1.0 refDoc">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Text>
+                    </cd:Text>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

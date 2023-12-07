@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" xmlns:ct="http://www.stcorp.nl/coda/test/2008/10" name="SSPAMessage" format="binary" last-modified="2023-03-08">
+  <cd:Field name="inPhaseVoltage">
+    <cd:Record>
+      <cd:Field name="inPhaseSign">
+        <cd:Integer>
+          <cd:Description>Sign of In-Phase voltage</cd:Description>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="inPhaseVoltageCode">
+        <cd:Integer>
+          <cd:Description>In-Phase Voltage Code</cd:Description>
+          <cd:BitSize>11</cd:BitSize>
+          <cd:NativeType>uint16</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="QuadratureVoltage">
+    <cd:Record>
+      <cd:Field name="quadratureSign">
+        <cd:Integer>
+          <cd:Description>Sign of Quadrature voltage</cd:Description>
+          <cd:BitSize>1</cd:BitSize>
+          <cd:NativeType>uint8</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+      <cd:Field name="quadratureVoltageCode">
+        <cd:Integer>
+          <cd:Description>Quadrature Voltage Code</cd:Description>
+          <cd:BitSize>11</cd:BitSize>
+          <cd:NativeType>uint16</cd:NativeType>
+        </cd:Integer>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="EPCVoltage">
+    <cd:Integer>
+      <cd:Description>EPC Voltage</cd:Description>
+      <cd:BitSize>6</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="E">
+    <cd:Integer>
+      <cd:Description>Tx Enable</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="P">
+    <cd:Integer>
+      <cd:Description>Parity</cd:Description>
+      <cd:BitSize>1</cd:BitSize>
+      <cd:NativeType>uint8</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+</cd:Record>

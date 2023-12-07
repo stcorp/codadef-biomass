@@ -1,0 +1,422 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="CFG_TRPCCF" format="xml" last-modified="2023-05-03">
+  <cd:Record>
+    <cd:Field name="Earth_Observation_File" real_name="http://c-core.ca/BCT Earth_Observation_File">
+      <cd:Record>
+        <cd:Attribute name="schemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance schemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Observation_Header" real_name="http://c-core.ca/BCT Earth_Observation_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header" real_name="http://c-core.ca/BCT Fixed_Header">
+              <cd:NamedType id="Fixed_Header_EOFFS_version"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header" real_name="http://c-core.ca/BCT Variable_Header">
+              <cd:Text/>
+              <cd:Optional/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block" real_name="http://c-core.ca/BCT Data_Block">
+          <cd:Record>
+            <!-- Schedule update -->
+            <cd:Field name="Schedule_Update" real_name="http://c-core.ca/BCT Schedule_Update">
+              <cd:Record>
+                <cd:Field name="Change_Operation_Time" real_name="http://c-core.ca/BCT Change_Operation_Time">
+                  <cd:Record>
+                    <cd:Field name="Operation_ID" real_name="http://c-core.ca/BCT Operation_ID">
+                      <cd:Text/>
+                    </cd:Field>
+                    <cd:Field name="Start_Time" real_name="http://c-core.ca/BCT Start_Time">
+                      <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSSS&quot;)">
+                        <cd:Text/>
+                      </cd:Time>
+                    </cd:Field>
+                    <cd:Field name="Duration" real_name="http://c-core.ca/BCT Duration">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="unit"/>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="Cancel_Operation" real_name="http://c-core.ca/BCT Cancel_Operation">
+                  <cd:Record>
+                    <cd:Field name="Operation_ID" real_name="http://c-core.ca/BCT Operation_ID">
+                      <cd:Text/>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+              </cd:Record>
+              <cd:Optional/>
+            </cd:Field>
+            <!-- External Calibration -->
+            <cd:Field name="External_Calibration" real_name="http://c-core.ca/BCT External_Calibration">
+              <cd:Record>
+                <cd:Field name="Waveform" real_name="http://c-core.ca/BCT Waveform">
+                  <cd:Record>
+                    <cd:Field name="Pulse_Data" real_name="http://c-core.ca/BCT Pulse_Data">
+                      <cd:Record>
+                        <cd:Field name="List_of_Pulse_Samples" real_name="http://c-core.ca/BCT List_of_Pulse_Samples">
+                          <cd:Record>
+                            <cd:Attribute name="count">
+                              <cd:Integer format="ascii">
+                                <cd:NativeType>uint32</cd:NativeType>
+                              </cd:Integer>
+                            </cd:Attribute>
+                            <cd:Field name="Pulse_Sample" real_name="http://c-core.ca/BCT Pulse_Sample">
+                              <cd:Array>
+                                <cd:Dimension/>
+                                <cd:Float format="ascii">
+                                  <cd:NativeType>float</cd:NativeType>
+                                </cd:Float>
+                              </cd:Array>
+                            </cd:Field>
+                          </cd:Record>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                    <cd:Field name="Pulse_Repetition_Interval" real_name="http://c-core.ca/BCT Pulse_Repetition_Interval">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="unit"/>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="Amplitude" real_name="http://c-core.ca/BCT Amplitude">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="unit"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="Number_of_Pulses" real_name="http://c-core.ca/BCT Number_of_Pulses">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint64</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+              </cd:Record>
+              <cd:Optional/>
+            </cd:Field>
+            <!-- Measurement mode -->
+            <cd:Field name="Measurement_Mode" real_name="http://c-core.ca/BCT Measurement_Mode">
+              <cd:Record>
+                <cd:Field name="Start_Time" real_name="http://c-core.ca/BCT Start_Time">
+                  <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSSS&quot;)">
+                    <cd:Text/>
+                  </cd:Time>
+                </cd:Field>
+                <cd:Field name="Duration" real_name="http://c-core.ca/BCT Duration">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="unit"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="Receive_Parameters" real_name="http://c-core.ca/BCT Receive_Parameters">
+                  <cd:Record>
+                    <cd:Field name="Dss_Rx_Board" real_name="http://c-core.ca/BCT Dss_Rx_Board">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="Transmit_Parameters" real_name="http://c-core.ca/BCT Transmit_Parameters">
+                  <cd:Record>
+                    <cd:Field name="Expected_Pulse_Repetition_Frequency" real_name="http://c-core.ca/BCT Expected_Pulse_Repetition_Frequency">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="unit"/>
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Expected_Pulse_Length" real_name="http://c-core.ca/BCT Expected_Pulse_Length">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="unit"/>
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Transponder_RCS" real_name="http://c-core.ca/BCT Transponder_RCS">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="unit"/>
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Amplitude" real_name="http://c-core.ca/BCT Amplitude">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="unit"/>
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="Receive_Triggered_Signals" real_name="http://c-core.ca/BCT Receive_Triggered_Signals">
+                      <cd:Record>
+                        <cd:Field name="Detection_Threshold" real_name="http://c-core.ca/BCT Detection_Threshold">
+                          <cd:Float format="ascii">
+                            <cd:Attribute name="unit"/>
+                            <cd:NativeType>double</cd:NativeType>
+                          </cd:Float>
+                        </cd:Field>
+                        <cd:Field name="Receive_Triggered_Self_Generated_Signals" real_name="http://c-core.ca/BCT Receive_Triggered_Self_Generated_Signals">
+                          <cd:Record>
+                            <cd:Field name="H_Transmit_Signal" real_name="http://c-core.ca/BCT H_Transmit_Signal">
+                              <cd:Record>
+                                <cd:Field name="Waveform" real_name="http://c-core.ca/BCT Waveform">
+                                  <cd:Record>
+                                    <cd:Field name="Start_Frequency" real_name="http://c-core.ca/BCT Start_Frequency">
+                                      <cd:Float format="ascii">
+                                        <cd:Attribute name="unit"/>
+                                        <cd:NativeType>float</cd:NativeType>
+                                      </cd:Float>
+                                    </cd:Field>
+                                    <cd:Field name="Stop_Frequency" real_name="http://c-core.ca/BCT Stop_Frequency">
+                                      <cd:Float format="ascii">
+                                        <cd:Attribute name="unit"/>
+                                        <cd:NativeType>float</cd:NativeType>
+                                      </cd:Float>
+                                    </cd:Field>
+                                    <cd:Field name="Pulse_Length" real_name="http://c-core.ca/BCT Pulse_Length">
+                                      <cd:Float format="ascii">
+                                        <cd:Attribute name="unit"/>
+                                        <cd:NativeType>float</cd:NativeType>
+                                      </cd:Float>
+                                    </cd:Field>
+                                  </cd:Record>
+                                  <cd:Optional/>
+                                </cd:Field>
+                                <cd:Field name="Delay" real_name="http://c-core.ca/BCT Delay">
+                                  <cd:Float format="ascii">
+                                    <cd:Attribute name="unit"/>
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                              </cd:Record>
+                              <cd:Optional/>
+                            </cd:Field>
+                            <cd:Field name="V_Transmit_Signal" real_name="http://c-core.ca/BCT V_Transmit_Signal">
+                              <cd:Array>
+                                <cd:Dimension/>
+                                <cd:Record>
+                                  <cd:Field name="Waveform" real_name="http://c-core.ca/BCT Waveform">
+                                    <cd:Record>
+                                      <cd:Field name="Start_Frequency" real_name="http://c-core.ca/BCT Start_Frequency">
+                                        <cd:Float format="ascii">
+                                          <cd:Attribute name="unit"/>
+                                          <cd:NativeType>float</cd:NativeType>
+                                        </cd:Float>
+                                      </cd:Field>
+                                      <cd:Field name="Stop_Frequency" real_name="http://c-core.ca/BCT Stop_Frequency">
+                                        <cd:Float format="ascii">
+                                          <cd:Attribute name="unit"/>
+                                          <cd:NativeType>float</cd:NativeType>
+                                        </cd:Float>
+                                      </cd:Field>
+                                      <cd:Field name="Pulse_Length" real_name="http://c-core.ca/BCT Pulse_Length">
+                                        <cd:Float format="ascii">
+                                          <cd:Attribute name="unit"/>
+                                          <cd:NativeType>float</cd:NativeType>
+                                        </cd:Float>
+                                      </cd:Field>
+                                    </cd:Record>
+                                    <cd:Optional/>
+                                  </cd:Field>
+                                  <cd:Field name="Delay" real_name="http://c-core.ca/BCT Delay">
+                                    <cd:Float format="ascii">
+                                      <cd:Attribute name="unit"/>
+                                      <cd:NativeType>float</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Array>
+                            </cd:Field>
+                          </cd:Record>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="Echo_Generation_Signals" real_name="http://c-core.ca/BCT Echo_Generation_Signals">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Record>
+                              <cd:Field name="List_of_Phase_Shifts" real_name="http://c-core.ca/BCT List_of_Phase_Shifts">
+                                <cd:Record>
+                                  <cd:Attribute name="count">
+                                    <cd:Integer format="ascii">
+                                      <cd:NativeType>uint32</cd:NativeType>
+                                    </cd:Integer>
+                                  </cd:Attribute>
+                                  <cd:Field name="Phase_Shift" real_name="http://c-core.ca/BCT Phase_Shift">
+                                    <cd:Float format="ascii">
+                                      <cd:Attribute name="unit"/>
+                                      <cd:NativeType>float</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                </cd:Record>
+                                <cd:Optional/>
+                              </cd:Field>
+                              <cd:Field name="Echo_Generation_Transmission_Delays" real_name="http://c-core.ca/BCT Echo_Generation_Transmission_Delays">
+                                <cd:Record>
+                                  <cd:Field name="HH" real_name="http://c-core.ca/BCT HH">
+                                    <cd:Float format="ascii">
+                                      <cd:Attribute name="unit"/>
+                                      <cd:NativeType>float</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                  <cd:Field name="HV" real_name="http://c-core.ca/BCT HV">
+                                    <cd:Float format="ascii">
+                                      <cd:Attribute name="unit"/>
+                                      <cd:NativeType>float</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                  <cd:Field name="VH" real_name="http://c-core.ca/BCT VH">
+                                    <cd:Float format="ascii">
+                                      <cd:Attribute name="unit"/>
+                                      <cd:NativeType>float</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                  <cd:Field name="VV" real_name="http://c-core.ca/BCT VV">
+                                    <cd:Float format="ascii">
+                                      <cd:Attribute name="unit"/>
+                                      <cd:NativeType>float</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Array>
+                        </cd:Field>
+                      </cd:Record>
+                      <cd:Optional/>
+                    </cd:Field>
+                    <cd:Field name="UTC_Triggered_Self_Generated_Signals" real_name="http://c-core.ca/BCT UTC_Triggered_Self_Generated_Signals">
+                      <cd:Record>
+                        <cd:Field name="H_Transmit_Signal" real_name="http://c-core.ca/BCT H_Transmit_Signal">
+                          <cd:Record>
+                            <cd:Field name="Waveform" real_name="http://c-core.ca/BCT Waveform">
+                              <cd:Record>
+                                <cd:Field name="Start_Frequency" real_name="http://c-core.ca/BCT Start_Frequency">
+                                  <cd:Float format="ascii">
+                                    <cd:Attribute name="unit"/>
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                                <cd:Field name="Stop_Frequency" real_name="http://c-core.ca/BCT Stop_Frequency">
+                                  <cd:Float format="ascii">
+                                    <cd:Attribute name="unit"/>
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                                <cd:Field name="Pulse_Length" real_name="http://c-core.ca/BCT Pulse_Length">
+                                  <cd:Float format="ascii">
+                                    <cd:Attribute name="unit"/>
+                                    <cd:NativeType>float</cd:NativeType>
+                                  </cd:Float>
+                                </cd:Field>
+                              </cd:Record>
+                              <cd:Optional/>
+                            </cd:Field>
+                            <cd:Field name="Offset" real_name="http://c-core.ca/BCT Offset">
+                              <cd:Float format="ascii">
+                                <cd:Attribute name="unit"/>
+                                <cd:NativeType>float</cd:NativeType>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="Pulse_Repetition_Interval" real_name="http://c-core.ca/BCT Pulse_Repetition_Interval">
+                              <cd:Float format="ascii">
+                                <cd:Attribute name="unit"/>
+                                <cd:NativeType>float</cd:NativeType>
+                              </cd:Float>
+                            </cd:Field>
+                          </cd:Record>
+                          <cd:Optional/>
+                        </cd:Field>
+                        <cd:Field name="V_Transmit_Signal" real_name="http://c-core.ca/BCT V_Transmit_Signal">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Record>
+                              <cd:Field name="Waveform" real_name="http://c-core.ca/BCT Waveform">
+                                <cd:Record>
+                                  <cd:Field name="Start_Frequency" real_name="http://c-core.ca/BCT Start_Frequency">
+                                    <cd:Float format="ascii">
+                                      <cd:Attribute name="unit"/>
+                                      <cd:NativeType>float</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                  <cd:Field name="Stop_Frequency" real_name="http://c-core.ca/BCT Stop_Frequency">
+                                    <cd:Float format="ascii">
+                                      <cd:Attribute name="unit"/>
+                                      <cd:NativeType>float</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                  <cd:Field name="Pulse_Length" real_name="http://c-core.ca/BCT Pulse_Length">
+                                    <cd:Float format="ascii">
+                                      <cd:Attribute name="unit"/>
+                                      <cd:NativeType>float</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                </cd:Record>
+                                <cd:Optional/>
+                              </cd:Field>
+                              <cd:Field name="Offset" real_name="http://c-core.ca/BCT Offset">
+                                <cd:Float format="ascii">
+                                  <cd:Attribute name="unit"/>
+                                  <cd:NativeType>float</cd:NativeType>
+                                </cd:Float>
+                              </cd:Field>
+                              <cd:Field name="Pulse_Repetition_Interval" real_name="http://c-core.ca/BCT Pulse_Repetition_Interval">
+                                <cd:Float format="ascii">
+                                  <cd:Attribute name="unit"/>
+                                  <cd:NativeType>float</cd:NativeType>
+                                </cd:Float>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Array>
+                        </cd:Field>
+                      </cd:Record>
+                      <cd:Optional/>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="List_of_Antenna_Pointing_Angles" real_name="http://c-core.ca/BCT List_of_Antenna_Pointing_Angles">
+                  <cd:Record>
+                    <cd:Attribute name="count">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:Field name="Antenna_Pointing_Angle" real_name="http://c-core.ca/BCT Antenna_Pointing_Angle">
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Record>
+                          <cd:Field name="Time" real_name="http://c-core.ca/BCT Time">
+                            <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSS&quot;)">
+                              <cd:Text/>
+                            </cd:Time>
+                          </cd:Field>
+                          <cd:Field name="Azimuth" real_name="http://c-core.ca/BCT Azimuth">
+                            <cd:Float format="ascii">
+                              <cd:Attribute name="unit"/>
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="Elevation" real_name="http://c-core.ca/BCT Elevation">
+                            <cd:Float format="ascii">
+                              <cd:Attribute name="unit"/>
+                              <cd:NativeType>float</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Array>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
+              <cd:Optional/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

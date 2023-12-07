@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="L1_LUT_dimensions" format="hdf5" last-modified="2023-06-28">
+  <cd:Field name="firstSample">
+    <cd:Array>
+      <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+        <cd:Array>
+          <cd:Dimension>1</cd:Dimension>
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+        </cd:Array>
+      </cd:Attribute>
+      <cd:Attribute name="description">
+        <cd:Text/>
+      </cd:Attribute>
+      <cd:Dimension>1</cd:Dimension>
+      <cd:Integer>
+        <cd:NativeType>uint32</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="firstLine">
+    <cd:Array>
+      <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+        <cd:Array>
+          <cd:Dimension>1</cd:Dimension>
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+        </cd:Array>
+      </cd:Attribute>
+      <cd:Attribute name="description">
+        <cd:Text/>
+      </cd:Attribute>
+      <cd:Dimension>1</cd:Dimension>
+      <cd:Integer>
+        <cd:NativeType>uint32</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="samplesInterval">
+    <cd:Array>
+      <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+        <cd:Array>
+          <cd:Dimension>1</cd:Dimension>
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+        </cd:Array>
+      </cd:Attribute>
+      <cd:Attribute name="description">
+        <cd:Text/>
+      </cd:Attribute>
+      <cd:Dimension>1</cd:Dimension>
+      <cd:Integer>
+        <cd:NativeType>uint32</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="linesInterval">
+    <cd:Array>
+      <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+        <cd:Array>
+          <cd:Dimension>1</cd:Dimension>
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+        </cd:Array>
+      </cd:Attribute>
+      <cd:Attribute name="description">
+        <cd:Text/>
+      </cd:Attribute>
+      <cd:Dimension>1</cd:Dimension>
+      <cd:Integer>
+        <cd:NativeType>uint32</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="slantRangeTime">
+    <cd:Array>
+      <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+        <cd:Array>
+          <cd:Dimension>1</cd:Dimension>
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+        </cd:Array>
+      </cd:Attribute>
+      <cd:Attribute name="description">
+        <cd:Text/>
+      </cd:Attribute>
+      <cd:Dimension>1</cd:Dimension>
+      <cd:Float>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="relativeAzimuthTime">
+    <cd:Array>
+      <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+        <cd:Array>
+          <cd:Dimension>1</cd:Dimension>
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+        </cd:Array>
+      </cd:Attribute>
+      <cd:Attribute name="description">
+        <cd:Text/>
+      </cd:Attribute>
+      <cd:Dimension>1</cd:Dimension>
+      <cd:Float>
+        <cd:NativeType>float</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+</cd:Record>

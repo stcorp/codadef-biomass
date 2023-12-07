@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns="http://c-core.ca/BCT" xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_TRPICR_META" format="xml" last-modified="2023-04-24">
+  <cd:Record>
+    <cd:Field name="Meta" real_name="http://c-core.ca/BCT Meta">
+      <cd:Record>
+        <cd:Attribute name="schemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance schemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+          <cd:Optional/>
+        </cd:Attribute>
+        <cd:Field name="Internal_Calibration" real_name="http://c-core.ca/BCT Internal_Calibration">
+          <cd:NamedType id="TRPxxx_META_Internal_Calibration"/>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>
