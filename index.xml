@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2023-12-07">
+<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2023-12-08">
   <cd:Description>BIOMASS products</cd:Description>
 
   <!-- Generic Product Header -->
@@ -257,7 +257,7 @@
   <cd:ProductType name="AUX_PP0___">
     <cd:Description>Auxiliary L0 Processing Parameters</cd:Description>
     <cd:ProductDefinition id="AUX_PP0" format="xml" version="0">
-      <cd:Description>This definition is based on version 1.8 of the BIOMASS L-0, OA Processors Specific ICD - BIO-FLEX-L0PF-OAPF</cd:Description>
+      <cd:Description>This definition is based on version 1.11 of the BIOMASS L-0, OA Processors Specific ICD - BIO-FLEX-L0PF-OAPF</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pp0</cd:MatchFilename>

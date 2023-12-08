@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP0" format="xml" last-modified="2023-03-21">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP0" format="xml" last-modified="2023-12-08">
   <cd:Record>
     <cd:Field name="Configuration">
       <cd:Record>
@@ -37,10 +37,11 @@
                     <cd:NativeType>float</cd:NativeType>
                   </cd:Float>
                 </cd:Field>
-                <!-- <cd:Field name="MinSliceDuration">
-                  <cd:Text/>
-                  <cd:Optional/>
-                </cd:Field> -->
+                <cd:Field name="MinSliceDuration">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint8</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
                 <cd:Field name="SliceStartOverlap">
                   <cd:Integer format="ascii">
                     <cd:NativeType>uint8</cd:NativeType>
@@ -71,6 +72,27 @@
                           <cd:Integer format="ascii">
                             <cd:NativeType>uint16</cd:NativeType>
                           </cd:Integer>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                    <cd:Field name="GstlSwathIdMappingRules">
+                      <cd:Record>
+                        <cd:Field name="GstlSwathIdMappingRule">
+                        <cd:Array>
+                          <cd:Dimension/>
+                            <cd:Record>
+                              <cd:Field name="Gstl">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint8</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                              <cd:Field name="SwathId">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint8</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Array>
                         </cd:Field>
                       </cd:Record>
                     </cd:Field>
