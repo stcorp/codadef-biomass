@@ -6,7 +6,7 @@
   <cd:ProductType name="Biomass_MPH">
     <cd:Description>Main product header for BIOMASS products and ADFs</cd:Description>
     <cd:ProductDefinition id="Biomass_MPH" format="xml" version="0">
-      <cd:Description>This definition is based on v2.3 of the BIOMASS Main Product Header Definition - BIO-ESA-EOPG-EEGS-TN-0051</cd:Description>
+      <cd:Description>This definition is based on version 2.3 of the BIOMASS Main Product Header Definition - BIO-ESA-EOPG-EEGS-TN-0051</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="80">.xml</cd:MatchFilename>
@@ -29,7 +29,7 @@
   <cd:ProductType name="L0_Measurement_Data">
     <cd:Description>L0 Measurement Data Component</cd:Description>
     <cd:ProductDefinition id="L0_Measurement_Data" format="binary" version="0">
-      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and version 5.1 of BIOMASS SAR Data ICD (L0 ISP) - BIO-ICD-ADSF-SY-1000563385</cd:Description>
+      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and issue 05 of BIOMASS SAR Data ICD (L0 ISP) - BIO-ICD-ADSF-SY-1000563385</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="70">_rxh.dat</cd:MatchFilename>
@@ -43,7 +43,7 @@
   <cd:ProductType name="L0_Index_Data">
     <cd:Description>L0 Index Data Component</cd:Description>
     <cd:ProductDefinition id="L0_Index_Data" format="binary" version="0">
-      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and version 5.1 of BIOMASS SAR Data ICD (L0 ISP) - BIO-ICD-ADSF-SY-1000563385</cd:Description>
+      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and issue 05 of BIOMASS SAR Data ICD (L0 ISP) - BIO-ICD-ADSF-SY-1000563385</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="70">_idx_rxh.dat</cd:MatchFilename>
@@ -57,7 +57,7 @@
   <cd:ProductType name="L0_Instrument_Ancillary_Data">
     <cd:Description>L0 Instrument Ancillary Data Component</cd:Description>
     <cd:ProductDefinition id="L0_Instrument_Ancillary_Data" format="binary" version="0">
-      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and version 5.1 of BIOMASS SAR Data ICD (L0 ISP) - BIO-ICD-ADSF-SY-1000563385</cd:Description>
+      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and issue 05 of BIOMASS SAR Data ICD (L0 ISP) - BIO-ICD-ADSF-SY-1000563385</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="70">_ia_rxh.dat</cd:MatchFilename>
@@ -71,7 +71,7 @@
   <cd:ProductType name="L0_Platform_Ancillary_Data">
     <cd:Description>L0 Platform Ancillary Data Component</cd:Description>
     <cd:ProductDefinition id="L0_Platform_Ancillary_Data" format="binary" version="0">
-      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and version 8.0 of BIOMASS Satellite to Ground Segment ICD - BIO-ICD-ASU-SY-00003</cd:Description>
+      <cd:Description>This definition is based on version 2.5 of BIOMASS L0 Product Format Definition - BIO-ESA-EOPG-EEGS-TN-0045, and issue 08 of BIOMASS Satellite to Ground Segment ICD - BIO-ICD-ASU-SY-00003</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="70">.dat</cd:MatchFilename>
@@ -83,7 +83,7 @@
   <cd:ProductType name="L1A_Main_ADS">
     <cd:Description>Main Annotation Data Set for BIOMASS L1A products</cd:Description>
     <cd:ProductDefinition id="L1A_Main_ADS" format="xml" version="0">
-      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="6">_scs_</cd:MatchFilename>
@@ -100,7 +100,7 @@
   <cd:ProductType name="L1C_Main_ADS">
     <cd:Description>Main Annotation Data Set for BIOMASS L1C Coregistered products</cd:Description>
     <cd:ProductDefinition id="L1C_Main_ADS" format="xml" version="0">
-      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="6">_sta_</cd:MatchFilename>
@@ -112,7 +112,7 @@
   <cd:ProductType name="L1A_LUT_ADS">
     <cd:Description>LookUp Table Annotation Data Set for BIOMASS L1A products</cd:Description>
     <cd:ProductDefinition id="L1A_LUT_ADS" format="hdf5" version="0">
-      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="6">_scs_</cd:MatchFilename>
@@ -123,7 +123,7 @@
   <cd:ProductType name="L1C_LUT_ADS">
     <cd:Description>LookUp Table Annotation Data Set for BIOMASS L1C coregistered products</cd:Description>
     <cd:ProductDefinition id="L1C_LUT_ADS" format="hdf5" version="0">
-      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="6">_sta_</cd:MatchFilename>
@@ -134,7 +134,7 @@
   <cd:ProductType name="L1_Attitude_ADS">
     <cd:Description>Attitude Annotation Data Set for BIOMASS L1A products</cd:Description>
     <cd:ProductDefinition id="AUX_ATT" format="xml" version="0">
-      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="70">_att.xml</cd:MatchFilename>
@@ -144,7 +144,7 @@
   <cd:ProductType name="L1_Orbit_ADS">
     <cd:Description>Orbit Annotation Data Set for BIOMASS L1A products</cd:Description>
     <cd:ProductDefinition id="AUX_ORB" format="xml" version="0">
-      <cd:Description>This definition is based on v1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.2.6 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="70">_orb.xml</cd:MatchFilename>
@@ -357,7 +357,7 @@
   <cd:ProductType name="AUX_PP2_FD">
     <cd:Description>Auxiliary L2b Processing Parameters for Forest Disturbance</cd:Description>
     <cd:ProductDefinition id="AUX_PP2_FD" format="xml" version="0">
-      <cd:Description>This definition is based on version 2.1.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pp2_fd</cd:MatchFilename>
@@ -403,7 +403,7 @@
   <cd:ProductType name="MPL_PPF_x_">
     <cd:Description>Payload Planning File Interface</cd:Description>
     <cd:ProductDefinition id="MPL_PPF" format="xml" version="0">
-      <cd:Description>This definition is based on the draft of v2.5 of the BIOMASS PDGS MPF Mission Planning File Format Specification - BIO-ESA-EOPG-EEGS-ID-0079</cd:Description>
+      <cd:Description>This definition is based on version 2.5 of the BIOMASS PDGS MPF Mission Planning File Format Specification - BIO-ESA-EOPG-EEGS-ID-0079</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
         <cd:MatchFilename offset="9">MPL_PPF_</cd:MatchFilename>
@@ -414,7 +414,7 @@
   <cd:ProductType name="MPL_TRPINP">
     <cd:Description>Transponder Input File Interface</cd:Description>
     <cd:ProductDefinition id="MPL_TRPINP" format="xml" version="0">
-      <cd:Description>This definition is based on the draft of v2.5 of the BIOMASS PDGS MPF Mission Planning File Format Specification - BIO-ESA-EOPG-EEGS-ID-0079</cd:Description>
+      <cd:Description>This definition is based on version 2.5 of the BIOMASS PDGS MPF Mission Planning File Format Specification - BIO-ESA-EOPG-EEGS-ID-0079</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
         <cd:MatchFilename offset="9">MPL_TRPINP</cd:MatchFilename>
@@ -425,7 +425,7 @@
   <cd:ProductType name="MPL_MISSTL">
     <cd:Description>Mission Timeline File Interface</cd:Description>
     <cd:ProductDefinition id="MPL_MISSTL" format="xml" version="0">
-      <cd:Description>This definition is based on the draft of v2.5 of the BIOMASS PDGS MPF Mission Planning File Format Specification - BIO-ESA-EOPG-EEGS-ID-0079</cd:Description>
+      <cd:Description>This definition is based on version 2.5 of the BIOMASS PDGS MPF Mission Planning File Format Specification - BIO-ESA-EOPG-EEGS-ID-0079</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
         <cd:MatchFilename offset="9">MPL_MISSTL</cd:MatchFilename>
@@ -438,7 +438,7 @@
   <cd:ProductType name="CFG_PF_BC_">
     <cd:Description>Baseline Configuration file</cd:Description>
     <cd:ProductDefinition id="Baseline_Configuration" format="xml" version="0">
-      <cd:Description>This definition is based on version 1.1 of the BIOMASS PDGS Processing Files Specifications - BIO-ESA-EOPG-EEGS-ID-0112</cd:Description>
+      <cd:Description>This definition is based on version 1.2 of the BIOMASS PDGS Processing Files Specifications - BIO-ESA-EOPG-EEGS-ID-0112</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
         <cd:MatchFilename offset="9">CFG_PF_BC</cd:MatchFilename>
