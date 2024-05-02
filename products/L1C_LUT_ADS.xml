@@ -741,7 +741,7 @@
     </cd:Field>
     <cd:Field name="fastIonosphereRemoval">
       <cd:Record>
-        <cd:Field name="fastIonospherePhasesScreen">
+        <cd:Field name="fastIonospherePhaseScreen">
           <cd:Array>
             <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
               <cd:Array>
@@ -770,7 +770,7 @@
             </cd:Float>
           </cd:Array>
         </cd:Field>
-        <cd:Field name="fastIonospherePhasesScreenQuality">
+        <cd:Field name="fastIonospherePhaseScreenQuality">
           <cd:Array>
             <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
               <cd:Array>
