@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_FH" format="xml" last-modified="2023-12-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_FH" format="xml" last-modified="2024-06-07">
   <cd:Record>
     <cd:Field name="auxiliaryL2bFHProcessingParameters">
       <cd:Record>
@@ -84,6 +84,15 @@
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="acquisitionIdImage">
+                  <cd:Record>
+                    <cd:Field name="compressionFactor">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                      </cd:Integer>
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
