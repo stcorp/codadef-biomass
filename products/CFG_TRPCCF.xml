@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="CFG_TRPCCF" format="xml" last-modified="2023-05-03">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="CFG_TRPCCF" format="xml" last-modified="2024-06-18">
   <cd:Record>
     <cd:Field name="Earth_Observation_File" real_name="http://c-core.ca/BCT Earth_Observation_File">
       <cd:Record>
         <cd:Attribute name="schemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance schemaLocation">
           <cd:Text/>
+          <cd:Optional/>
         </cd:Attribute>
         <cd:Attribute name="schemaVersion">
           <cd:Text/>
@@ -22,6 +23,12 @@
         </cd:Field>
         <cd:Field name="Data_Block" real_name="http://c-core.ca/BCT Data_Block">
           <cd:Record>
+            <cd:Field name="Gstl_Index" real_name="http://c-core.ca/BCT Gstl_Index">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+            </cd:Field>
             <!-- Schedule update -->
             <cd:Field name="Schedule_Update" real_name="http://c-core.ca/BCT Schedule_Update">
               <cd:Record>
@@ -160,6 +167,7 @@
                             <cd:Attribute name="unit"/>
                             <cd:NativeType>double</cd:NativeType>
                           </cd:Float>
+                          <cd:Optional/>
                         </cd:Field>
                         <cd:Field name="Receive_Triggered_Self_Generated_Signals" real_name="http://c-core.ca/BCT Receive_Triggered_Self_Generated_Signals">
                           <cd:Record>
@@ -286,6 +294,7 @@
                               </cd:Field>
                             </cd:Record>
                           </cd:Array>
+                          <cd:Optional/>
                         </cd:Field>
                       </cd:Record>
                       <cd:Optional/>
