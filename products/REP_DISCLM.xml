@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_DISCLM" format="xml" last-modified="2023-05-03">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_DISCLM" format="xml" last-modified="2024-06-20">
   <cd:Record>
     <cd:Field name="Earth_Observation_File" real_name="Earth_Observation_File">
       <!-- TODO: Update namespace once the namespace is defined -->
@@ -48,55 +48,31 @@
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
-                <cd:Field name="Degradation_Percentage" real_name="Degradation_Percentage">
-                  <cd:Float format="ascii">
-                    <cd:Attribute name="unit"/>
-                    <cd:NativeType>float</cd:NativeType>
-                  </cd:Float>
+                <cd:Field name="Validity_Period">
+                  <cd:Record>
+                    <cd:Field name="Validity_Start">
+                      <cd:Time timeformat="time(str(.), &quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                        <cd:Text/>
+                      </cd:Time>
+                    </cd:Field>
+                    <cd:Field name="Validity_Stop">
+                      <cd:Time timeformat="time(str(.), &quot;'UTC='yyyy-MM-dd'T'HH:mm:ss&quot;)">
+                        <cd:Text/>
+                      </cd:Time>
+                    </cd:Field>
+                  </cd:Record>
                 </cd:Field>
-                <cd:Field name="Reference" real_name="Reference">
-                  <cd:Text/>
-                </cd:Field>
-                <cd:Field name="List_of_Product_Groups" real_name="List_of_Product_Groups">
+                <cd:Field name="List_of_Product_Types" real_name="List_of_Product_Types">
                   <cd:Record>
                     <cd:Attribute name="count">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint32</cd:NativeType>
                       </cd:Integer>
                     </cd:Attribute>
-                    <cd:Field name="Product_Group" real_name="Product_Group">
+                    <cd:Field name="Product_Type" real_name="Product_Type">
                       <cd:Array>
                         <cd:Dimension/>
-                        <cd:Record>
-                          <cd:Field name="Product_Type" real_name="Product_Type">
-                            <cd:Text/>
-                            <cd:Optional/>
-                          </cd:Field>
-                          <cd:Field name="Processing_Facillity" real_name="Processing_Facillity">
-                            <cd:Text/>
-                            <cd:Optional/>
-                          </cd:Field>
-                          <cd:Field name="Processor_Name" real_name="Processor_Name">
-                            <cd:Text/>
-                            <cd:Optional/>
-                          </cd:Field>
-                          <cd:Field name="Processor_Version" real_name="Processor_Version">
-                            <cd:Text/>
-                            <cd:Optional/>
-                          </cd:Field>
-                          <cd:Field name="Baseline" real_name="Baseline">
-                            <cd:Text/>
-                            <cd:Optional/>
-                          </cd:Field>
-                          <cd:Field name="Mission_Phase" real_name="Mission_Phase">
-                            <cd:Text/>
-                            <cd:Optional/>
-                          </cd:Field>
-                          <cd:Field name="Operational_Scenario" real_name="Operational_Scenario">
-                            <cd:Text/>
-                            <cd:Optional/>
-                          </cd:Field>
-                        </cd:Record>
+                        <cd:Text/>
                       </cd:Array>
                       <cd:Optional/>
                     </cd:Field>
