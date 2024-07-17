@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_TRPCRF" format="xml" last-modified="2024-07-17">
+  <cd:Record>
+    <cd:Field name="Earth_Observation_File" real_name="http://c-core.ca/BCT Earth_Observation_File">
+      <cd:Record>
+        <cd:Attribute name="schemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance schemaLocation">
+          <cd:Text/>
+          <cd:Optional/>
+        </cd:Attribute>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="Earth_Observation_Header" real_name="http://c-core.ca/BCT Earth_Observation_Header">
+          <cd:Record>
+            <cd:Field name="Fixed_Header" real_name="http://c-core.ca/BCT Fixed_Header">
+              <cd:NamedType id="Fixed_Header_EOFFS_version"/>
+            </cd:Field>
+            <cd:Field name="Variable_Header" real_name="http://c-core.ca/BCT Variable_Header">
+              <cd:Text/>
+              <cd:Optional/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="Data_Block" real_name="http://c-core.ca/BCT Data_Block">
+          <cd:Record>
+            <cd:Field name="Type" real_name="http://c-core.ca/BCT Type">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="Configuration_Command_File_ID" real_name="http://c-core.ca/BCT Configuration_Command_File_ID">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="Message" real_name="http://c-core.ca/BCT Message">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="List_of_Conflicting_Scheduled_Operations" real_name="http://c-core.ca/BCT List_of_Conflicting_Scheduled_Operations">
+              <cd:Record>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="Operation_ID" real_name="http://c-core.ca/BCT Operation_ID">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Text/>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+              <cd:Optional/>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>

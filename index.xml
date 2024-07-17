@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2024-06-07">
+<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2024-07-17">
   <cd:Description>BIOMASS products</cd:Description>
 
   <!-- Generic Product Header -->
@@ -486,7 +486,7 @@
 
   <!-- Transponder files -->
   <cd:ProductType name="CFG_TRPCCF">
-    <cd:Description>Transponder Input File Interface</cd:Description>
+    <cd:Description>Transponder Configuration Command File</cd:Description>
     <cd:ProductDefinition id="CFG_TRPCCF" format="xml" version="0">
       <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
       <cd:DetectionRule>
@@ -494,6 +494,18 @@
         <cd:MatchFilename offset="9">CFG_TRPCCF</cd:MatchFilename>
         <cd:MatchFilename offset="56">.EOF</cd:MatchFilename>
         <cd:MatchData path="/Earth_Observation_File/Earth_Observation_Header/Fixed_Header/File_Type">CFG_TRPCCF</cd:MatchData>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="REP_TRPCRF">
+    <cd:Description>Transponder Command Response File</cd:Description>
+    <cd:ProductDefinition id="REP_TRPCRF" format="xml" version="0">
+      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
+        <cd:MatchFilename offset="9">REP_TRPCRF</cd:MatchFilename>
+        <cd:MatchFilename offset="56">.EOF</cd:MatchFilename>
+        <cd:MatchData path="/Earth_Observation_File/Earth_Observation_Header/Fixed_Header/File_Type">REP_TRPCRF</cd:MatchData>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
