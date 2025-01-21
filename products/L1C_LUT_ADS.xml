@@ -109,15 +109,11 @@
     <cd:Attribute name="productComposition">
       <cd:Text/>
     </cd:Attribute>
-    <cd:Attribute name="noDataValueBool">
-      <cd:Text/>
-    </cd:Attribute>
-    <cd:Attribute name="noDataValueFloat">
+    <cd:Attribute name="noDataValue">
       <cd:Array>
         <cd:Dimension>1</cd:Dimension>
         <cd:Float>
           <cd:NativeType>double</cd:NativeType>
-          <cd:LittleEndian/>
         </cd:Float>
       </cd:Array>
     </cd:Attribute>
@@ -160,7 +156,7 @@
         </cd:Attribute>
         <cd:Dimension/>
         <cd:Float>
-          <cd:NativeType>float</cd:NativeType>
+          <cd:NativeType>double</cd:NativeType>
         </cd:Float>
       </cd:Array>
     </cd:Field>
@@ -195,11 +191,12 @@
         </cd:Attribute>
         <cd:Dimension/>
         <cd:Float>
-          <cd:NativeType>float</cd:NativeType>
+          <cd:NativeType>double</cd:NativeType>
         </cd:Float>
       </cd:Array>
     </cd:Field>
     <cd:Field name="ionosphereRelativeRangeTime">
+      <cd:Optional/>
       <cd:Array>
         <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
           <cd:Array>
@@ -235,6 +232,7 @@
       </cd:Array>
     </cd:Field>
     <cd:Field name="ionosphereCenteredAzimuthTime">
+      <cd:Optional/>
       <cd:Array>
         <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
           <cd:Array>
@@ -359,7 +357,35 @@
             </cd:Float>
           </cd:Array>
         </cd:Field>
-        <cd:Field name="denoisingXX">
+        <cd:Field name="denoisingHV">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="denoisingVH">
           <cd:Array>
             <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
               <cd:Array>
@@ -443,7 +469,7 @@
             <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
             <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
             <cd:Float>
-              <cd:NativeType>float</cd:NativeType>
+              <cd:NativeType>double</cd:NativeType>
             </cd:Float>
           </cd:Array>
         </cd:Field>
@@ -471,7 +497,7 @@
             <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
             <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
             <cd:Float>
-              <cd:NativeType>float</cd:NativeType>
+              <cd:NativeType>double</cd:NativeType>
             </cd:Float>
           </cd:Array>
         </cd:Field>
@@ -499,7 +525,7 @@
             <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
             <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
             <cd:Float>
-              <cd:NativeType>float</cd:NativeType>
+              <cd:NativeType>double</cd:NativeType>
             </cd:Float>
           </cd:Array>
           <cd:Optional/>

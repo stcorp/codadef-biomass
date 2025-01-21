@@ -763,6 +763,17 @@
             <cd:Field name="rangeCompressionMethod">
               <cd:Text/>
             </cd:Field>
+            <cd:Field name="extendedSwathProcessingFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
             <cd:Field name="dcMethod">
               <cd:Text/>
             </cd:Field>
@@ -1513,23 +1524,97 @@
         </cd:Field>
         <cd:Field name="polarimetricDistortion">
           <cd:Record>
-            <cd:Field name="crossTalkHVTx">
-              <cd:Text/>
+            <cd:Field name="crossTalkList">
+              <cd:Record>
+                <cd:Field name="crossTalkHVTx">
+                  <cd:Record>
+                    <cd:Field name="re">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="im">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="crossTalkVHTx">
+                  <cd:Record>
+                    <cd:Field name="re">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="im">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="crossTalkHVRx">
+                  <cd:Record>
+                    <cd:Field name="re">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="im">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="crossTalkVHRx">
+                  <cd:Record>
+                    <cd:Field name="re">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="im">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
             </cd:Field>
-            <cd:Field name="crossTalkVHTx">
-              <cd:Text/>
-            </cd:Field>
-            <cd:Field name="crossTalkHVRx">
-              <cd:Text/>
-            </cd:Field>
-            <cd:Field name="crossTalkVHRx">
-              <cd:Text/>
-            </cd:Field>
-            <cd:Field name="channelImbalanceHVTx">
-              <cd:Text/>
-            </cd:Field>
-            <cd:Field name="channelImbalanceHVRx">
-              <cd:Text/>
+            <cd:Field name="channelImbalanceList">
+              <cd:Record>
+                <cd:Field name="channelImbalanceHVTx">
+                  <cd:Record>
+                    <cd:Field name="re">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="im">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="channelImbalanceHVRx">
+                  <cd:Record>
+                    <cd:Field name="re">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="im">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
             </cd:Field>
           </cd:Record>
         </cd:Field>
@@ -1617,6 +1702,17 @@
               <cd:Text>
                 <cd:Attribute name="version"/>
               </cd:Text>
+            </cd:Field>
+            <cd:Field name="heightModelUsedFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
             </cd:Field>
             <cd:Field name="rollAngleList">
               <cd:Record>

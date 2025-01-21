@@ -164,6 +164,41 @@
         </cd:Float>
       </cd:Array>
     </cd:Field>
+    <cd:Field name="rangeFreqRAW">
+      <cd:Array>
+        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+          <cd:Array>
+            <cd:Dimension>1</cd:Dimension>
+            <cd:Integer>
+              <cd:NativeType>int32</cd:NativeType>
+              <cd:LittleEndian/>
+            </cd:Integer>
+          </cd:Array>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="units">
+          <cd:FixedValue>Hz</cd:FixedValue>
+        </cd:Attribute>
+        <cd:Dimension/>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
     <cd:Field name="relativeAzimuthTimeRAW">
       <cd:Array>
         <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
@@ -229,7 +264,7 @@
         </cd:Attribute>
         <cd:Dimension/>
         <cd:Float>
-          <cd:NativeType>float</cd:NativeType>
+          <cd:NativeType>double</cd:NativeType>
         </cd:Float>
       </cd:Array>
     </cd:Field>
@@ -263,7 +298,7 @@
         </cd:Attribute>
         <cd:Dimension/>
         <cd:Float>
-          <cd:NativeType>float</cd:NativeType>
+          <cd:NativeType>double</cd:NativeType>
         </cd:Float>
       </cd:Array>
     </cd:Field>
@@ -879,7 +914,7 @@
             <cd:Dimension><![CDATA[$relative_azimuth_time_rgc]]></cd:Dimension>
             <cd:Dimension><![CDATA[$slant_range_time_rgc]]></cd:Dimension>
             <cd:Float>
-              <cd:NativeType>float</cd:NativeType>
+              <cd:NativeType>double</cd:NativeType>
             </cd:Float>
           </cd:Array>
         </cd:Field>
@@ -907,7 +942,7 @@
             <cd:Dimension><![CDATA[$relative_azimuth_time_rgc]]></cd:Dimension>
             <cd:Dimension><![CDATA[$slant_range_time_rgc]]></cd:Dimension>
             <cd:Float>
-              <cd:NativeType>float</cd:NativeType>
+              <cd:NativeType>double</cd:NativeType>
             </cd:Float>
           </cd:Array>
         </cd:Field>
@@ -935,7 +970,7 @@
             <cd:Dimension><![CDATA[$relative_azimuth_time_rgc]]></cd:Dimension>
             <cd:Dimension><![CDATA[$slant_range_time_rgc]]></cd:Dimension>
             <cd:Float>
-              <cd:NativeType>float</cd:NativeType>
+              <cd:NativeType>double</cd:NativeType>
             </cd:Float>
           </cd:Array>
           <cd:Optional/>
