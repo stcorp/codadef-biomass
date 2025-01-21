@@ -156,7 +156,7 @@
   <cd:ProductType name="FP_FD_L2A_Main_ADS">
     <cd:Description>L2A Forest Disturbance Main ADS</cd:Description>
     <cd:ProductDefinition id="FP_FD_L2A_Main_ADS" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Forest Disturbance Products Format Specifications - BIO-BPS-FDPFD-ARE-010258</cd:Description>
+      <cd:Description>This definition is based on version 3.1.0 of the BIOMASS Forest Disturbance Products Format Specifications - BIO-BPS-FDPFD-ARE-010258</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">fp_fd__l2a</cd:MatchFilename>
@@ -167,7 +167,7 @@
   <cd:ProductType name="FP_FH_L2A_Main_ADS">
     <cd:Description>L2A Forest Height Main ADS</cd:Description>
     <cd:ProductDefinition id="FP_FH_L2A_Main_ADS" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Forest Height Products Format Specifications - BIO-BPS-FHPFD-ARE-010256</cd:Description>
+      <cd:Description>This definition is based on version 3.1.0 of the BIOMASS Forest Height Products Format Specifications - BIO-BPS-FHPFD-ARE-010256</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">fp_fh__l2a</cd:MatchFilename>
@@ -178,7 +178,7 @@
   <cd:ProductType name="FP_GN_L2A_Main_ADS">
     <cd:Description>L2A GN Main ADS</cd:Description>
     <cd:ProductDefinition id="FP_GN_L2A_Main_ADS" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.0.1 of the BIOMASS Above Ground Biomass Products Format Specifications - BIO-BPS-AGBPFD-ARE-010257</cd:Description>
+      <cd:Description>This definition is based on version 3.1.0 of the BIOMASS Above Ground Biomass Products Format Specifications - BIO-BPS-AGBPFD-ARE-010257</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">fp_gn__l2a</cd:MatchFilename>

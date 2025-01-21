@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FH_L2A_LUT_ADS" format="hdf5" last-modified="2023-12-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FH_L2A_LUT_ADS" format="hdf5" last-modified="2025-01-21">
   <cd:Record>
     <cd:Attribute name="mission">
       <cd:Text/>
@@ -19,7 +19,7 @@
     <cd:Attribute name="productType">
       <cd:Text/>
     </cd:Attribute>
-    <cd:Attribute name="starTime">
+    <cd:Attribute name="startTime">
       <cd:Text/>
     </cd:Attribute>
     <cd:Attribute name="stopTime">
