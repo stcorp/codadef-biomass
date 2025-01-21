@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="Biomass_MPH" format="xml" last-modified="2023-03-08">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="Biomass_MPH" format="xml" last-modified="2025-01-21">
   <cd:Record>
     <cd:Field name="EarthObservation" real_name="http://earth.esa.int/biomass/1.0 EarthObservation">
       <cd:Record>
@@ -649,6 +649,14 @@
                     <cd:Text>
                     </cd:Text>
                   </cd:Array>
+                </cd:Field>
+                <cd:Field name="agbTileStatus">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="agbTileIteration">
+                  <cd:Text/>
+                  <cd:Optional/>
                 </cd:Field>
               </cd:Record>
             </cd:Field>

@@ -136,11 +136,15 @@
                 <cd:Field name="Quality">
                   <cd:Text/>
                 </cd:Field>
+                <cd:Field name="FH_heatMap">
+                  <cd:Text/>
+                  <cd:Optional/>
+                </cd:Field>
                 <cd:Field name="BPS_FNF">
                   <cd:Text/>
                   <cd:Optional/>
                 </cd:Field>
-                <cd:Field name="FH_heatMap">
+                <cd:Field name="Acquisition_id_image">
                   <cd:Text/>
                   <cd:Optional/>
                 </cd:Field>
@@ -191,14 +195,28 @@
                     <cd:Text/>
                   </cd:Field>
                   <cd:Field name="L2aProductDate">
-                    <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
-                      <cd:Text/>
-                    </cd:Time>
+                    <cd:Text/>
                   </cd:Field>
                   <cd:Field name="L1Inputs">
                     <cd:Record>
                       <cd:Field name="productType">
                         <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="overallProductsQualityIndex">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint8</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Field>
+                      <cd:Field name="nominalStack">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint8</cd:NativeType>
+                          <cd:Mapping string="FALSE" value="0"/>
+                          <cd:Mapping string="False" value="0"/>
+                          <cd:Mapping string="false" value="0"/>
+                          <cd:Mapping string="TRUE" value="1"/>
+                          <cd:Mapping string="True" value="1"/>
+                          <cd:Mapping string="true" value="1"/>
+                        </cd:Integer>
                       </cd:Field>
                       <cd:Field name="polarisationList">
                         <cd:Record>
@@ -245,10 +263,10 @@
                               <cd:NativeType>uint32</cd:NativeType>
                             </cd:Integer>
                           </cd:Attribute>
-                          <cd:Field name="acquisitionFolderName">
+                          <cd:Field name="acquisition">
                             <cd:Array>
                               <cd:Dimension/>
-                              <cd:Text>
+                              <cd:Record>
                                 <cd:Attribute name="referenceImage">
                                   <cd:Integer format="ascii">
                                     <cd:NativeType>uint8</cd:NativeType>
@@ -260,7 +278,86 @@
                                     <cd:Mapping string="true" value="1"/>
                                   </cd:Integer>
                                 </cd:Attribute>
-                              </cd:Text>
+                                <cd:Field name="FolderName">
+                                  <cd:Text />
+                                </cd:Field>
+                                <cd:Field name="staQuality">
+                                  <cd:Record>
+                                    <cd:Field name="overallProductQualityIndex">
+                                      <cd:Integer format="ascii">
+                                        <cd:NativeType>uint32</cd:NativeType>
+                                      </cd:Integer>
+                                    </cd:Field>
+                                    <cd:Field name="staQualityParametersList">
+                                      <cd:Record>
+                                        <cd:Attribute name="count">
+                                          <cd:Integer format="ascii">
+                                            <cd:NativeType>uint32</cd:NativeType>
+                                          </cd:Integer>
+                                        </cd:Attribute>
+                                        <cd:Field name="staQualityParameters">
+                                          <cd:Array>
+                                            <cd:Dimension/>
+                                            <cd:Record>
+                                              <cd:Attribute name="polarisation">
+                                                <cd:Text/>
+                                              </cd:Attribute>
+                                              <cd:Field name="invalidL1aDataSamples">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="rfiDecorrelation">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="rfiDecorrelationThreshold">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="faradayDecorrelation">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="faradayDecorrelationThreshold">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="invalidResidualShiftsFraction">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="residualShiftsQualityThreshold">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="invalidFastIonosphereEstimatesFraction">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="fastIonospherePhaseScreenQualityThreshold">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="invalidGroundPhasesScreenEstimatesFraction">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="groundPhasesScreenQualityThreshold">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                              <cd:Field name="skpDecompositionIndex">
+                                                <cd:Text/>
+                                                <cd:Optional/>
+                                              </cd:Field>
+                                            </cd:Record>
+                                          </cd:Array>
+                                        </cd:Field>
+                                      </cd:Record>
+                                    </cd:Field>
+                                  </cd:Record>
+                                </cd:Field>
+                              </cd:Record>
                             </cd:Array>
                           </cd:Field>
                         </cd:Record>
