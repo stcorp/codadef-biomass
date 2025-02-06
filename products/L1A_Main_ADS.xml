@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1A_Main_ADS" format="xml" last-modified="2025-01-21">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1A_Main_ADS" format="xml" last-modified="2025-02-06">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -1331,45 +1331,6 @@
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
                         </cd:Float>
-                      </cd:Field>
-                      <cd:Field name="fmMaskAxisLen" real_name="fmMaskAxisLen">
-                        <cd:Integer format="ascii">
-                          <cd:NativeType>uint32</cd:NativeType>
-                        </cd:Integer>
-                      </cd:Field>
-                      <cd:Field name="fmMaskAxisStep" real_name="fmMaskAxisStep">
-                        <cd:Float format="ascii">
-                          <cd:NativeType>float</cd:NativeType>
-                          <cd:Attribute name="units">
-                            <cd:FixedValue>Hz</cd:FixedValue>
-                          </cd:Attribute>
-                        </cd:Float>
-                      </cd:Field>
-                      <cd:Field name="fmMaskList">
-                        <cd:Record>
-                          <cd:Attribute name="count"/>
-                          <cd:Field name="fmMask">
-                            <cd:Array>
-                              <cd:Dimension/>
-                              <cd:Record>
-                                <cd:Field name="azimuthTime" real_name="azimuthTime">
-                                  <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
-                                    <cd:Text/>
-                                  </cd:Time>
-                                </cd:Field>
-                                <cd:Field name="rfiMask">
-                                  <cd:Array format="ascii">
-                                    <cd:Attribute name="count"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Integer format="ascii">
-                                      <cd:NativeType>int32</cd:NativeType>
-                                    </cd:Integer>
-                                  </cd:Array>
-                                </cd:Field>
-                              </cd:Record>
-                            </cd:Array>
-                          </cd:Field>
-                        </cd:Record>
                       </cd:Field>
                     </cd:Record>
                   </cd:Array>
