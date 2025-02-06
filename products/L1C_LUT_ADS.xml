@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_LUT_ADS" format="hdf5" last-modified="2024-05-02">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_LUT_ADS" format="hdf5" last-modified="2025-02-06">
   <cd:Record>
     <cd:Attribute name="mission">
       <cd:Text/>
@@ -357,6 +357,34 @@
             </cd:Float>
           </cd:Array>
         </cd:Field>
+        <cd:Field name="denoisingVV">
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
         <cd:Field name="denoisingHV">
           <cd:Array>
             <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
@@ -384,6 +412,7 @@
               <cd:NativeType>float</cd:NativeType>
             </cd:Float>
           </cd:Array>
+          <cd:Optional/>
         </cd:Field>
         <cd:Field name="denoisingVH">
           <cd:Array>
@@ -412,8 +441,9 @@
               <cd:NativeType>float</cd:NativeType>
             </cd:Float>
           </cd:Array>
+          <cd:Optional/>
         </cd:Field>
-        <cd:Field name="denoisingVV">
+        <cd:Field name="denoisingXX">
           <cd:Array>
             <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
               <cd:Array>
@@ -440,6 +470,7 @@
               <cd:NativeType>float</cd:NativeType>
             </cd:Float>
           </cd:Array>
+          <cd:Optional/>
         </cd:Field>
       </cd:Record>
     </cd:Field>
