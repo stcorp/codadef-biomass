@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="MPL_TRPINP" format="xml" last-modified="2023-12-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="MPL_TRPINP" format="xml" last-modified="2025-02-14">
   <cd:Record>
     <cd:Field name="Earth_Explorer_File">
       <cd:Record>
@@ -17,7 +17,10 @@
                   <cd:Record>
                     <cd:Attribute name="count"/>
                     <cd:Field name="Input_File">
-                      <cd:Text/>
+                      <cd:Array>
+                        <cd:Dimension/>
+                        <cd:Text/>
+                      </cd:Array>
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
