@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_Main_ADS" format="xml" last-modified="2023-12-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_Main_ADS" format="xml" last-modified="2025-03-06">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -1977,7 +1977,7 @@
                 <cd:Mapping string="true" value="1"/>
               </cd:Integer>
             </cd:Field>
-            <cd:Field name="polarizationUsedForCalibration">
+            <cd:Field name="polarisationUsedForCalibration">
               <cd:Text/>
             </cd:Field>
             <cd:Field name="calibrationPrimaryImageFlag" real_name="calibrationPrimaryImageFlag">
