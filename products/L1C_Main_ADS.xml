@@ -2183,7 +2183,7 @@
                 <cd:NativeType>double</cd:NativeType>
               </cd:Float>
             </cd:Field>
-            <cd:Field name="spectralDiversityQuality">
+            <cd:Field name="baselineSpectralDiversityQuality">
               <cd:Float format="ascii">
                 <cd:NativeType>float</cd:NativeType>
               </cd:Float>
