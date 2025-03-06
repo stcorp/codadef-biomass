@@ -772,6 +772,7 @@
               <cd:NativeType>float</cd:NativeType>
             </cd:Float>
           </cd:Array>
+          <cd:Optional/>
         </cd:Field>
         <cd:Field name="autofocusPhaseScreenStd">
           <cd:Array>
@@ -800,6 +801,7 @@
               <cd:NativeType>float</cd:NativeType>
             </cd:Float>
           </cd:Array>
+          <cd:Optional/>
         </cd:Field>
       </cd:Record>
       <cd:Optional/>
