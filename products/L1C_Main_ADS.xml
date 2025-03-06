@@ -2046,6 +2046,14 @@
                 <cd:Mapping string="true" value="1"/>
               </cd:Integer>
             </cd:Field>
+            <cd:Field name="skpEstimationWindowSize" real_name="skpEstimationWindowSize">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units">
+                  <cd:FixedValue>m</cd:FixedValue>
+                </cd:Attribute>
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
           </cd:Record>
         </cd:Field>
         <cd:Field name="staCoregistrationParameters">
@@ -2092,6 +2100,20 @@
                 </cd:Attribute>
                 <cd:NativeType>float</cd:NativeType>
               </cd:Float>
+            </cd:Field>
+            <cd:Field name="rangeSpectralFilteringFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="polarisationUsed">
+              <cd:Text/>
             </cd:Field>
           </cd:Record>
         </cd:Field>
@@ -2252,6 +2274,11 @@
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
                         </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="skpDecompositionIndex" real_name="skpDecompositionIndex">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
                       </cd:Field>
                     </cd:Record>
                   </cd:Array>
