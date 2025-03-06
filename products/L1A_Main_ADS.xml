@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1A_Main_ADS" format="xml" last-modified="2025-02-06">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1A_Main_ADS" format="xml" last-modified="2025-03-17">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -1547,7 +1547,7 @@
             </cd:Field>
             <cd:Field name="channelImbalanceList">
               <cd:Record>
-                <cd:Field name="channelImbalanceHVTx">
+                <cd:Field name="channelImbalHVTx">
                   <cd:Record>
                     <cd:Field name="re">
                       <cd:Float format="ascii">
@@ -1561,7 +1561,7 @@
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
-                <cd:Field name="channelImbalanceHVRx">
+                <cd:Field name="channelImbalHVRx">
                   <cd:Record>
                     <cd:Field name="re">
                       <cd:Float format="ascii">
