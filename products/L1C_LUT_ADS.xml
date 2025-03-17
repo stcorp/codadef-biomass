@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_LUT_ADS" format="hdf5" last-modified="2025-02-06">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_LUT_ADS" format="hdf5" last-modified="2025-03-17">
   <cd:Record>
     <cd:Attribute name="mission">
       <cd:Text/>
