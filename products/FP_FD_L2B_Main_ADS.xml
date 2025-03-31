@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FD_L2B_Main_ADS" format="xml" last-modified="2023-12-01">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FD_L2B_Main_ADS" format="xml" last-modified="2025-03-31">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -231,11 +231,7 @@
                           <cd:Field name="polarisation">
                             <cd:Array>
                               <cd:Dimension/>
-                              <cd:Text>
-                                <cd:Attribute name="rfiDecorrelation">
-                                  <cd:Text/>
-                                </cd:Attribute>
-                              </cd:Text>
+                              <cd:Text />
                             </cd:Array>
                           </cd:Field>
                         </cd:Record>

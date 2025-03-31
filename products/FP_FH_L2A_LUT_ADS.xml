@@ -1,25 +1,19 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FH_L2A_LUT_ADS" format="hdf5" last-modified="2025-01-21">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FH_L2A_LUT_ADS" format="hdf5" last-modified="2025-03-31">
   <cd:Record>
     <cd:Attribute name="mission">
       <cd:Text/>
     </cd:Attribute>
     <cd:Attribute name="tileID">
-      <cd:Array>
-        <cd:Dimension/>
-        <cd:Text/>
-      </cd:Array>
+      <cd:Text/>
     </cd:Attribute>
     <cd:Attribute name="basinID">
-      <cd:Array>
-        <cd:Dimension/>
-        <cd:Text/>
-      </cd:Array>
+      <cd:Text/>
     </cd:Attribute>
     <cd:Attribute name="productType">
       <cd:Text/>
     </cd:Attribute>
-    <cd:Attribute name="startTime">
+    <cd:Attribute name="starTime">
       <cd:Text/>
     </cd:Attribute>
     <cd:Attribute name="stopTime">
@@ -83,13 +77,7 @@
       <cd:Text/>
     </cd:Attribute>
     <cd:Attribute name="dataTakeID">
-      <cd:Array>
-        <cd:Dimension/>
-        <cd:Integer>
-          <cd:NativeType>uint32</cd:NativeType>
-          <cd:LittleEndian/>
-        </cd:Integer>
-      </cd:Array>
+      <cd:Text/>
     </cd:Attribute>
     <cd:Attribute name="frame">
       <cd:Array>
@@ -116,6 +104,9 @@
     </cd:Attribute>
     <cd:Field name="FNF">
       <cd:Record>
+        <cd:Attribute name="description">
+          <cd:Text/>
+        </cd:Attribute>
         <cd:Field name="FNF">
           <cd:Array>
             <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">

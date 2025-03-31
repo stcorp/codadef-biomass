@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FD_L2A_Main_ADS" format="xml" last-modified="2025-01-21">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FD_L2A_Main_ADS" format="xml" last-modified="2025-03-31">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -260,11 +260,7 @@
                 <cd:Field name="polarisation">
                   <cd:Array>
                     <cd:Dimension/>
-                    <cd:Text>
-                      <cd:Attribute name="rfiDecorrelation">
-                        <cd:Text/>
-                      </cd:Attribute>
-                    </cd:Text>
+                    <cd:Text />
                   </cd:Array>
                 </cd:Field>
               </cd:Record>
@@ -414,15 +410,7 @@
             <cd:Field name="generalConfigurationParameters">
               <cd:Record>
                 <cd:Field name="applyCalibrationScreen">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint8</cd:NativeType>
-                    <cd:Mapping string="FALSE" value="0"/>
-                    <cd:Mapping string="False" value="0"/>
-                    <cd:Mapping string="false" value="0"/>
-                    <cd:Mapping string="TRUE" value="1"/>
-                    <cd:Mapping string="True" value="1"/>
-                    <cd:Mapping string="true" value="1"/>
-                  </cd:Integer>
+                  <cd:Text />
                 </cd:Field>
                 <cd:Field name="forestCoverageThreshold">
                   <cd:Float format="ascii">
