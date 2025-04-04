@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP1" format="xml" last-modified="2023-12-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP1" format="xml" last-modified="2025-04-04">
   <cd:Record>
     <cd:Field name="auxiliaryL1ProcessingParameters">
       <cd:Record>
@@ -1071,23 +1071,6 @@
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="phaseGradientThresholdCharParameters">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="phaseGradientClutterFilteringParameters">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="phaseGradientLMSSpatialHandling">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="phaseGradientLMSConsistencyThresholding">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="phaseGradientAzimuthSubBands">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
-                    </cd:Field>
                   </cd:Record>
                 </cd:Field>
                 <cd:Field name="multilook">
@@ -1316,9 +1299,6 @@
                     <cd:Field name="pixelRepresentation">
                       <cd:Text/>
                     </cd:Field>
-                    <cd:Field name="pixelType">
-                      <cd:Text/>
-                    </cd:Field>
                     <cd:Field name="pixelQuantity">
                       <cd:Text/>
                     </cd:Field>
@@ -1358,15 +1338,41 @@
                         <cd:NativeType>uint32</cd:NativeType>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="lutRangeDecimationFactor">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
+                    <cd:Field name="lutRangeDecimationFactorList">
+                      <cd:Record>
+                        <cd:Attribute name="count">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint32</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Attribute>
+                        <cd:Field name="lutDecimationFactor">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Integer format="ascii">
+                              <cd:Attribute name="group"/>
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Array>
+                        </cd:Field>
+                      </cd:Record>
                     </cd:Field>
-                    <cd:Field name="lutAzimuthDecimationFactor">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
+                    <cd:Field name="lutAzimuthDecimationFactorList">
+                      <cd:Record>
+                        <cd:Attribute name="count">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint32</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Attribute>
+                        <cd:Field name="lutDecimationFactor">
+                          <cd:Array>
+                            <cd:Dimension/>
+                            <cd:Integer format="ascii">
+                              <cd:Attribute name="group"/>
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Array>
+                        </cd:Field>
+                      </cd:Record>
                     </cd:Field>
                     <cd:Field name="lutBlockSize">
                       <cd:Integer format="ascii">

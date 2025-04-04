@@ -1,8 +1,11 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PPS" format="xml" last-modified="2023-12-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PPS" format="xml" last-modified="2025-04-04">
   <cd:Record>
     <cd:Field name="auxiliarySTAProcessingParameters">
       <cd:Record>
+        <cd:Attribute name="noNamespaceSchemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance noNamespaceSchemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
         <cd:Field name="staProductList">
           <cd:Record>
             <cd:Attribute name="count">
@@ -17,26 +20,7 @@
                 </cd:Field>
                 <cd:Field name="general">
                   <cd:Record>
-                    <cd:Field name="polarisationsUsed">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
-                    </cd:Field>
                     <cd:Field name="polarisationCombinationMethod">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="heightModel">
-                      <cd:Text>
-                        <cd:Attribute name="version"/>
-                      </cd:Text>
-                    </cd:Field>
-                    <cd:Field name="backgeocodingPosting">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="brkFilesFormat">
                       <cd:Text/>
                     </cd:Field>
                     <cd:Field name="outerParallelizationMaxCores">
@@ -45,6 +29,17 @@
                       </cd:Integer>
                     </cd:Field>
                     <cd:Field name="allowDuplicateImagesFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="flatteningPhaseBiasCompensationFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
                         <cd:Mapping string="FALSE" value="0"/>
@@ -79,12 +74,23 @@
                     <cd:Field name="coregistrationMethod">
                       <cd:Text/>
                     </cd:Field>
+                    <cd:Field name="rangeSpectralFilteringFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
                     <cd:Field name="residualShiftsQualityThreshold">
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="polarizationUsed">
+                    <cd:Field name="polarisationUsed">
                       <cd:Text/>
                     </cd:Field>
                     <cd:Field name="blockQualityThreshold">
@@ -101,6 +107,30 @@
                       <cd:Integer format="ascii">
                         <cd:NativeType>int16</cd:NativeType>
                       </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="azimuthMaxShift">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="rangeMaxShift">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="exportDebugProductsFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="coregistrationExecutionPolicy">
+                      <cd:Text/>
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
@@ -132,6 +162,25 @@
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
                     </cd:Field>
+                    <cd:Field name="usePrimaryWeightingWindowFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="spectralWeightingWindow">
+                      <cd:Text/>
+                    </cd:Field>
+                    <cd:Field name="spectralWeightingWindowParameter">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
                   </cd:Record>
                 </cd:Field>
                 <cd:Field name="calibration">
@@ -158,7 +207,7 @@
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="polarizationUsed">
+                    <cd:Field name="polarisationUsed">
                       <cd:Text/>
                     </cd:Field>
                   </cd:Record>
@@ -166,6 +215,17 @@
                 <cd:Field name="slowIonosphereRemoval">
                   <cd:Record>
                     <cd:Field name="slowIonosphereRemovalFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="applyL1IonoPhaseScreenFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
                         <cd:Mapping string="FALSE" value="0"/>
@@ -234,6 +294,11 @@
                         <cd:Mapping string="True" value="1"/>
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="slowIonosphereQualityThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
@@ -316,6 +381,11 @@
                         <cd:Mapping string="True" value="1"/>
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="baselineErrorQualityThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
@@ -404,6 +474,16 @@
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
                     </cd:Field>
+                    <cd:Field name="maxRangeBlockEstimationFailures">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="overallProductQualityThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
                   </cd:Record>
                 </cd:Field>
                 <cd:Field name="skpPhaseCalibration">
@@ -441,6 +521,11 @@
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
+                    <cd:Field name="overallProductQualityThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
                   </cd:Record>
                 </cd:Field>
                 <cd:Field name="l1cProductExport">
@@ -449,9 +534,6 @@
                       <cd:Text/>
                     </cd:Field>
                     <cd:Field name="pixelRepresentation">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="pixelType">
                       <cd:Text/>
                     </cd:Field>
                     <cd:Field name="pixelQuantity">
@@ -487,16 +569,6 @@
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="lutRangeDecimationFactor">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="lutAzimuthDecimationFactor">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
                     </cd:Field>
                     <cd:Field name="qlRangeDecimationFactor">
                       <cd:Integer format="ascii">

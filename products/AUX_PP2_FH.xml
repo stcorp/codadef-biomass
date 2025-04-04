@@ -50,7 +50,7 @@
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
-                <cd:Field name="FHquality">
+                <cd:Field name="Quality">
                   <cd:Record>
                     <cd:Field name="compressionFactor">
                       <cd:Integer format="ascii">

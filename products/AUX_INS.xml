@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_INS" format="xml" last-modified="2023-12-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_INS" format="xml" last-modified="2025-04-03">
   <cd:Record>
     <cd:Field name="auxiliaryInstrumentParameters">
       <cd:Record>
@@ -21,7 +21,9 @@
         <cd:Field name="acquisitionModeList">
           <cd:Record>
             <cd:Attribute name="count">
-              <cd:Text/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint32</cd:NativeType>
+              </cd:Integer>
             </cd:Attribute>
             <cd:Field name="acquisitionMode">
               <cd:Array>
@@ -38,35 +40,12 @@
                   <cd:Field name="swath">
                     <cd:Text/>
                   </cd:Field>
-                  <cd:Field name="swathParameters">
-                    <cd:Record>
-                      <cd:Field name="txPulseParameters">
-                        <cd:Record>
-                          <cd:Field name="txPulseAmplitude">
-                            <cd:Float format="ascii">
-                              <cd:NativeType>float</cd:NativeType>
-                            </cd:Float>
-                          </cd:Field>
-                          <cd:Field name="txPulseBandwidth">
-                            <cd:Float format="ascii">
-                              <cd:Attribute name="units"/>
-                              <cd:NativeType>float</cd:NativeType>
-                            </cd:Float>
-                          </cd:Field>
-                          <cd:Field name="txPulseLength">
-                            <cd:Float format="ascii">
-                              <cd:Attribute name="units"/>
-                              <cd:NativeType>float</cd:NativeType>
-                            </cd:Float>
-                          </cd:Field>
-                        </cd:Record>
-                      </cd:Field>
-                    </cd:Record>
-                  </cd:Field>
                   <cd:Field name="intCalParametersList">
                     <cd:Record>
                       <cd:Attribute name="count">
-                        <cd:Text/>
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
                       </cd:Attribute>
                       <cd:Field name="intCalParameters">
                         <cd:Array>
@@ -85,7 +64,11 @@
                                 </cd:Field>
                                 <cd:Field name="modelValues">
                                   <cd:Text>
-                                    <cd:Attribute name="count"/>
+                                    <cd:Attribute name="count">
+                                      <cd:Integer format="ascii">
+                                        <cd:NativeType>uint32</cd:NativeType>
+                                      </cd:Integer>
+                                    </cd:Attribute>
                                   </cd:Text>
                                 </cd:Field>
                               </cd:Record>
@@ -166,94 +149,128 @@
                   <cd:Field name="timelineParametersOddRank">
                     <cd:Record>
                       <cd:Attribute name="count">
-                        <cd:Text/>
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
                       </cd:Attribute>
                       <cd:Field name="section">
-                        <cd:Record>
-                          <cd:Field name="name">
-                            <cd:Text/>
-                          </cd:Field>
-                          <cd:Field name="repeatFlag">
-                            <cd:Integer format="ascii">
-                              <cd:NativeType>uint8</cd:NativeType>
-                              <cd:Mapping string="FALSE" value="0"/>
-                              <cd:Mapping string="False" value="0"/>
-                              <cd:Mapping string="false" value="0"/>
-                              <cd:Mapping string="TRUE" value="1"/>
-                              <cd:Mapping string="True" value="1"/>
-                              <cd:Mapping string="true" value="1"/>
-                            </cd:Integer>
-                          </cd:Field>
-                          <cd:Field name="ispList">
-                            <cd:Record>
-                              <cd:Attribute name="count">
-                                <cd:Text/>
-                              </cd:Attribute>
-                              <cd:Field name="isp">
-                                <cd:Array>
-                                  <cd:Dimension/>
-                                  <cd:Record>
-                                    <cd:Field name="signalType">
-                                      <cd:Text/>
-                                    </cd:Field>
-                                    <cd:Field name="priNumber">
-                                      <cd:Integer format="ascii">
-                                        <cd:NativeType>int32</cd:NativeType>
-                                      </cd:Integer>
-                                    </cd:Field>
-                                  </cd:Record>
-                                </cd:Array>
-                              </cd:Field>
-                            </cd:Record>
-                          </cd:Field>
-                        </cd:Record>
+                        <cd:Array>
+                          <cd:Dimension/>
+                          <cd:Record>
+                            <cd:Field name="name">
+                              <cd:Text/>
+                            </cd:Field>
+                            <cd:Field name="repeatFlag">
+                              <cd:Integer format="ascii">
+                                <cd:NativeType>uint8</cd:NativeType>
+                                <cd:Mapping string="FALSE" value="0"/>
+                                <cd:Mapping string="False" value="0"/>
+                                <cd:Mapping string="false" value="0"/>
+                                <cd:Mapping string="TRUE" value="1"/>
+                                <cd:Mapping string="True" value="1"/>
+                                <cd:Mapping string="true" value="1"/>
+                              </cd:Integer>
+                            </cd:Field>
+                            <cd:Field name="ispList">
+                              <cd:Record>
+                                <cd:Attribute name="count">
+                                  <cd:Integer format="ascii">
+                                    <cd:NativeType>uint32</cd:NativeType>
+                                  </cd:Integer>
+                                </cd:Attribute>
+                                <cd:Field name="isp">
+                                  <cd:Array>
+                                    <cd:Dimension/>
+                                    <cd:Record>
+                                      <cd:Field name="signalType">
+                                        <cd:Text/>
+                                      </cd:Field>
+                                      <cd:Field name="priNumber">
+                                        <cd:Integer format="ascii">
+                                          <cd:NativeType>int32</cd:NativeType>
+                                        </cd:Integer>
+                                      </cd:Field>
+                                      <cd:Field name="repetitionNumber">
+                                        <cd:Integer format="ascii">
+                                          <cd:NativeType>int32</cd:NativeType>
+                                        </cd:Integer>
+                                      </cd:Field>
+                                      <cd:Field name="returnAddressOffset">
+                                        <cd:Integer format="ascii">
+                                          <cd:NativeType>int32</cd:NativeType>
+                                        </cd:Integer>
+                                      </cd:Field>
+                                    </cd:Record>
+                                  </cd:Array>
+                                </cd:Field>
+                              </cd:Record>
+                            </cd:Field>
+                          </cd:Record>
+                        </cd:Array>
                       </cd:Field>
                     </cd:Record>
                   </cd:Field>
                   <cd:Field name="timelineParametersEvenRank">
                     <cd:Record>
                       <cd:Attribute name="count">
-                        <cd:Text/>
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
                       </cd:Attribute>
                       <cd:Field name="section">
-                        <cd:Record>
-                          <cd:Field name="name">
-                            <cd:Text/>
-                          </cd:Field>
-                          <cd:Field name="repeatFlag">
-                            <cd:Integer format="ascii">
-                              <cd:NativeType>uint8</cd:NativeType>
-                              <cd:Mapping string="FALSE" value="0"/>
-                              <cd:Mapping string="False" value="0"/>
-                              <cd:Mapping string="false" value="0"/>
-                              <cd:Mapping string="TRUE" value="1"/>
-                              <cd:Mapping string="True" value="1"/>
-                              <cd:Mapping string="true" value="1"/>
-                            </cd:Integer>
-                          </cd:Field>
-                          <cd:Field name="ispList">
-                            <cd:Record>
-                              <cd:Attribute name="count">
-                                <cd:Text/>
-                              </cd:Attribute>
-                              <cd:Field name="isp">
-                                <cd:Array>
-                                  <cd:Dimension/>
-                                  <cd:Record>
-                                    <cd:Field name="signalType">
-                                      <cd:Text/>
-                                    </cd:Field>
-                                    <cd:Field name="priNumber">
-                                      <cd:Integer format="ascii">
-                                        <cd:NativeType>int32</cd:NativeType>
-                                      </cd:Integer>
-                                    </cd:Field>
-                                  </cd:Record>
-                                </cd:Array>
-                              </cd:Field>
-                            </cd:Record>
-                          </cd:Field>
-                        </cd:Record>
+                        <cd:Array>
+                          <cd:Dimension/>
+                          <cd:Record>
+                            <cd:Field name="name">
+                              <cd:Text/>
+                            </cd:Field>
+                            <cd:Field name="repeatFlag">
+                              <cd:Integer format="ascii">
+                                <cd:NativeType>uint8</cd:NativeType>
+                                <cd:Mapping string="FALSE" value="0"/>
+                                <cd:Mapping string="False" value="0"/>
+                                <cd:Mapping string="false" value="0"/>
+                                <cd:Mapping string="TRUE" value="1"/>
+                                <cd:Mapping string="True" value="1"/>
+                                <cd:Mapping string="true" value="1"/>
+                              </cd:Integer>
+                            </cd:Field>
+                            <cd:Field name="ispList">
+                              <cd:Record>
+                                <cd:Attribute name="count">
+                                  <cd:Integer format="ascii">
+                                    <cd:NativeType>uint32</cd:NativeType>
+                                  </cd:Integer>
+                                </cd:Attribute>
+                                <cd:Field name="isp">
+                                  <cd:Array>
+                                    <cd:Dimension/>
+                                    <cd:Record>
+                                      <cd:Field name="signalType">
+                                        <cd:Text/>
+                                      </cd:Field>
+                                      <cd:Field name="priNumber">
+                                        <cd:Integer format="ascii">
+                                          <cd:NativeType>int32</cd:NativeType>
+                                        </cd:Integer>
+                                      </cd:Field>
+                                      <cd:Field name="repetitionNumber">
+                                        <cd:Integer format="ascii">
+                                          <cd:NativeType>int32</cd:NativeType>
+                                        </cd:Integer>
+                                      </cd:Field>
+                                      <cd:Field name="returnAddressOffset">
+                                        <cd:Integer format="ascii">
+                                          <cd:NativeType>int32</cd:NativeType>
+                                        </cd:Integer>
+                                      </cd:Field>
+                                    </cd:Record>
+                                  </cd:Array>
+                                </cd:Field>
+                              </cd:Record>
+                            </cd:Field>
+                          </cd:Record>
+                        </cd:Array>
                       </cd:Field>
                     </cd:Record>
                   </cd:Field>
@@ -264,37 +281,61 @@
         </cd:Field>
         <cd:Field name="rawDataDecodingParameters">
           <cd:Record>
-            <cd:Field name="unBAQLUT">
+            <cd:Field name="unBAQLUTList">
               <cd:Record>
-                <cd:Field name="baqCode">
-                  <cd:Text/>
-                </cd:Field>
-                <cd:Field name="magnitudeCode">
-                  <cd:Text>
-                    <cd:Attribute name="count"/>
-                  </cd:Text>
-                </cd:Field>
-                <cd:Field name="normalizedIQ">
-                  <cd:Text>
-                    <cd:Attribute name="count"/>
-                  </cd:Text>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="unBAQLUT">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Field name="baqCode">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="magnitudeCode">
+                        <cd:Text>
+                          <cd:Attribute name="count"/>
+                        </cd:Text>
+                      </cd:Field>
+                      <cd:Field name="normalizedIQ">
+                        <cd:Text>
+                          <cd:Attribute name="count"/>
+                        </cd:Text>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
                 </cd:Field>
               </cd:Record>
             </cd:Field>
-            <cd:Field name="unBAQSmallASMLUT">
+            <cd:Field name="unBAQSmallASMLUTList">
               <cd:Record>
-                <cd:Field name="baqCode">
-                  <cd:Text/>
-                </cd:Field>
-                <cd:Field name="asmValue">
-                  <cd:Text>
-                    <cd:Attribute name="count"/>
-                  </cd:Text>
-                </cd:Field>
-                <cd:Field name="uncompressedIQ">
-                  <cd:Text>
-                    <cd:Attribute name="count"/>
-                  </cd:Text>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="unBAQSmallASMLUT">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Field name="baqCode">
+                        <cd:Text/>
+                      </cd:Field>
+                      <cd:Field name="asmValue">
+                        <cd:Text>
+                          <cd:Attribute name="count"/>
+                        </cd:Text>
+                      </cd:Field>
+                      <cd:Field name="uncompressedIQ">
+                        <cd:Text>
+                          <cd:Attribute name="count"/>
+                        </cd:Text>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
                 </cd:Field>
               </cd:Record>
             </cd:Field>

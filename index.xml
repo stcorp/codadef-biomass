@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2025-01-21">
+<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2025-04-04">
   <cd:Description>BIOMASS products</cd:Description>
 
   <!-- Generic Product Header -->
@@ -344,9 +344,9 @@
     </cd:ProductDefinition>
   </cd:ProductType>
   <cd:ProductType name="AUX_PP2_2A">
-    <cd:Description>Auxiliary L2A Processing Parameters</cd:Description>
+    <cd:Description>Auxiliary L2a Processing Parameters</cd:Description>
     <cd:ProductDefinition id="AUX_PP2_2A" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.2.6 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pp2_2a</cd:MatchFilename>
@@ -357,7 +357,7 @@
   <cd:ProductType name="AUX_PP2_FD">
     <cd:Description>Auxiliary L2b Processing Parameters for Forest Disturbance</cd:Description>
     <cd:ProductDefinition id="AUX_PP2_FD" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.2.6 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pp2_fd</cd:MatchFilename>
@@ -368,11 +368,22 @@
   <cd:ProductType name="AUX_PP2_FH">
     <cd:Description>Auxiliary L2b Processing Parameters for Forest Height</cd:Description>
     <cd:ProductDefinition id="AUX_PP2_FH" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.2.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.2.6 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pp2_fh</cd:MatchFilename>
         <cd:MatchFilename offset="46">_pp2_fh.xml</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
+  <cd:ProductType name="AUX_PP2_AB">
+    <cd:Description>Auxiliary L2b AB Processing Parameters</cd:Description>
+    <cd:ProductDefinition id="AUX_PP2_AB" format="xml" version="0">
+      <cd:Description>This definition is based on version 3.2.6 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_pp2_ab</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_pp2_ab.xml</cd:MatchFilename>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
