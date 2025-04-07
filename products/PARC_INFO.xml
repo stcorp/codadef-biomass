@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="PARC_INFO" format="xml" last-modified="2025-04-07">
+  <cd:Record>
+    <cd:Field name="auxiliaryCalSiteInformation">
+      <cd:Record>
+        <cd:Attribute name="noNamespaceSchemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance noNamespaceSchemaLocation">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Field name="parcList">
+          <cd:Record>
+            <cd:Attribute name="count"/>
+            <cd:Field name="parc">
+              <cd:Record>
+                <cd:Field name="parcID">
+                  <cd:Text/>
+                </cd:Field>
+                <cd:Field name="validityStart">
+                  <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;)">
+                    <cd:Text/>
+                  </cd:Time>
+                </cd:Field>
+                <cd:Field name="validityStop">
+                  <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSS'Z'&quot;)">
+                    <cd:Text/>
+                  </cd:Time>
+                </cd:Field>
+                <cd:Field name="positionX">
+                  <cd:Float format="ascii">
+                    <cd:NativeType>double</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="positionY">
+                  <cd:Float format="ascii">
+                    <cd:NativeType>double</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="positionZ">
+                  <cd:Float format="ascii">
+                    <cd:NativeType>double</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="delayList">
+                  <cd:Record>
+                    <cd:Field name="delayGt1">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="delayGt2">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="delayX">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="delayY">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+                <cd:Field name="rcsList">
+                  <cd:Record>
+                    <cd:Field name="rcsGt1">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="rcsGt2">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="rcsX">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="rcsY">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>double</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                  <cd:Optional/>
+                </cd:Field>
+              </cd:Record>
+              <cd:Optional/>
+            </cd:Field>
+          </cd:Record>
+          <cd:Optional/>
+        </cd:Field>
+      </cd:Record>
+      <cd:Optional/>
+    </cd:Field>
+  </cd:Record>
+</cd:ProductDefinition>
