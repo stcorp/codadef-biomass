@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="CFG_TRPCCF" format="xml" last-modified="2024-06-18">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="CFG_TRPCCF" format="xml" last-modified="2025-07-12">
   <cd:Record>
     <cd:Field name="Earth_Observation_File" real_name="http://c-core.ca/BCT Earth_Observation_File">
       <cd:Record>
@@ -125,13 +125,7 @@
                   </cd:Float>
                 </cd:Field>
                 <cd:Field name="Receive_Parameters" real_name="http://c-core.ca/BCT Receive_Parameters">
-                  <cd:Record>
-                    <cd:Field name="Dss_Rx_Board" real_name="http://c-core.ca/BCT Dss_Rx_Board">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                      </cd:Integer>
-                    </cd:Field>
-                  </cd:Record>
+                  <cd:Record/>
                   <cd:Optional/>
                 </cd:Field>
                 <cd:Field name="Transmit_Parameters" real_name="http://c-core.ca/BCT Transmit_Parameters">
