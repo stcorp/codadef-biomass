@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2025-04-07">
+<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2025-05-28">
   <cd:Description>BIOMASS products</cd:Description>
 
   <!-- Generic Product Header -->
@@ -328,7 +328,7 @@
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_att</cd:MatchFilename>
-        <cd:MatchFilename offset="46">_att.xml</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_attitude.xml</cd:MatchFilename>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
@@ -339,7 +339,7 @@
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_orb</cd:MatchFilename>
-        <cd:MatchFilename offset="46">_orb.xml</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_orbit.xml</cd:MatchFilename>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
