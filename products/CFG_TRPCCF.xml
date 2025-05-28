@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="CFG_TRPCCF" format="xml" last-modified="2025-07-12">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="CFG_TRPCCF" format="xml" last-modified="2025-05-12">
   <cd:Record>
     <cd:Field name="Earth_Observation_File" real_name="http://c-core.ca/BCT Earth_Observation_File">
       <cd:Record>
