@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_Main_ADS" format="xml" last-modified="2025-03-17">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_Main_ADS" format="xml" last-modified="2025-06-06">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -335,7 +335,9 @@
                       <cd:Field name="value" real_name="value">
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
-                          <cd:Attribute name="units"/>
+                          <cd:Attribute name="units">
+                            <cd:FixedValue>s</cd:FixedValue>
+                          </cd:Attribute>
                         </cd:Float>
                       </cd:Field>
                     </cd:Record>
@@ -358,7 +360,9 @@
                       <cd:Field name="value" real_name="value">
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
-                          <cd:Attribute name="units"/>
+                          <cd:Attribute name="units">
+                            <cd:FixedValue>s</cd:FixedValue>
+                          </cd:Attribute>
                         </cd:Float>
                       </cd:Field>
                     </cd:Record>
@@ -381,7 +385,9 @@
                       <cd:Field name="value" real_name="value">
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
-                          <cd:Attribute name="units"/>
+                          <cd:Attribute name="units">
+                            <cd:FixedValue>Hz</cd:FixedValue>
+                          </cd:Attribute>
                         </cd:Float>
                       </cd:Field>
                     </cd:Record>
@@ -426,7 +432,7 @@
                         <cd:Float format="ascii">
                           <cd:NativeType>double</cd:NativeType>
                           <cd:Attribute name="units">
-                            <cd:FixedValue>deg</cd:FixedValue>
+                            <cd:FixedValue>rad</cd:FixedValue>
                           </cd:Attribute>
                         </cd:Float>
                       </cd:Field>
@@ -455,40 +461,6 @@
                   <cd:FixedValue>Hz</cd:FixedValue>
                 </cd:Attribute>
               </cd:Float>
-            </cd:Field>
-            <cd:Field name="aocsMode">
-              <cd:Text/>
-            </cd:Field>
-            <cd:Field name="aocsSubMode">
-              <cd:Text/>
-            </cd:Field>
-            <cd:Field name="rxGain" real_name="rxGain">
-              <cd:Float format="ascii">
-                <cd:NativeType>double</cd:NativeType>
-              </cd:Float>
-            </cd:Field>
-            <cd:Field name="temperatureList">
-              <cd:Record>
-                <cd:Attribute name="count"/>
-                <cd:Field name="temperature">
-                  <cd:Array>
-                    <cd:Dimension/>
-                    <cd:Record>
-                      <cd:Field name="azimuthTime" real_name="azimuthTime">
-                        <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
-                          <cd:Text/>
-                        </cd:Time>
-                      </cd:Field>
-                      <cd:Field name="value">
-                        <cd:Float format="ascii">
-                          <cd:NativeType>float</cd:NativeType>
-                          <cd:Attribute name="units"/>
-                        </cd:Float>
-                      </cd:Field>
-                    </cd:Record>
-                  </cd:Array>
-                </cd:Field>
-              </cd:Record>
             </cd:Field>
             <cd:Field name="preambleFlag" real_name="preambleFlag">
               <cd:Integer format="ascii">
@@ -880,19 +852,25 @@
                 <cd:Field name="totalBandwidth" real_name="totalBandwidth">
                   <cd:Float format="ascii">
                     <cd:NativeType>double</cd:NativeType>
-                    <cd:Attribute name="units"/>
+                    <cd:Attribute name="units">
+                      <cd:FixedValue>Hz</cd:FixedValue>
+                    </cd:Attribute>
                   </cd:Float>
                 </cd:Field>
                 <cd:Field name="processingBandwidth" real_name="processingBandwidth">
                   <cd:Float format="ascii">
                     <cd:NativeType>double</cd:NativeType>
-                    <cd:Attribute name="units"/>
+                    <cd:Attribute name="units">
+                      <cd:FixedValue>Hz</cd:FixedValue>
+                    </cd:Attribute>
                   </cd:Float>
                 </cd:Field>
                 <cd:Field name="lookBandwidth" real_name="lookBandwidth">
                   <cd:Float format="ascii">
                     <cd:NativeType>double</cd:NativeType>
-                    <cd:Attribute name="units"/>
+                    <cd:Attribute name="units">
+                      <cd:FixedValue>Hz</cd:FixedValue>
+                    </cd:Attribute>
                   </cd:Float>
                 </cd:Field>
                 <cd:Field name="numberOfLooks" real_name="numberOfLooks">
@@ -903,7 +881,9 @@
                 <cd:Field name="lookOverlap" real_name="lookOverlap">
                   <cd:Float format="ascii">
                     <cd:NativeType>double</cd:NativeType>
-                    <cd:Attribute name="units"/>
+                    <cd:Attribute name="units">
+                      <cd:FixedValue>Hz</cd:FixedValue>
+                    </cd:Attribute>
                   </cd:Float>
                 </cd:Field>
               </cd:Record>
@@ -1113,6 +1093,9 @@
                             <cd:Field name="driftPhase" real_name="driftPhase">
                               <cd:Float format="ascii">
                                 <cd:NativeType>float</cd:NativeType>
+                                <cd:Attribute name="units">
+                                  <cd:FixedValue>rad</cd:FixedValue>
+                                </cd:Attribute>
                               </cd:Float>
                             </cd:Field>
                             <cd:Field name="modelDriftAmplitude" real_name="modelDriftAmplitude">
@@ -1123,6 +1106,9 @@
                             <cd:Field name="modelDriftPhase" real_name="modelDriftPhase">
                               <cd:Float format="ascii">
                                 <cd:NativeType>float</cd:NativeType>
+                                <cd:Attribute name="units">
+                                  <cd:FixedValue>rad</cd:FixedValue>
+                                </cd:Attribute>
                               </cd:Float>
                             </cd:Field>
                             <cd:Field name="relativeDriftValidFlag" real_name="relativeDriftValidFlag">
@@ -1198,24 +1184,82 @@
                                 </cd:Attribute>
                               </cd:Float>
                             </cd:Field>
-                            <cd:Field name="internalChannelImbalanceAmplitude" real_name="internalChannelImbalanceAmplitude">
+                            <cd:Field name="internalTxChannelImbalanceAmplitude" real_name="internalTxChannelImbalanceAmplitude">
                               <cd:Float format="ascii">
                                 <cd:NativeType>float</cd:NativeType>
                               </cd:Float>
                             </cd:Field>
-                            <cd:Field name="internalChannelImbalancePhase" real_name="internalChannelImbalancePhase">
+                            <cd:Field name="internalTxChannelImbalancePhase" real_name="internalTxChannelImbalancePhase">
+                              <cd:Float format="ascii">
+                                <cd:NativeType>float</cd:NativeType>
+                                <cd:Attribute name="units">
+                                  <cd:FixedValue>rad</cd:FixedValue>
+                                </cd:Attribute>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="internalRxChannelImbalanceAmplitude" real_name="internalRxChannelImbalanceAmplitude">
                               <cd:Float format="ascii">
                                 <cd:NativeType>float</cd:NativeType>
                               </cd:Float>
                             </cd:Field>
-                            <cd:Field name="transmitPowerTrackingAmplitude" real_name="transmitPowerTrackingAmplitude">
+                            <cd:Field name="internalRxChannelImbalancePhase" real_name="internalRxChannelImbalancePhase">
+                              <cd:Float format="ascii">
+                                <cd:NativeType>float</cd:NativeType>
+                                <cd:Attribute name="units">
+                                  <cd:FixedValue>rad</cd:FixedValue>
+                                </cd:Attribute>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="transmitPowerTrackingD1Amplitude" real_name="transmitPowerTrackingD1Amplitude">
                               <cd:Float format="ascii">
                                 <cd:NativeType>float</cd:NativeType>
                               </cd:Float>
                             </cd:Field>
-                            <cd:Field name="transmitPowerTrackingPhase" real_name="transmitPowerTrackingPhase">
+                            <cd:Field name="transmitPowerTrackingD1Phase" real_name="transmitPowerTrackingD1Phase">
                               <cd:Float format="ascii">
                                 <cd:NativeType>float</cd:NativeType>
+                                <cd:Attribute name="units">
+                                  <cd:FixedValue>rad</cd:FixedValue>
+                                </cd:Attribute>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="receivePowerTrackingD1Amplitude" real_name="receivePowerTrackingD1Amplitude">
+                              <cd:Float format="ascii">
+                                <cd:NativeType>float</cd:NativeType>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="receivePowerTrackingD1Phase" real_name="receivePowerTrackingD1Phase">
+                              <cd:Float format="ascii">
+                                <cd:NativeType>float</cd:NativeType>
+                                <cd:Attribute name="units">
+                                  <cd:FixedValue>rad</cd:FixedValue>
+                                </cd:Attribute>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="transmitPowerTrackingD2Amplitude" real_name="transmitPowerTrackingD2Amplitude">
+                              <cd:Float format="ascii">
+                                <cd:NativeType>float</cd:NativeType>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="transmitPowerTrackingD2Phase" real_name="transmitPowerTrackingD2Phase">
+                              <cd:Float format="ascii">
+                                <cd:NativeType>float</cd:NativeType>
+                                <cd:Attribute name="units">
+                                  <cd:FixedValue>rad</cd:FixedValue>
+                                </cd:Attribute>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="receivePowerTrackingD2Amplitude" real_name="receivePowerTrackingD2Amplitude">
+                              <cd:Float format="ascii">
+                                <cd:NativeType>float</cd:NativeType>
+                              </cd:Float>
+                            </cd:Field>
+                            <cd:Field name="receivePowerTrackingD2Phase" real_name="receivePowerTrackingD2Phase">
+                              <cd:Float format="ascii">
+                                <cd:NativeType>float</cd:NativeType>
+                                <cd:Attribute name="units">
+                                  <cd:FixedValue>rad</cd:FixedValue>
+                                </cd:Attribute>
                               </cd:Float>
                             </cd:Field>
                           </cd:Record>
@@ -1675,93 +1719,13 @@
                 <cd:Mapping string="true" value="1"/>
               </cd:Integer>
             </cd:Field>
-            <cd:Field name="rollAngleList">
-              <cd:Record>
-                <cd:Attribute name="count"/>
-                <cd:Field name="rollAngle">
-                  <cd:Record>
-                    <cd:Field name="azimuthTime" real_name="azimuthTime">
-                      <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
-                        <cd:Text/>
-                      </cd:Time>
-                    </cd:Field>
-                    <cd:Field name="value" real_name="value">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                        <cd:Attribute name="units"/>
-                      </cd:Float>
-                    </cd:Field>
-                  </cd:Record>
-                </cd:Field>
-              </cd:Record>
-            </cd:Field>
-            <cd:Field name="incidenceAngleList">
-              <cd:Record>
-                <cd:Attribute name="count"/>
-                <cd:Field name="incidenceAngle">
-                  <cd:Array>
-                    <cd:Dimension/>
-                    <cd:Record>
-                      <cd:Field name="azimuthTime" real_name="azimuthTime">
-                        <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
-                          <cd:Text/>
-                        </cd:Time>
-                      </cd:Field>
-                      <cd:Field name="t0" real_name="t0">
-                        <cd:Float format="ascii">
-                          <cd:NativeType>double</cd:NativeType>
-                          <cd:Attribute name="units">
-                            <cd:FixedValue>s</cd:FixedValue>
-                          </cd:Attribute>
-                        </cd:Float>
-                      </cd:Field>
-                      <cd:Field name="polynomial" real_name="polynomial">
-                        <cd:Array format="ascii">
-                          <cd:Attribute name="count"/>
-                          <cd:Dimension>int(str(@count))</cd:Dimension>
-                          <cd:Float>
-                            <cd:NativeType>double</cd:NativeType>
-                          </cd:Float>
-                        </cd:Array>
-                      </cd:Field>
-                    </cd:Record>
-                  </cd:Array>
-                </cd:Field>
-              </cd:Record>
-            </cd:Field>
-            <cd:Field name="elevationAngleList">
-              <cd:Record>
-                <cd:Attribute name="count"/>
-                <cd:Field name="elevationAngle">
-                  <cd:Array>
-                    <cd:Dimension/>
-                    <cd:Record>
-                      <cd:Field name="azimuthTime" real_name="azimuthTime">
-                        <cd:Time timeformat="time(str(.),&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;)">
-                          <cd:Text/>
-                        </cd:Time>
-                      </cd:Field>
-                      <cd:Field name="t0" real_name="t0">
-                        <cd:Float format="ascii">
-                          <cd:NativeType>double</cd:NativeType>
-                          <cd:Attribute name="units">
-                            <cd:FixedValue>s</cd:FixedValue>
-                          </cd:Attribute>
-                        </cd:Float>
-                      </cd:Field>
-                      <cd:Field name="polynomial" real_name="polynomial">
-                        <cd:Array format="ascii">
-                          <cd:Attribute name="count"/>
-                          <cd:Dimension>int(str(@count))</cd:Dimension>
-                          <cd:Float>
-                            <cd:NativeType>double</cd:NativeType>
-                          </cd:Float>
-                        </cd:Array>
-                      </cd:Field>
-                    </cd:Record>
-                  </cd:Array>
-                </cd:Field>
-              </cd:Record>
+            <cd:Field name="rollBias">
+              <cd:Float format="ascii">
+                <cd:NativeType>float</cd:NativeType>
+                <cd:Attribute name="units">
+                  <cd:FixedValue>deg</cd:FixedValue>
+                </cd:Attribute>
+              </cd:Float>
             </cd:Field>
           </cd:Record>
         </cd:Field>
@@ -1791,16 +1755,6 @@
                         </cd:Integer>
                       </cd:Field>
                       <cd:Field name="maxISPGapThreshold" real_name="maxISPGapThreshold">
-                        <cd:Integer format="ascii">
-                          <cd:NativeType>uint32</cd:NativeType>
-                        </cd:Integer>
-                      </cd:Field>
-                      <cd:Field name="maxTimeGap" real_name="maxTimeGap">
-                        <cd:Integer format="ascii">
-                          <cd:NativeType>uint32</cd:NativeType>
-                        </cd:Integer>
-                      </cd:Field>
-                      <cd:Field name="maxTimeGapThreshold" real_name="maxTimeGapThreshold">
                         <cd:Integer format="ascii">
                           <cd:NativeType>uint32</cd:NativeType>
                         </cd:Integer>
