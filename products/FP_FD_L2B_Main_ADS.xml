@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FD_L2B_Main_ADS" format="xml" last-modified="2025-03-31">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FD_L2B_Main_ADS" format="xml" last-modified="2025-06-11">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -60,7 +60,9 @@
             <cd:Field name="footprint">
               <cd:Type>
                 <cd:Attribute name="count">
-                  <cd:Text/>
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
                 </cd:Attribute>
                 <cd:Attribute name="units">
                   <cd:FixedValue>deg</cd:FixedValue>
@@ -226,12 +228,14 @@
                       <cd:Field name="polarisationList">
                         <cd:Record>
                           <cd:Attribute name="count">
-                            <cd:Text/>
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
                           </cd:Attribute>
                           <cd:Field name="polarisation">
                             <cd:Array>
                               <cd:Dimension/>
-                              <cd:Text />
+                              <cd:Text/>
                             </cd:Array>
                           </cd:Field>
                         </cd:Record>
@@ -242,7 +246,9 @@
                       <cd:Field name="footprint">
                         <cd:Type>
                           <cd:Attribute name="count">
-                            <cd:Text/>
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
                           </cd:Attribute>
                           <cd:Attribute name="units">
                             <cd:FixedValue>deg</cd:FixedValue>
@@ -283,7 +289,7 @@
                                   </cd:Float>
                                 </cd:Attribute>
                                 <cd:Field name="FolderName">
-                                  <cd:Text />
+                                  <cd:Text/>
                                 </cd:Field>
                                 <cd:Field name="staQuality">
                                   <cd:Record>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_GN_L2A_Main_ADS" format="xml" last-modified="2025-03-31">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_GN_L2A_Main_ADS" format="xml" last-modified="2025-06-11">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -120,7 +120,9 @@
             <cd:Field name="footprint">
               <cd:Type>
                 <cd:Attribute name="count">
-                  <cd:Text/>
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
                 </cd:Attribute>
                 <cd:Attribute name="units">
                   <cd:FixedValue>deg</cd:FixedValue>
@@ -254,7 +256,7 @@
                 <cd:Field name="polarisation">
                   <cd:Array>
                     <cd:Dimension/>
-                    <cd:Text />
+                    <cd:Text/>
                   </cd:Array>
                 </cd:Field>
               </cd:Record>
@@ -265,7 +267,9 @@
             <cd:Field name="footprint">
               <cd:Type>
                 <cd:Attribute name="count">
-                  <cd:Text/>
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
                 </cd:Attribute>
                 <cd:Attribute name="units">
                   <cd:FixedValue>deg</cd:FixedValue>
@@ -301,7 +305,7 @@
                         </cd:Integer>
                       </cd:Attribute>
                       <cd:Field name="FolderName">
-                        <cd:Text />
+                        <cd:Text/>
                       </cd:Field>
                       <cd:Field name="staQuality">
                         <cd:Record>
@@ -399,7 +403,7 @@
             <cd:Field name="generalConfigurationParameters">
               <cd:Record>
                 <cd:Field name="applyCalibrationScreen">
-                  <cd:Text />
+                  <cd:Text/>
                 </cd:Field>
                 <cd:Field name="forestCoverageThreshold">
                   <cd:Float format="ascii">
@@ -582,7 +586,9 @@
         <cd:Field name="annotationLUT">
           <cd:Record>
             <cd:Attribute name="count">
-              <cd:Text/>
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint32</cd:NativeType>
+              </cd:Integer>
             </cd:Attribute>
             <cd:Field name="layer">
               <cd:Array>
