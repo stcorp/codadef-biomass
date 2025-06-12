@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP1" format="xml" last-modified="2025-04-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP1" format="xml" last-modified="2025-06-12">
   <cd:Record>
     <cd:Field name="auxiliaryL1ProcessingParameters">
       <cd:Record>
@@ -29,18 +29,11 @@
                     </cd:Field>
                     <cd:Field name="heightModelMargin">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>deg</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="backgeocodingPosting">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="brkFilesFormat">
-                      <cd:Text/>
                     </cd:Field>
                     <cd:Field name="parcProcessing">
                       <cd:Record>
@@ -77,11 +70,6 @@
                       </cd:Integer>
                     </cd:Field>
                     <cd:Field name="maxISPGap">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="maxTimeGap">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint32</cd:NativeType>
                       </cd:Integer>
@@ -356,7 +344,9 @@
                     </cd:Field>
                     <cd:Field name="maxDriftPhaseError">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>rad</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
@@ -402,7 +392,9 @@
                               </cd:Field>
                               <cd:Field name="timeBias">
                                 <cd:Float format="ascii">
-                                  <cd:Attribute name="units"/>
+                                  <cd:Attribute name="units">
+                                    <cd:FixedValue>s</cd:FixedValue>
+                                  </cd:Attribute>
                                   <cd:NativeType>double</cd:NativeType>
                                 </cd:Float>
                               </cd:Field>
@@ -416,7 +408,9 @@
                               </cd:Field>
                               <cd:Field name="processingBandwidth">
                                 <cd:Float format="ascii">
-                                  <cd:Attribute name="units"/>
+                                  <cd:Attribute name="units">
+                                    <cd:FixedValue>Hz</cd:FixedValue>
+                                  </cd:Attribute>
                                   <cd:NativeType>float</cd:NativeType>
                                 </cd:Float>
                               </cd:Field>
@@ -522,7 +516,7 @@
                     <cd:Field name="lutOffNadirSpan">
                       <cd:Float format="ascii">
                         <cd:Attribute name="units">
-                          <cd:FixedValue>rad</cd:FixedValue>
+                          <cd:FixedValue>deg</cd:FixedValue>
                         </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
@@ -530,20 +524,24 @@
                     <cd:Field name="lutOffNadirSampling">
                       <cd:Float format="ascii">
                         <cd:Attribute name="units">
-                          <cd:FixedValue>rad</cd:FixedValue>
+                          <cd:FixedValue>deg</cd:FixedValue>
                         </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
                     <cd:Field name="elevationMispointingBias">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>deg</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
                     <cd:Field name="azimuthMispointingBias">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>deg</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
@@ -587,7 +585,9 @@
                               </cd:Field>
                               <cd:Field name="timeBias">
                                 <cd:Float format="ascii">
-                                  <cd:Attribute name="units"/>
+                                  <cd:Attribute name="units">
+                                    <cd:FixedValue>s</cd:FixedValue>
+                                  </cd:Attribute>
                                   <cd:NativeType>double</cd:NativeType>
                                 </cd:Float>
                               </cd:Field>
@@ -639,7 +639,9 @@
                     </cd:Field>
                     <cd:Field name="azimuthResamplingFrequency">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>Hz</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
@@ -670,7 +672,9 @@
                     </cd:Field>
                     <cd:Field name="filterBandwidth">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>Hz</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
@@ -701,7 +705,9 @@
                     </cd:Field>
                     <cd:Field name="referenceRange">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>m</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
@@ -920,7 +926,9 @@
                     </cd:Field>
                     <cd:Field name="ionosphereHeightEstimationMethodLatitudeThreshold">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>deg</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
@@ -952,8 +960,14 @@
                     </cd:Field>
                     <cd:Field name="squintSensitivityFittingError">
                       <cd:Array format="ascii">
-                        <cd:Attribute name="count"/>
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="count">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint32</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Attribute>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>(rad/nT)^2</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:Dimension>int(str(@count))</cd:Dimension>
                         <cd:Float>
                           <cd:NativeType>float</cd:NativeType>
@@ -1099,7 +1113,9 @@
                               </cd:Field>
                               <cd:Field name="lookBandwidth">
                                 <cd:Float format="ascii">
-                                  <cd:Attribute name="units"/>
+                                  <cd:Attribute name="units">
+                                    <cd:FixedValue>Hz</cd:FixedValue>
+                                  </cd:Attribute>
                                   <cd:NativeType>float</cd:NativeType>
                                 </cd:Float>
                               </cd:Field>
@@ -1110,8 +1126,14 @@
                               </cd:Field>
                               <cd:Field name="lookCentralFrequencies">
                                 <cd:Array format="ascii">
-                                  <cd:Attribute name="count"/>
-                                  <cd:Attribute name="units"/>
+                                  <cd:Attribute name="count">
+                                    <cd:Integer format="ascii">
+                                      <cd:NativeType>uint32</cd:NativeType>
+                                    </cd:Integer>
+                                  </cd:Attribute>
+                                  <cd:Attribute name="units">
+                                    <cd:FixedValue>Hz</cd:FixedValue>
+                                  </cd:Attribute>
                                   <cd:Dimension>int(str(@count))</cd:Dimension>
                                   <cd:Float>
                                     <cd:NativeType>float</cd:NativeType>
@@ -1157,7 +1179,9 @@
                               </cd:Field>
                               <cd:Field name="lookBandwidth">
                                 <cd:Float format="ascii">
-                                  <cd:Attribute name="units"/>
+                                  <cd:Attribute name="units">
+                                    <cd:FixedValue>Hz</cd:FixedValue>
+                                  </cd:Attribute>
                                   <cd:NativeType>float</cd:NativeType>
                                 </cd:Float>
                               </cd:Field>
@@ -1168,8 +1192,14 @@
                               </cd:Field>
                               <cd:Field name="lookCentralFrequencies">
                                 <cd:Array format="ascii">
-                                  <cd:Attribute name="count"/>
-                                  <cd:Attribute name="units"/>
+                                  <cd:Attribute name="count">
+                                    <cd:Integer format="ascii">
+                                      <cd:NativeType>uint32</cd:NativeType>
+                                    </cd:Integer>
+                                  </cd:Attribute>
+                                  <cd:Attribute name="units">
+                                    <cd:FixedValue>Hz</cd:FixedValue>
+                                  </cd:Attribute>
                                   <cd:Dimension>int(str(@count))</cd:Dimension>
                                   <cd:Float>
                                     <cd:NativeType>float</cd:NativeType>
@@ -1266,7 +1296,9 @@
                     </cd:Field>
                     <cd:Field name="rangePixelSpacing">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>m</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
@@ -1275,7 +1307,9 @@
                     </cd:Field>
                     <cd:Field name="filterBandwidth">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units"/>
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>Hz</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
@@ -1293,7 +1327,10 @@
                 </cd:Field>
                 <cd:Field name="l1ProductExport">
                   <cd:Record>
-                    <cd:Field name="l1ProductDOI">
+                    <cd:Field name="l1aProductDOI">
+                      <cd:Text/>
+                    </cd:Field>
+                    <cd:Field name="l1bProductDOI">
                       <cd:Text/>
                     </cd:Field>
                     <cd:Field name="pixelRepresentation">
@@ -1320,6 +1357,9 @@
                     </cd:Field>
                     <cd:Field name="phaseMaxZError">
                       <cd:Float format="ascii">
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>rad</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
