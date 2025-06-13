@@ -16,7 +16,11 @@
             </cd:Field>
             <cd:Field name="polarisationList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="polarisation">
                   <cd:Array>
                     <cd:Dimension/>
@@ -180,7 +184,11 @@
             </cd:Field>
             <cd:Field name="rangeCoordinateConversion">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="coordinateConversion">
                   <cd:Array>
                     <cd:Dimension/>
@@ -208,7 +216,11 @@
                       </cd:Field>
                       <cd:Field name="slantToGroundCoefficients" real_name="slantToGroundCoefficients">
                         <cd:Array format="ascii">
-                          <cd:Attribute name="count"/>
+                          <cd:Attribute name="count">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Attribute>
                           <cd:Dimension>int(str(@count))</cd:Dimension>
                           <cd:Float>
                             <cd:NativeType>double</cd:NativeType>
@@ -225,7 +237,11 @@
                       </cd:Field>
                       <cd:Field name="groundToSlantCoefficients" real_name="groundToSlantCoefficients">
                         <cd:Array format="ascii">
-                          <cd:Attribute name="count"/>
+                          <cd:Attribute name="count">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Attribute>
                           <cd:Dimension>int(str(@count))</cd:Dimension>
                           <cd:Float>
                             <cd:NativeType>double</cd:NativeType>
@@ -249,7 +265,11 @@
             </cd:Field>
             <cd:Field name="footprint">
               <cd:Array format="ascii">
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Attribute name="units">
                   <cd:FixedValue>deg</cd:FixedValue>
                 </cd:Attribute>
@@ -279,7 +299,11 @@
           <cd:Record>
             <cd:Field name="firstLineSensingTimeList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="firstLineSensingTime" real_name="firstLineSensingTime">
                   <cd:Array>
                     <cd:Dimension/>
@@ -296,7 +320,11 @@
             </cd:Field>
             <cd:Field name="lastLineSensingTimeList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="lastLineSensingTime" real_name="lastLineSensingTime">
                   <cd:Array>
                     <cd:Dimension/>
@@ -322,7 +350,11 @@
             </cd:Field>
             <cd:Field name="swpList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="swp">
                   <cd:Array>
                     <cd:Dimension/>
@@ -347,7 +379,11 @@
             </cd:Field>
             <cd:Field name="swlList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="swl">
                   <cd:Array>
                     <cd:Dimension/>
@@ -372,7 +408,11 @@
             </cd:Field>
             <cd:Field name="prfList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="prf">
                   <cd:Array>
                     <cd:Dimension/>
@@ -402,7 +442,11 @@
             </cd:Field>
             <cd:Field name="txPulseList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="txPulse">
                   <cd:Array>
                     <cd:Dimension/>
@@ -464,7 +508,11 @@
             </cd:Field>
             <cd:Field name="rxGainList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="rxGain">
                   <cd:Array>
                     <cd:Dimension/>
@@ -550,7 +598,11 @@
             </cd:Field>
             <cd:Field name="rawDataStatisticsList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="rawDataStatistics">
                   <cd:Array>
                     <cd:Dimension/>
@@ -862,7 +914,11 @@
             </cd:Field>
             <cd:Field name="processingGainList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="processingGain" real_name="processingGain">
                   <cd:Array>
                     <cd:Dimension/>
@@ -970,7 +1026,11 @@
             </cd:Field>
             <cd:Field name="noiseGainList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="noiseGain" real_name="noiseGain">
                   <cd:Array>
                     <cd:Dimension/>
@@ -1008,13 +1068,21 @@
             </cd:Field>
             <cd:Field name="internalCalibrationParametersList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="internalCalibrationSequenceList">
                   <cd:Array>
                     <cd:Dimension/>
                     <cd:Record>
                       <cd:Attribute name="polarisation"/>
-                      <cd:Attribute name="count"/>
+                      <cd:Attribute name="count">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Attribute>
                       <cd:Field name="internalCalibrationSequence">
                         <cd:Array>
                           <cd:Dimension/>
@@ -1211,13 +1279,21 @@
             </cd:Field>
             <cd:Field name="noiseList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="noiseSequenceList">
                   <cd:Array>
                     <cd:Dimension/>
                     <cd:Record>
                       <cd:Attribute name="polarisation"/>
-                      <cd:Attribute name="count"/>
+                      <cd:Attribute name="count">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Attribute>
                       <cd:Field name="noiseSequence">
                         <cd:Array>
                           <cd:Dimension/>
@@ -1251,7 +1327,11 @@
           <cd:Record>
             <cd:Field name="rfiTMReportList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="rfiTMReport">
                   <cd:Array>
                     <cd:Dimension/>
@@ -1280,7 +1360,11 @@
             </cd:Field>
             <cd:Field name="rfiIsolatedFMReportList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="rfiIsolatedFMReport">
                   <cd:Array>
                     <cd:Dimension/>
@@ -1304,7 +1388,11 @@
             </cd:Field>
             <cd:Field name="rfiPersistentFMReportList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="rfiPersistentFMReport">
                   <cd:Array>
                     <cd:Dimension/>
@@ -1327,7 +1415,11 @@
           <cd:Record>
             <cd:Field name="dcEstimateList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="dcEstimate">
                   <cd:Array>
                     <cd:Dimension/>
@@ -1347,7 +1439,11 @@
                       </cd:Field>
                       <cd:Field name="geometryDCPolynomial" real_name="geometryDCPolynomial">
                         <cd:Array format="ascii">
-                          <cd:Attribute name="count"/>
+                          <cd:Attribute name="count">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Attribute>
                           <cd:Dimension>int(str(@count))</cd:Dimension>
                           <cd:Float>
                             <cd:NativeType>float</cd:NativeType>
@@ -1356,7 +1452,11 @@
                       </cd:Field>
                       <cd:Field name="combinedDCPolynomial" real_name="combinedDCPolynomial">
                         <cd:Array format="ascii">
-                          <cd:Attribute name="count"/>
+                          <cd:Attribute name="count">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Attribute>
                           <cd:Dimension>int(str(@count))</cd:Dimension>
                           <cd:Float>
                             <cd:NativeType>float</cd:NativeType>
@@ -1365,7 +1465,11 @@
                       </cd:Field>
                       <cd:Field name="combinedDCValues" real_name="combinedDCValues">
                         <cd:Array format="ascii">
-                          <cd:Attribute name="count"/>
+                          <cd:Attribute name="count">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Attribute>
                           <cd:Attribute name="units">
                             <cd:FixedValue>Hz</cd:FixedValue>
                           </cd:Attribute>
@@ -1377,7 +1481,11 @@
                       </cd:Field>
                       <cd:Field name="combinedDCSlantRangeTimes" real_name="combinedDCSlantRangeTimes">
                         <cd:Array format="ascii">
-                          <cd:Attribute name="count"/>
+                          <cd:Attribute name="count">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Attribute>
                           <cd:Attribute name="units">
                             <cd:FixedValue>s</cd:FixedValue>
                           </cd:Attribute>
@@ -1414,7 +1522,11 @@
             </cd:Field>
             <cd:Field name="fmRateEstimateList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="fmRateEstimate">
                   <cd:Array>
                     <cd:Dimension/>
@@ -1434,7 +1546,11 @@
                       </cd:Field>
                       <cd:Field name="polynomial" real_name="polynomial">
                         <cd:Array format="ascii">
-                          <cd:Attribute name="count"/>
+                          <cd:Attribute name="count">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Attribute>
                           <cd:Dimension>int(str(@count))</cd:Dimension>
                           <cd:Float>
                             <cd:NativeType>double</cd:NativeType>
@@ -1452,7 +1568,11 @@
           <cd:Record>
             <cd:Field name="absoluteCalibrationConstantList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="absoluteCalibrationConstant" real_name="absoluteCalibrationConstant">
                   <cd:Array>
                     <cd:Dimension/>
@@ -1677,7 +1797,11 @@
             </cd:Field>
             <cd:Field name="qualityParametersList">
               <cd:Record>
-                <cd:Attribute name="count"/>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
                 <cd:Field name="qualityParameters">
                   <cd:Array>
                     <cd:Dimension/>
@@ -1798,7 +1922,11 @@
         </cd:Field>
         <cd:Field name="annotationLUT">
           <cd:Record>
-            <cd:Attribute name="count"/>
+            <cd:Attribute name="count">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint32</cd:NativeType>
+              </cd:Integer>
+            </cd:Attribute>
             <cd:Field name="layer">
               <cd:Array>
                 <cd:Dimension/>
