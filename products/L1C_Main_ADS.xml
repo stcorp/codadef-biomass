@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_Main_ADS" format="xml" last-modified="2025-06-06">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_Main_ADS" format="xml" last-modified="2025-06-13">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -506,6 +506,24 @@
                 </cd:Attribute>
               </cd:Float>
             </cd:Field>
+            <cd:Field name="rxGainList">
+              <cd:Record>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="rxGain">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Float format="ascii">
+                      <cd:Attribute name="polarisation"/>
+                      <cd:NativeType>float</cd:NativeType>
+                    </cd:Float>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
             <cd:Field name="preambleFlag" real_name="preambleFlag">
               <cd:Integer format="ascii">
                 <cd:NativeType>uint8</cd:NativeType>
@@ -566,87 +584,12 @@
           <cd:Record>
             <cd:Field name="errorCounters">
               <cd:Record>
-                <cd:Field name="numErrSyncMarker" real_name="numErrSyncMarker">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrDataTakeId" real_name="numErrDataTakeId">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrInstrumentConfigId" real_name="numErrInstrumentConfigId">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrPacketCount" real_name="numErrPacketCount">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrPriCount" real_name="numErrPriCount">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrBaqMode" real_name="numErrBaqMode">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrBaqBlockLength" real_name="numErrBaqBlockLength">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrRxGain" real_name="numErrRxGain">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrSwp" real_name="numErrSwp">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrSwl" real_name="numErrSwl">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrPri" real_name="numErrPri">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrRank" real_name="numErrRank">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrPolarisation" real_name="numErrPolarisation">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrTComp" real_name="numErrTComp">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrTxPulseIndex" real_name="numErrTxPulseIndex">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
-                <cd:Field name="numErrSignalType" real_name="numErrSignalType">
-                  <cd:Integer format="ascii">
-                    <cd:NativeType>uint32</cd:NativeType>
-                  </cd:Integer>
-                </cd:Field>
                 <cd:Field name="numIspHeaderErrors" real_name="numIspHeaderErrors">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+                <cd:Field name="numIspMissing" real_name="numIspMissing">
                   <cd:Integer format="ascii">
                     <cd:NativeType>uint32</cd:NativeType>
                   </cd:Integer>
@@ -2124,6 +2067,17 @@
                 <cd:Mapping string="true" value="1"/>
               </cd:Integer>
             </cd:Field>
+            <cd:Field name="skpPhaseCorrectionFlatteningOnlyFlag" real_name="skpPhaseCorrectionFlatteningOnlyFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
             <cd:Field name="skpEstimationWindowSize" real_name="skpEstimationWindowSize">
               <cd:Float format="ascii">
                 <cd:Attribute name="units">
@@ -2131,6 +2085,101 @@
                 </cd:Attribute>
                 <cd:NativeType>float</cd:NativeType>
               </cd:Float>
+            </cd:Field>
+            <cd:Field name="skpMedianFilterFlag" real_name="skpMedianFilterFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="skpMedianFilterWindowSize" real_name="skpMedianFilterWindowSize">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units">
+                  <cd:FixedValue>m</cd:FixedValue>
+                </cd:Attribute>
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="slowIonosphereRemovalMultiBaselineThreshold" real_name="slowIonosphereRemovalMultiBaselineThreshold">
+              <cd:Float format="ascii">
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="baselineErrorCorrectionMultiBaselineThreshold" real_name="baselineErrorCorrectionMultiBaselineThreshold">
+              <cd:Float format="ascii">
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="azimuthSpectralFilteringUse32BitFlag" real_name="azimuthSpectralFilteringUse32BitFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="slowIonosphereRemovalUse32BitFlag" real_name="slowIonosphereRemovalUse32BitFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="baselineErrorCorrectionUse32BitFlag" real_name="baselineErrorCorrectionUse32BitFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="fastIonosphereRemovalUse32BitEstimationFlag" real_name="fastIonosphereRemovalUse32BitEstimationFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="fastIonosphereRemovalUse32BitCorrectionFlag" real_name="fastIonosphereRemovalUse32BitCorrectionFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="skpPhaseCalibrationUse32BitFlag" real_name="skpPhaseCalibrationUse32BitFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
             </cd:Field>
           </cd:Record>
         </cd:Field>
@@ -2219,7 +2268,7 @@
             <cd:Field name="slowIonosphereRangePhaseScreen">
               <cd:Float format="ascii">
                 <cd:Attribute name="units">
-                  <cd:FixedValue>deg/s</cd:FixedValue>
+                  <cd:FixedValue>rad/s</cd:FixedValue>
                 </cd:Attribute>
                 <cd:NativeType>float</cd:NativeType>
               </cd:Float>
@@ -2227,7 +2276,7 @@
             <cd:Field name="slowIonosphereAzimuthPhaseScreen">
               <cd:Float format="ascii">
                 <cd:Attribute name="units">
-                  <cd:FixedValue>deg/s</cd:FixedValue>
+                  <cd:FixedValue>rad/s</cd:FixedValue>
                 </cd:Attribute>
                 <cd:NativeType>float</cd:NativeType>
               </cd:Float>
@@ -2236,6 +2285,32 @@
               <cd:Float format="ascii">
                 <cd:NativeType>float</cd:NativeType>
               </cd:Float>
+            </cd:Field>
+            <cd:Field name="slowIonosphereRemovalInterferometricPairs">
+              <cd:Record>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="interferometricPairs">
+                  <cd:Array>
+                  <cd:Dimension>int(str(@count))</cd:Dimension>
+                    <cd:Record>
+                      <cd:Field name="primary">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Field>
+                      <cd:Field name="secondary">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
             </cd:Field>
             <cd:Field name="linearParallelComponent">
               <cd:Float format="ascii">
@@ -2266,6 +2341,32 @@
                 <cd:NativeType>float</cd:NativeType>
               </cd:Float>
             </cd:Field>
+            <cd:Field name="baselineErrorCorrectionInterferometricPairs">
+              <cd:Record>
+                <cd:Attribute name="count">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Attribute>
+                <cd:Field name="interferometricPairs">
+                  <cd:Array>
+                  <cd:Dimension>int(str(@count))</cd:Dimension>
+                    <cd:Record>
+                      <cd:Field name="primary">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Field>
+                      <cd:Field name="secondary">
+                        <cd:Integer format="ascii">
+                          <cd:NativeType>uint32</cd:NativeType>
+                        </cd:Integer>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
             <cd:Field name="ionosphereHeight" real_name="ionosphereHeight">
               <cd:Float format="ascii">
                 <cd:Attribute name="units">
@@ -2278,6 +2379,32 @@
               <cd:Integer format="ascii">
                 <cd:NativeType>uint32</cd:NativeType>
               </cd:Integer>
+            </cd:Field>
+            <cd:Field name="skpCalibrationPhaseScreenMean">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units">
+                  <cd:FixedValue>rad</cd:FixedValue>
+                </cd:Attribute>
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="skpCalibrationPhaseScreenStd">
+              <cd:Float format="ascii">
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="skpCalibrationPhaseScreenVar">
+              <cd:Float format="ascii">
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="skpCalibrationPhaseScreenMAD">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units">
+                  <cd:FixedValue>rad</cd:FixedValue>
+                </cd:Attribute>
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
             </cd:Field>
           </cd:Record>
         </cd:Field>
@@ -2347,12 +2474,12 @@
                           <cd:NativeType>float</cd:NativeType>
                         </cd:Float>
                       </cd:Field>
-                      <cd:Field name="invalidGroundPhasesScreenEstimatesFraction" real_name="invalidGroundPhasesScreenEstimatesFraction">
+                      <cd:Field name="invalidSkpCalibrationPhasesScreenEstimatesFraction" real_name="invalidSkpCalibrationPhasesScreenEstimatesFraction">
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
                         </cd:Float>
                       </cd:Field>
-                      <cd:Field name="groundPhasesScreenQualityThreshold" real_name="groundPhasesScreenQualityThreshold">
+                      <cd:Field name="skpCalibrationPhasesScreenQualityThreshold" real_name="skpCalibrationPhasesScreenQualityThreshold">
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
                         </cd:Float>
