@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2025-06-12">
+<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2025-09-10">
   <cd:Description>BIOMASS products</cd:Description>
 
   <!-- Generic Product Header -->
@@ -83,7 +83,7 @@
   <cd:ProductType name="L1A_Main_ADS">
     <cd:Description>Main Annotation Data Set for BIOMASS L1A products</cd:Description>
     <cd:ProductDefinition id="L1A_Main_ADS" format="xml" version="0">
-      <cd:Description>This definition is based on version 1.4.3 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.4.4 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="6">_scs_</cd:MatchFilename>
@@ -100,7 +100,7 @@
   <cd:ProductType name="L1C_Main_ADS">
     <cd:Description>Main Annotation Data Set for BIOMASS L1C Coregistered products</cd:Description>
     <cd:ProductDefinition id="L1C_Main_ADS" format="xml" version="0">
-      <cd:Description>This definition is based on version 1.4.3 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.4.4 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="6">_sta_</cd:MatchFilename>
@@ -112,7 +112,7 @@
   <cd:ProductType name="L1A_LUT_ADS">
     <cd:Description>LookUp Table Annotation Data Set for BIOMASS L1A products</cd:Description>
     <cd:ProductDefinition id="L1A_LUT_ADS" format="hdf5" version="0">
-      <cd:Description>This definition is based on version 1.4.3 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.4.4 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="6">_scs_</cd:MatchFilename>
@@ -123,7 +123,7 @@
   <cd:ProductType name="L1C_LUT_ADS">
     <cd:Description>LookUp Table Annotation Data Set for BIOMASS L1C coregistered products</cd:Description>
     <cd:ProductDefinition id="L1C_LUT_ADS" format="hdf5" version="0">
-      <cd:Description>This definition is based on version 1.4.3 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
+      <cd:Description>This definition is based on version 1.4.4 of the BIOMASS L1a/b/c Products Format Specification - BIO-BPS-L1PFD-ARE-010076</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="6">_sta_</cd:MatchFilename>
