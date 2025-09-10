@@ -6,7 +6,7 @@
   <cd:ProductType name="Biomass_MPH">
     <cd:Description>Main product header for BIOMASS products and ADFs</cd:Description>
     <cd:ProductDefinition id="Biomass_MPH" format="xml" version="0">
-      <cd:Description>This definition is based on version 2.3 of the BIOMASS Main Product Header Definition - BIO-ESA-EOPG-EEGS-TN-0051</cd:Description>
+      <cd:Description>This definition is based on version 2.11 of the BIOMASS Main Product Header Definition - BIO-ESA-EOPG-EEGS-TN-0051</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="80">.xml</cd:MatchFilename>
