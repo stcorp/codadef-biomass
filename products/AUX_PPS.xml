@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PPS" format="xml" last-modified="2025-06-12">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PPS" format="xml" last-modified="2025-09-10">
   <cd:Record>
     <cd:Field name="auxiliarySTAProcessingParameters">
       <cd:Record>
@@ -207,17 +207,6 @@
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="rangeSpectralFilteringFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
                     <cd:Field name="polarisationUsed">
                       <cd:Text/>
                     </cd:Field>
@@ -305,6 +294,11 @@
                         <cd:NativeType>uint32</cd:NativeType>
                       </cd:Integer>
                     </cd:Field>
+                    <cd:Field name="minCoherenceThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
                     <cd:Field name="multiBaselineCriticalBaselineThreshold">
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
@@ -318,7 +312,7 @@
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="minValidPhaseUnwrapRatio">
+                    <cd:Field name="minUsablePixelRatio">
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
@@ -336,7 +330,7 @@
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
-                <cd:Field name="baselineErrorCorrection">
+                <cd:Field name="baselineAndIonosphereCorrection">
                   <cd:Record>
                     <cd:Field name="baselineErrorCorrectionFlag">
                       <cd:Integer format="ascii">
@@ -349,7 +343,7 @@
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="linearParallelComponentFlag">
+                    <cd:Field name="residualIonosphereRemovalFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
                         <cd:Mapping string="FALSE" value="0"/>
@@ -359,153 +353,6 @@
                         <cd:Mapping string="True" value="1"/>
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="linearNormalComponentFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="constantAzimuthComponentFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="azimuthLookBandwidth">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="azimuthLookFrequency">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="rangeFilterSize">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="azimuthFilterSize">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="baselineMethod">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="unweightedMultiBaselineEstimation">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="baselineErrorQualityThreshold">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="multiBaselineCriticalBaselineThreshold">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="use32bitFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                  </cd:Record>
-                </cd:Field>
-                <cd:Field name="fastIonosphereRemoval">
-                  <cd:Record>
-                    <cd:Field name="fastIonosphereRemovalFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="ionosphereHeightDetectionPeakThreshold">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="rangeBlockSizeEstimation">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="rangeBlockHeightEstimationThreshold">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="ionosphereHeightSource">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="ionosphereHeight">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="minIonosphereSearchHeight">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="maxIonosphereSearchHeight">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="ionosphereSearchHeightStep">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="squintOversamplingFactor">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
                     </cd:Field>
                     <cd:Field name="latitudeThreshold">
                       <cd:Float format="ascii">
@@ -515,15 +362,26 @@
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="fastIonospherePhaseScreenQualityThreshold">
+                    <cd:Field name="ionosphereHeightPrior">
                       <cd:Float format="ascii">
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>m</cd:FixedValue>
+                        </cd:Attribute>
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="baselineMethod">
+                    <cd:Field name="ionosphereHeightPriorSource">
                       <cd:Text/>
                     </cd:Field>
-                    <cd:Field name="unweightedMultiBaselineEstimation">
+                    <cd:Field name="ionosphereMaxDeviationFromPrior">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>m</cd:FixedValue>
+                        </cd:Attribute>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="useIonosphereHeightPriorFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
                         <cd:Mapping string="FALSE" value="0"/>
@@ -534,15 +392,83 @@
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="maxRangeBlockEstimationFailures">
+                    <cd:Field name="fallbackToIonosphereAltitudePriorFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="squintUpsamplingFactor">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="azimuthUpsamplingFactor">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="rangeBlockSize">
+                      <cd:Float format="ascii">
+                        <!-- <cd:Attribute name="units">
+                          <cd:FixedValue>px</cd:FixedValue>
+                        </cd:Attribute> -->
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceAzimuthSubsamplingStep">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units">
+                          <cd:FixedValue>m</cd:FixedValue>
+                        </cd:Attribute>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceAzimuthFilterWindowSize">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint32</cd:NativeType>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="overallProductQualityThreshold">
+                    <cd:Field name="maxNumSpectrumPeaks">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="spectrumPeakThreshold">
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="ionosphereEstimationQualityThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="maxFailedIonosphereDetectionRatio">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="maxInvalidIonosphereRatio">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="applyShiftsWithBPSStackProcessorFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
                     </cd:Field>
                     <cd:Field name="use32bitEstimationFlag">
                       <cd:Integer format="ascii">
@@ -581,16 +507,8 @@
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="skpPhaseCorrectionFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
+                    <cd:Field name="phaseCorrection">
+                      <cd:Text/>
                     </cd:Field>
                     <cd:Field name="estimationWindowSize">
                       <cd:Float format="ascii">
@@ -600,7 +518,7 @@
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="skpCalibrationPhasesScreenQualityThreshold">
+                    <cd:Field name="skpCalibrationPhaseScreenQualityThreshold">
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
@@ -629,7 +547,7 @@
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="flatteningPhaseCorrectionFlag">
+                    <cd:Field name="excludeMPMBPolarizationCrossCovarianceFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
                         <cd:Mapping string="FALSE" value="0"/>
@@ -722,6 +640,17 @@
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="decimateResidualIonosphereLutFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>

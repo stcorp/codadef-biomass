@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_INS" format="xml" last-modified="2025-06-12">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_INS" format="xml" last-modified="2025-09-10">
   <cd:Record>
     <cd:Field name="auxiliaryInstrumentParameters">
       <cd:Record>
@@ -18,6 +18,22 @@
           <cd:Float format="ascii">
             <cd:Attribute name="units">
               <cd:FixedValue>deg</cd:FixedValue>
+            </cd:Attribute>
+            <cd:NativeType>float</cd:NativeType>
+          </cd:Float>
+        </cd:Field>
+        <cd:Field name="txStartTime">
+          <cd:Float format="ascii">
+            <cd:Attribute name="units">
+              <cd:FixedValue>s</cd:FixedValue>
+            </cd:Attribute>
+            <cd:NativeType>float</cd:NativeType>
+          </cd:Float>
+        </cd:Field>
+        <cd:Field name="calibrationSignalsSWP">
+          <cd:Float format="ascii">
+            <cd:Attribute name="units">
+              <cd:FixedValue>s</cd:FixedValue>
             </cd:Attribute>
             <cd:NativeType>float</cd:NativeType>
           </cd:Float>

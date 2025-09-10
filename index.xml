@@ -268,7 +268,7 @@
   <cd:ProductType name="AUX_PP1___">
     <cd:Description>Auxiliary L1 Processing Parameters</cd:Description>
     <cd:ProductDefinition id="AUX_PP1" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.4.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.4.3 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pp1</cd:MatchFilename>
@@ -279,7 +279,7 @@
   <cd:ProductType name="AUX_PPS___">
     <cd:Description>Auxiliary Stack Processing Parameters</cd:Description>
     <cd:ProductDefinition id="AUX_PPS" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.4.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.4.3 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pps</cd:MatchFilename>
@@ -290,7 +290,7 @@
   <cd:ProductType name="AUX_INS___">
     <cd:Description>Auxiliary Instrument Parameters</cd:Description>
     <cd:ProductDefinition id="AUX_INS" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.4.1 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.4.3 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_ins</cd:MatchFilename>

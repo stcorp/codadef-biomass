@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP1" format="xml" last-modified="2025-06-12">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP1" format="xml" last-modified="2025-09-10">
   <cd:Record>
     <cd:Field name="auxiliaryL1ProcessingParameters">
       <cd:Record>
@@ -496,38 +496,6 @@
                         <cd:Mapping string="True" value="1"/>
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="lutTopographySpan">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="lutTopographySampling">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="lutOffNadirSpan">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>deg</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="lutOffNadirSampling">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>deg</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
                     </cd:Field>
                     <cd:Field name="elevationMispointingBias">
                       <cd:Float format="ascii">
@@ -1030,6 +998,16 @@
                         <cd:Mapping string="TRUE" value="1"/>
                         <cd:Mapping string="True" value="1"/>
                         <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="blockLines">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="blockOverlapLines">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
                       </cd:Integer>
                     </cd:Field>
                   </cd:Record>
