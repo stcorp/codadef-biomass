@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2025-09-10">
+<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2025-09-18">
   <cd:Description>BIOMASS products</cd:Description>
 
   <!-- Generic Product Header -->
@@ -510,7 +510,7 @@
   <cd:ProductType name="CFG_TRPCCF">
     <cd:Description>Transponder Configuration Command File</cd:Description>
     <cd:ProductDefinition id="CFG_TRPCCF" format="xml" version="0">
-      <cd:Description>This definition is based on version 2.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
+      <cd:Description>This definition is based on version 6.0 of the BIOMASS BCT - PDGS Interface File Specification - BIO-FI-CCOR-SW-0126</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
         <cd:MatchFilename offset="9">CFG_TRPCCF</cd:MatchFilename>
