@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_GN_L2A_LUT_ADS" format="hdf5" last-modified="2025-03-31">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_GN_L2A_LUT_ADS" format="hdf5" last-modified="2025-11-21">
   <cd:Record>
     <cd:Attribute name="mission">
       <cd:Text/>
@@ -13,7 +13,7 @@
     <cd:Attribute name="productType">
       <cd:Text/>
     </cd:Attribute>
-    <cd:Attribute name="starTime">
+    <cd:Attribute name="startTime">
       <cd:Text/>
     </cd:Attribute>
     <cd:Attribute name="stopTime">
@@ -97,16 +97,159 @@
         </cd:Float>
       </cd:Array>
     </cd:Attribute>
+    <cd:Attribute name="forest_coverage_percentage">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+          <cd:LittleEndian/>
+        </cd:Float>
+      </cd:Array>
+    </cd:Attribute>
+    <cd:Attribute name="selected_reference_image">
+      <cd:Array>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Integer>
+          <cd:NativeType>uint16</cd:NativeType>
+        </cd:Integer>
+      </cd:Array>
+      <cd:Optional/>
+    </cd:Attribute>
+    <cd:Attribute name="acquisition_id_reference_image">
+      <cd:Text/>
+      <cd:Optional/>
+    </cd:Attribute>
     <cd:Attribute name="NCProperties" real_name="_NCProperties">
       <cd:Text/>
       <cd:Hidden/>
       <cd:Optional/>
     </cd:Attribute>
-    <cd:Field name="FNF">
-      <cd:Record>
+    <cd:Field name="Latitude">
+      <cd:Array>
+        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+          <cd:Array>
+            <cd:Dimension>1</cd:Dimension>
+            <cd:Integer>
+              <cd:NativeType>int32</cd:NativeType>
+              <cd:LittleEndian/>
+            </cd:Integer>
+          </cd:Array>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="units">
+          <cd:Text/>
+        </cd:Attribute>
         <cd:Attribute name="description">
           <cd:Text/>
         </cd:Attribute>
+        <cd:Dimension/>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="Longitude">
+      <cd:Array>
+        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+          <cd:Array>
+            <cd:Dimension>1</cd:Dimension>
+            <cd:Integer>
+              <cd:NativeType>int32</cd:NativeType>
+              <cd:LittleEndian/>
+            </cd:Integer>
+          </cd:Array>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="units">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Attribute name="description">
+          <cd:Text/>
+        </cd:Attribute>
+        <cd:Dimension/>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="scalar">
+      <cd:Array>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="string">
+      <cd:Array>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+            <cd:LittleEndian/>
+          </cd:Integer>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Dimension>1</cd:Dimension>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="FNF">
+      <cd:Record>
         <cd:Field name="FNF">
           <cd:Array>
             <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
@@ -118,6 +261,14 @@
                 </cd:Integer>
               </cd:Array>
               <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="FillValue" real_name="_FillValue">
+              <cd:Array>
+                <cd:Dimension>1</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>uint8</cd:NativeType>
+                </cd:Integer>
+              </cd:Array>
             </cd:Attribute>
             <cd:Attribute name="description">
               <cd:Text/>
@@ -313,89 +464,8 @@
         </cd:Field>
       </cd:Record>
     </cd:Field>
-    <cd:Field name="Latitude">
-      <cd:Array>
-        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
-          <cd:Array>
-            <cd:Dimension>1</cd:Dimension>
-            <cd:Integer>
-              <cd:NativeType>int32</cd:NativeType>
-              <cd:LittleEndian/>
-            </cd:Integer>
-          </cd:Array>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="CLASS">
-          <cd:Text/>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="NAME">
-          <cd:Text/>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
-          <cd:Integer>
-            <cd:NativeType>int32</cd:NativeType>
-            <cd:LittleEndian/>
-          </cd:Integer>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="units">
-          <cd:Text/>
-        </cd:Attribute>
-        <cd:Attribute name="description">
-          <cd:Text/>
-        </cd:Attribute>
-        <cd:Dimension/>
-        <cd:Float>
-          <cd:NativeType>float</cd:NativeType>
-        </cd:Float>
-      </cd:Array>
-    </cd:Field>
-    <cd:Field name="Longitude">
-      <cd:Array>
-        <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
-          <cd:Array>
-            <cd:Dimension>1</cd:Dimension>
-            <cd:Integer>
-              <cd:NativeType>int32</cd:NativeType>
-              <cd:LittleEndian/>
-            </cd:Integer>
-          </cd:Array>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="CLASS">
-          <cd:Text/>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="NAME">
-          <cd:Text/>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
-          <cd:Integer>
-            <cd:NativeType>int32</cd:NativeType>
-            <cd:LittleEndian/>
-          </cd:Integer>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="units">
-          <cd:Text/>
-        </cd:Attribute>
-        <cd:Attribute name="description">
-          <cd:Text/>
-        </cd:Attribute>
-        <cd:Dimension/>
-        <cd:Float>
-          <cd:NativeType>float</cd:NativeType>
-        </cd:Float>
-      </cd:Array>
-    </cd:Field>
     <cd:Field name="localIncidenceAngle">
       <cd:Record>
-        <cd:Attribute name="description">
-          <cd:Text/>
-        </cd:Attribute>
         <cd:Field name="coordinateReferenceSystem">
           <cd:Array>
             <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
@@ -519,7 +589,18 @@
                 </cd:Integer>
               </cd:Array>
             </cd:Attribute>
+            <cd:Attribute name="FillValue" real_name="_FillValue">
+              <cd:Array>
+                <cd:Dimension>1</cd:Dimension>
+                <cd:Float>
+                  <cd:NativeType>float</cd:NativeType>
+                </cd:Float>
+              </cd:Array>
+            </cd:Attribute>
             <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Attribute name="units">
               <cd:Text/>
             </cd:Attribute>
             <cd:Dimension><![CDATA[$latitude]]></cd:Dimension>
@@ -610,52 +691,6 @@
           </cd:Array>
         </cd:Field>
       </cd:Record>
-    </cd:Field>
-    <cd:Field name="scalar">
-      <cd:Array>
-        <cd:Attribute name="CLASS">
-          <cd:Text/>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="NAME">
-          <cd:Text/>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
-          <cd:Integer>
-            <cd:NativeType>int32</cd:NativeType>
-            <cd:LittleEndian/>
-          </cd:Integer>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Dimension>1</cd:Dimension>
-        <cd:Float>
-          <cd:NativeType>float</cd:NativeType>
-        </cd:Float>
-      </cd:Array>
-    </cd:Field>
-    <cd:Field name="string">
-      <cd:Array>
-        <cd:Attribute name="CLASS">
-          <cd:Text/>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="NAME">
-          <cd:Text/>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
-          <cd:Integer>
-            <cd:NativeType>int32</cd:NativeType>
-            <cd:LittleEndian/>
-          </cd:Integer>
-          <cd:Hidden/>
-        </cd:Attribute>
-        <cd:Dimension>1</cd:Dimension>
-        <cd:Float>
-          <cd:NativeType>float</cd:NativeType>
-        </cd:Float>
-      </cd:Array>
     </cd:Field>
   </cd:Record>
   <cd:ProductVariable name="latitude">
