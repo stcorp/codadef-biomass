@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP1" format="xml" last-modified="2025-09-10">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP1" format="xml" last-modified="2025-12-03">
   <cd:Record>
     <cd:Field name="auxiliaryL1ProcessingParameters">
       <cd:Record>
@@ -168,16 +168,13 @@
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="rfiCorrectionFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
+                    <cd:Field name="rfiMitigationMode">
+                      <cd:Text/>
+                    </cd:Field>
+                    <cd:Field name="rfiActivationMaskThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
                     </cd:Field>
                     <cd:Field name="rfiMitigationMethod">
                       <cd:Text/>
@@ -273,6 +270,33 @@
                           <cd:Float format="ascii">
                             <cd:NativeType>float</cd:NativeType>
                           </cd:Float>
+                        </cd:Field>
+                        <cd:Field name="periodgramSize">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint32</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                        <cd:Field name="enablePowerLossCompensation">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint8</cd:NativeType>
+                            <cd:Mapping string="FALSE" value="0"/>
+                            <cd:Mapping string="False" value="0"/>
+                            <cd:Mapping string="false" value="0"/>
+                            <cd:Mapping string="TRUE" value="1"/>
+                            <cd:Mapping string="True" value="1"/>
+                            <cd:Mapping string="true" value="1"/>
+                          </cd:Integer>
+                        </cd:Field>
+                        <cd:Field name="powerLossThreshold">
+                          <cd:Float format="ascii">
+                            <cd:NativeType>float</cd:NativeType>
+                          </cd:Float>
+                        </cd:Field>
+                        <cd:Field name="chirpSource">
+                          <cd:Text/>
+                        </cd:Field>
+                        <cd:Field name="mitigationMethod">
+                          <cd:Text/>
                         </cd:Field>
                       </cd:Record>
                     </cd:Field>

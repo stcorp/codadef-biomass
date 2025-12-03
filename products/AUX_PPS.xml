@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PPS" format="xml" last-modified="2025-09-10">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PPS" format="xml" last-modified="2025-12-03">
   <cd:Record>
     <cd:Field name="auxiliarySTAProcessingParameters">
       <cd:Record>
@@ -118,6 +118,50 @@
                         <cd:NativeType>uint32</cd:NativeType>
                       </cd:Integer>
                     </cd:Field>
+                    <cd:Field name="rangeBlockSize">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="azimuthBlockSize">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="azimuthMinOverlap">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="rangeMinOverlap">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="modelBasedFitFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="lowPassFilterType">
+                      <cd:Text/>
+                    </cd:Field>
+                    <cd:Field name="lowPassFilterOrder">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="lowPassFilterStdDev">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
                     <cd:Field name="exportDebugProductsFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
@@ -194,8 +238,19 @@
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
-                <cd:Field name="calibration">
+                <cd:Field name="slowIonosphereRemoval">
                   <cd:Record>
+                    <cd:Field name="slowIonosphereRemovalFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
                     <cd:Field name="primaryImageFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
@@ -209,21 +264,6 @@
                     </cd:Field>
                     <cd:Field name="polarisationUsed">
                       <cd:Text/>
-                    </cd:Field>
-                  </cd:Record>
-                </cd:Field>
-                <cd:Field name="slowIonosphereRemoval">
-                  <cd:Record>
-                    <cd:Field name="slowIonosphereRemovalFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
                     </cd:Field>
                     <cd:Field name="compensateL1IonoPhaseScreenFlag">
                       <cd:Integer format="ascii">
@@ -299,6 +339,11 @@
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
+                    <cd:Field name="minUsablePixelRatio">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
                     <cd:Field name="multiBaselineCriticalBaselineThreshold">
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
@@ -309,11 +354,6 @@
                         <cd:Attribute name="units">
                           <cd:FixedValue>rad</cd:FixedValue>
                         </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="minUsablePixelRatio">
-                      <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
@@ -330,9 +370,9 @@
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
-                <cd:Field name="baselineAndIonosphereCorrection">
+                <cd:Field name="inSARCalibration">
                   <cd:Record>
-                    <cd:Field name="baselineErrorCorrectionFlag">
+                    <cd:Field name="inSARCalibrationFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
                         <cd:Mapping string="FALSE" value="0"/>
@@ -343,145 +383,20 @@
                         <cd:Mapping string="true" value="1"/>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="residualIonosphereRemovalFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="latitudeThreshold">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>deg</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="ionosphereHeightPrior">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="ionosphereHeightPriorSource">
+                    <cd:Field name="polarisationUsed">
                       <cd:Text/>
                     </cd:Field>
-                    <cd:Field name="ionosphereMaxDeviationFromPrior">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="useIonosphereHeightPriorFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="fallbackToIonosphereAltitudePriorFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="squintUpsamplingFactor">
+                    <cd:Field name="fft2ZeroPaddingUpsamplingFactor">
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="azimuthUpsamplingFactor">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="rangeBlockSize">
-                      <cd:Float format="ascii">
-                        <!-- <cd:Attribute name="units">
-                          <cd:FixedValue>px</cd:FixedValue>
-                        </cd:Attribute> -->
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="multiSquintCoherenceAzimuthSubsamplingStep">
-                      <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="multiSquintCoherenceAzimuthFilterWindowSize">
+                    <cd:Field name="fft2PeakWindowSize">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint32</cd:NativeType>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="maxNumSpectrumPeaks">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint32</cd:NativeType>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="spectrumPeakThreshold">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="ionosphereEstimationQualityThreshold">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="maxFailedIonosphereDetectionRatio">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="maxInvalidIonosphereRatio">
-                      <cd:Float format="ascii">
-                        <cd:NativeType>float</cd:NativeType>
-                      </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="applyShiftsWithBPSStackProcessorFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="use32bitEstimationFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
-                    </cd:Field>
-                    <cd:Field name="use32bitCorrectionFlag">
+                    <cd:Field name="use32bitFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
                         <cd:Mapping string="FALSE" value="0"/>
@@ -640,17 +555,6 @@
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
-                    </cd:Field>
-                    <cd:Field name="decimateResidualIonosphereLutFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
