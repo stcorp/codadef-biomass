@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1A_Main_ADS" format="xml" last-modified="2025-06-06">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1A_Main_ADS" format="xml" last-modified="2025-12-04">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
@@ -698,6 +698,12 @@
             <cd:Field name="rfiMaskGenerationMethod">
               <cd:Text/>
             </cd:Field>
+            <cd:Field name="rfiFMChirpSource">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="rfiFMMitigationMethod">
+              <cd:Text/>
+            </cd:Field>
             <cd:Field name="internalCalibrationEstimationFlag">
               <cd:Integer format="ascii">
                 <cd:NativeType>uint8</cd:NativeType>
@@ -1370,12 +1376,17 @@
                     <cd:Dimension/>
                     <cd:Record>
                       <cd:Attribute name="polarisation"/>
-                      <cd:Field name="percentageAffectedLines" real_name="percentageAffectedLines">
+                      <cd:Field name="percentageAffectedLines">
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
                         </cd:Float>
                       </cd:Field>
-                      <cd:Field name="maxPercentageAffectedBW" real_name="maxPercentageAffectedBW">
+                      <cd:Field name="maxPercentageAffectedBW">
+                        <cd:Float format="ascii">
+                          <cd:NativeType>float</cd:NativeType>
+                        </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="avgPercentageAffectedBW">
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
                         </cd:Float>
@@ -1398,7 +1409,17 @@
                     <cd:Dimension/>
                     <cd:Record>
                       <cd:Attribute name="polarisation"/>
-                      <cd:Field name="rfiPersistentBWPercentage" real_name="rfiPersistentBWPercentage">
+                      <cd:Field name="maxPercentageAffectedBW">
+                        <cd:Float format="ascii">
+                          <cd:NativeType>float</cd:NativeType>
+                        </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="avgPercentageAffectedBW">
+                        <cd:Float format="ascii">
+                          <cd:NativeType>float</cd:NativeType>
+                        </cd:Float>
+                      </cd:Field>
+                      <cd:Field name="percentageAffectedLines">
                         <cd:Float format="ascii">
                           <cd:NativeType>float</cd:NativeType>
                         </cd:Float>
