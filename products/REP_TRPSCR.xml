@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_TRPSCR" format="xml" last-modified="2023-05-03">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="REP_TRPSCR" format="xml" last-modified="2026-01-15">
   <cd:Record>
     <cd:Field name="Earth_Observation_File" real_name="http://c-core.ca/BCT Earth_Observation_File">
       <cd:Record>
