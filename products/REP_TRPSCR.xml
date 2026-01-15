@@ -30,24 +30,27 @@
                   <cd:Text/>
                 </cd:Attribute>
                 <cd:Field name="Scheduled_Operation" real_name="http://c-core.ca/BCT Scheduled_Operation">
-                  <cd:Record>
-                    <cd:Field name="Operation_ID" real_name="http://c-core.ca/BCT Operation_ID">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="Operation_Type" real_name="http://c-core.ca/BCT Operation_Type">
-                      <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="Start_Time" real_name="http://c-core.ca/BCT Start_Time">
-                      <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSSS&quot;)">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Field name="Operation_ID" real_name="http://c-core.ca/BCT Operation_ID">
                         <cd:Text/>
-                      </cd:Time>
-                    </cd:Field>
-                    <cd:Field name="Stop_Time" real_name="http://c-core.ca/BCT Stop_Time">
-                      <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSSS&quot;)">
+                      </cd:Field>
+                      <cd:Field name="Operation_Type" real_name="http://c-core.ca/BCT Operation_Type">
                         <cd:Text/>
-                      </cd:Time>
-                    </cd:Field>
-                  </cd:Record>
+                      </cd:Field>
+                      <cd:Field name="Start_Time" real_name="http://c-core.ca/BCT Start_Time">
+                        <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSSS&quot;)">
+                          <cd:Text/>
+                        </cd:Time>
+                      </cd:Field>
+                      <cd:Field name="Stop_Time" real_name="http://c-core.ca/BCT Stop_Time">
+                        <cd:Time timeformat="time(str(.),&quot;'UTC='yyyy-MM-dd'T'HH:mm:ss.SSSSSSS&quot;)">
+                          <cd:Text/>
+                        </cd:Time>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
                 </cd:Field>
               </cd:Record>
             </cd:Field>
