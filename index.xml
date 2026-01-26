@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2025-12-04">
+<cd:ProductClass xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" name="BIOMASS" last-modified="2026-01-26">
   <cd:Description>BIOMASS products</cd:Description>
 
   <!-- Generic Product Header -->
@@ -500,19 +500,6 @@
         <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
         <cd:MatchFilename offset="9">REP_NOBOUT</cd:MatchFilename>
         <cd:MatchFilename offset="65">.EOF</cd:MatchFilename>
-      </cd:DetectionRule>
-    </cd:ProductDefinition>
-  </cd:ProductType>
-
-  <!-- Disclaimer files -->
-  <cd:ProductType name="REP_DISCLM">
-    <cd:Description>Quality Disclaimer Metadata file</cd:Description>
-    <cd:ProductDefinition id="REP_DISCLM" format="xml" version="0">
-      <cd:Description>This definition is based on version 1.1 of the BIOMASS MPMF File Format Specifications - ST-ESA-MPMF-FFS-001</cd:Description>
-      <cd:DetectionRule>
-        <cd:MatchFilename offset="0">BIO_</cd:MatchFilename>
-        <cd:MatchFilename offset="9">REP_DISCLM</cd:MatchFilename>
-        <cd:MatchFilename offset="51">.EOF</cd:MatchFilename>
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
