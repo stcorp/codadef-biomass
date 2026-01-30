@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_2A" format="xml" last-modified="2025-04-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_2A" format="xml" last-modified="2026-01-30">
   <cd:Record>
     <cd:Field name="auxiliaryL2aProcessingParameters">
       <cd:Record>
@@ -615,6 +615,155 @@
               <cd:Integer format="ascii">
                 <cd:NativeType>uint32</cd:NativeType>
               </cd:Integer>
+            </cd:Field>
+          </cd:Record>
+        </cd:Field>
+        <cd:Field name="TFH">
+          <cd:Record>
+            <cd:Field name="l2aTFHProductDOI">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="productID">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="enableProductFlag">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="enableSuperResolution">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+                <cd:Mapping string="FALSE" value="0"/>
+                <cd:Mapping string="False" value="0"/>
+                <cd:Mapping string="false" value="0"/>
+                <cd:Mapping string="TRUE" value="1"/>
+                <cd:Mapping string="True" value="1"/>
+                <cd:Mapping string="true" value="1"/>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="productResolution">
+              <cd:Float format="ascii">
+                <cd:Attribute name="units"/>
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="regularizationNoiseFactor">
+              <cd:Float format="ascii">
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="powerThreshold">
+              <cd:Float format="ascii">
+                <cd:NativeType>float</cd:NativeType>
+              </cd:Float>
+            </cd:Field>
+            <cd:Field name="medianFactor">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint32</cd:NativeType>
+              </cd:Integer>
+            </cd:Field>
+            <cd:Field name="estimationValidValuesLimits">
+              <cd:Record>
+                <cd:Field name="min">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="units"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="max">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="units"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="verticalRange">
+              <cd:Record>
+                <cd:Field name="min">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="units"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="max">
+                  <cd:Float format="ascii">
+                    <cd:Attribute name="units"/>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="sampling">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint16</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="compressionOptions">
+              <cd:Record>
+                <cd:Field name="MDS">
+                  <cd:Record>
+                    <cd:Field name="TFH">
+                      <cd:Record>
+                        <cd:Field name="compressionFactor">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint16</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                        <cd:Field name="MAX_Z_ERROR">
+                          <cd:Float format="ascii">
+                            <cd:NativeType>float</cd:NativeType>
+                          </cd:Float>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                    <cd:Field name="Quality">
+                      <cd:Record>
+                        <cd:Field name="compressionFactor">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint16</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                        <cd:Field name="MAX_Z_ERROR">
+                          <cd:Float format="ascii">
+                            <cd:NativeType>float</cd:NativeType>
+                          </cd:Float>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="ADS">
+                  <cd:Record>
+                    <cd:Field name="FNF">
+                      <cd:Record>
+                        <cd:Field name="compressionFactor">
+                          <cd:Integer format="ascii">
+                            <cd:NativeType>uint16</cd:NativeType>
+                          </cd:Integer>
+                        </cd:Field>
+                      </cd:Record>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="MDS_blockSize">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+                <cd:Field name="ADS_blockSize">
+                  <cd:Integer format="ascii">
+                    <cd:NativeType>uint32</cd:NativeType>
+                  </cd:Integer>
+                </cd:Field>
+              </cd:Record>
             </cd:Field>
           </cd:Record>
         </cd:Field>

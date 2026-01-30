@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_INS" format="xml" last-modified="2025-09-10">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_INS" format="xml" last-modified="2026-01-29">
   <cd:Record>
     <cd:Field name="auxiliaryInstrumentParameters">
       <cd:Record>
@@ -467,18 +467,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -493,18 +489,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -540,18 +532,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -566,18 +554,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -617,18 +601,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -643,18 +623,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -690,18 +666,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -716,18 +688,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -767,18 +735,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -793,18 +757,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -840,18 +800,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -866,18 +822,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -917,18 +869,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -943,18 +891,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -990,18 +934,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -1016,18 +956,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -1067,18 +1003,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -1093,18 +1025,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -1140,18 +1068,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -1166,18 +1090,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -1217,18 +1137,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -1243,18 +1159,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -1290,18 +1202,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -1316,18 +1224,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -2401,18 +2305,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -2427,18 +2327,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -2474,18 +2370,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -2500,18 +2392,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -2551,18 +2439,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -2577,18 +2461,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -2624,18 +2504,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -2650,18 +2526,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -3735,18 +3607,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -3761,18 +3629,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -3808,18 +3672,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -3834,18 +3694,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -3885,18 +3741,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -3911,18 +3763,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -3958,18 +3806,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -3984,18 +3828,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -5069,18 +4909,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -5095,18 +4931,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -5142,18 +4974,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -5168,18 +4996,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -5219,18 +5043,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -5245,18 +5065,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -5292,18 +5108,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -5318,18 +5130,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -6413,18 +6221,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -6439,18 +6243,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -6486,18 +6286,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -6512,18 +6308,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -6562,18 +6354,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -6588,18 +6376,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -6635,18 +6419,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -6661,18 +6441,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -6934,18 +6710,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -6960,18 +6732,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7007,18 +6775,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7033,18 +6797,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7083,18 +6843,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7109,18 +6865,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7156,18 +6908,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7182,18 +6930,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7455,18 +7199,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7481,18 +7221,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7528,18 +7264,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7554,18 +7286,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7604,18 +7332,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7630,18 +7354,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7677,18 +7397,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7703,18 +7419,14 @@
                               <cd:Field name="Polarisation">
                                 <cd:Array>
                                   <cd:Dimension/>
-                                  <cd:Array format="ascii">
+                                  <cd:Text>
                                     <cd:Attribute name="count">
                                       <cd:Integer format="ascii">
                                         <cd:NativeType>uint32</cd:NativeType>
                                       </cd:Integer>
                                     </cd:Attribute>
                                     <cd:Attribute name="value"/>
-                                    <cd:Dimension>int(str(@count))</cd:Dimension>
-                                    <cd:Float>
-                                      <cd:NativeType>float</cd:NativeType>
-                                    </cd:Float>
-                                  </cd:Array>
+                                  </cd:Text>
                                 </cd:Array>
                               </cd:Field>
                             </cd:Record>
@@ -7966,18 +7678,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -7992,18 +7700,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8039,18 +7743,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8065,18 +7765,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8116,18 +7812,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8142,18 +7834,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8189,18 +7877,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8215,18 +7899,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8390,18 +8070,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8416,18 +8092,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8463,18 +8135,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8489,18 +8157,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8540,18 +8204,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8566,18 +8226,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8613,18 +8269,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
@@ -8639,18 +8291,14 @@
                             <cd:Field name="Polarisation">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Array format="ascii">
+                                <cd:Text>
                                   <cd:Attribute name="count">
                                     <cd:Integer format="ascii">
                                       <cd:NativeType>uint32</cd:NativeType>
                                     </cd:Integer>
                                   </cd:Attribute>
                                   <cd:Attribute name="value"/>
-                                  <cd:Dimension>int(str(@count))</cd:Dimension>
-                                  <cd:Float>
-                                    <cd:NativeType>float</cd:NativeType>
-                                  </cd:Float>
-                                </cd:Array>
+                                </cd:Text>
                               </cd:Array>
                             </cd:Field>
                           </cd:Record>
