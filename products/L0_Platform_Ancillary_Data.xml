@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L0_Platform_Ancillary_Data" format="binary" last-modified="2023-05-09">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L0_Platform_Ancillary_Data" format="binary" last-modified="2026-02-06">
   <cd:Array>
     <cd:Dimension><![CDATA[$num_dsr]]></cd:Dimension>
     <cd:Record>
@@ -17,9 +17,7 @@
         </cd:Integer>
       </cd:Field>
       <cd:Field name="L0PlatformAncillaryData">
-        <cd:Raw>
-          <cd:BitSize>2432</cd:BitSize>
-        </cd:Raw>
+        <cd:NamedType id="L0_Platform_Ancillary_Data_Packet"/>
       </cd:Field>
       <cd:Field name="PEC">
         <cd:Integer>

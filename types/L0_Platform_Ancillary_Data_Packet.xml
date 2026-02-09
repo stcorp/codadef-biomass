@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<cd:Record xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" xmlns:ct="http://www.stcorp.nl/coda/test/2008/10" name="L0_Platform_Ancillary_Data_Packet" format="binary" last-modified="2026-02-06">
+  <cd:Description>Platform Ancillary Data Packet</cd:Description>
+  <cd:Field name="AOCSVersionNumber">
+    <cd:Integer>
+      <cd:Description>AOCS control law parameters update version number. This is updated by ground.</cd:Description>
+      <cd:BitSize>16</cd:BitSize>
+      <cd:NativeType>uint16</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="OrbitDriftPhaseFlag">
+    <cd:Integer>
+      <cd:Description>Flag to indicate when data is acquired during orbit drift phases. This is updated by ground: 0 (not in drift phase), 1 (in drift phase)</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="NAVUniversalTimeInMJD">
+    <cd:Record>
+      <cd:Description>Current Universal Time (from OBT) in Modified Julian Date Format [day, fraction of day]</cd:Description>
+      <cd:Field name="NAVUTDay">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="NAVUTFractionOfDay">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="NAVDeltaTime">
+    <cd:Float>
+      <cd:Description>Time (in seconds) between the current OBT and the OBT of the last valid GNSS data</cd:Description>
+      <cd:BitSize>64</cd:BitSize>
+      <cd:NativeType>double</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="NAVSuccessiveValidMeasures">
+    <cd:Integer>
+      <cd:Description>Number of successive valid GPS measurements</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="NAVGNSSPVDateInOBTScale">
+    <cd:Float>
+      <cd:Description>Current GNSS PV date in OBT scale</cd:Description>
+      <cd:BitSize>64</cd:BitSize>
+      <cd:NativeType>double</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="NAVGNSSPVTValAfterCheck">
+    <cd:Integer>
+      <cd:Description>Current GNSS PVT validity (for a number of successive measurements) : TRUE (1), FALSE (0)</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="NAVPropPosInECEF">
+    <cd:Record>
+      <cd:Description>Current propagated position of the spacecraft CoG from NAV function in ECEF frame</cd:Description>
+      <cd:Field name="NAVPropPositionX">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="NAVPropPositionY">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="NAVPropPositionZ">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="NAVPropVelInECEF">
+    <cd:Record>
+      <cd:Description>Current propagated velocity of the spacecraft CoG from NAV function in ECEF frame</cd:Description>
+      <cd:Field name="NAVPropVelocityX">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="NAVPropVelocityY">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="NAVPropVelocityZ">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="IAEDSEEstimQuat">
+    <cd:Record>
+      <cd:Description>Estimated quaternion from inertial reference frame J2000 to the satellite frame: first element is the rotation angle and the following 3 elements represent the rotation axis</cd:Description>
+      <cd:Field name="IAEDSEEstimQuatS">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="IAEDSEEstimQuatX">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="IAEDSEEstimQuatY">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="IAEDSEEstimQuatZ">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="IAEDSEEstimAngRate">
+    <cd:Record>
+      <cd:Description>Estimated angular rate of the satellite frame wrt the inertial reference frame J2000 expressed in the satellite frame</cd:Description>
+      <cd:Field name="IAEDSEEstimAngRateX">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="IAEDSEEstimAngRateY">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+      <cd:Field name="IAEDSEEstimAngRateZ">
+        <cd:Float>
+          <cd:BitSize>64</cd:BitSize>
+          <cd:NativeType>double</cd:NativeType>
+        </cd:Float>
+      </cd:Field>
+    </cd:Record>
+  </cd:Field>
+  <cd:Field name="AOCSCurrentAOCSMode">
+    <cd:Integer>
+      <cd:Description>Current AOCS operating mode: {0 =IDLE, 1 =ASH, 2 =NORMAL, 3 =OCM, 4 =RDM}</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="AOCSNMState">
+    <cd:Integer>
+      <cd:Description>Current submode when AOCS is in Normal Mode: {0 =STOPPED, 1 =SUP, 2 =GAP, 3 =MAN, 4 =CAP}</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="StarTrackerQualityStatus">
+    <cd:Integer>
+      <cd:Description>Indicates which OH(s) are used in the STR measurement merging. It is coded on 4 (useful) bits and each bit correspond to one OH. ( bit0 : OH1, bit1: OH2, bit3: OH3, bit4: OH4 ) If it is equal to zero, it means there is no valid OH measurement.</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="OBTSynchStatus">
+    <cd:Integer>
+      <cd:Description>Status of the OBT synchronisation with the GNSS: FREE_RUNNING(NO_SYNCH) = 0, SYNCHRONISING = 1, SYNCHRONISED = 2</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="InstrumentHeaterCtrlThermistors">
+    <cd:Array>
+      <cd:Description>The median of the thermistor triplets associated to each of the 9 instrument thermal regulated lines:HL03, HL13, HL37, HL38, HL39, HL40, HL41, HL42</cd:Description>
+      <cd:Dimension>9</cd:Dimension>
+      <cd:Integer>
+        <cd:BitSize>16</cd:BitSize>
+        <cd:NativeType>uint16</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="InstrumentMonitoringThermistors">
+    <cd:Array>
+      <cd:Description>16 instrument monitoring thermistors: TH_DCU-A_EXT_1_ANF_184 TH_DCU-A_INT_1_ANF_148 TH_DCU-B_EXT_1_ANF_158 TH_DCU-B_INT_1_ANF_151 TH_FAA_001_ANP_002 (PT1000) TH_FAA_002_ANP_004 (PT1000) TH_FAA_003_ANP_005 (PT1000) TH_FAA_004_ANP_007 (PT1000) TH_RAS-V_EXT_ANF_053 TH_SSPA1_ANF_045 TH_SSPA2_ANF_157 TH_SSPA3_ANF_186 TH_SSPA4_ANF_187 TH_SSPA5_ANF_105 TH_SSPA6_ANF_052 TH_RAS-H_EXT_ANF_159</cd:Description>
+      <cd:Dimension>16</cd:Dimension>
+      <cd:Integer>
+        <cd:BitSize>16</cd:BitSize>
+        <cd:NativeType>uint16</cd:NativeType>
+      </cd:Integer>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="CommandedQuaternionWrtTheGuidanceFrame">
+    <cd:Array>
+      <cd:Description>Commanded quaternion in the guidance reference frame (Zero Doppler) when the AOCS is in NM-MAN and NM-CAP submodes: first element is the rotation angle and the following 3 elements represent the rotation axis</cd:Description>
+      <cd:Dimension>4</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>64</cd:BitSize>
+        <cd:NativeType>double</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="CommandedAngularRateWrtTheGuidanceFrame">
+    <cd:Array>
+      <cd:Description>Commanded angular rate in the guidance reference frame (Zero Doppler) when the AOCS is in NM-MAN and NM-CAP submodes.</cd:Description>
+      <cd:Dimension>3</cd:Dimension>
+      <cd:Float>
+        <cd:BitSize>64</cd:BitSize>
+        <cd:NativeType>double</cd:NativeType>
+      </cd:Float>
+    </cd:Array>
+  </cd:Field>
+  <cd:Field name="InOrbitPosition">
+    <cd:Float>
+      <cd:Description>Angle between the satellite position and the ascending node in the orbital plane. This is computed considering the Equatorial Plane of the ECEF frame.</cd:Description>
+      <cd:BitSize>64</cd:BitSize>
+      <cd:NativeType>double</cd:NativeType>
+    </cd:Float>
+  </cd:Field>
+  <cd:Field name="IndexOfTheSelectedRollSteeringProfileForTheCAPGuidance">
+    <cd:Integer>
+      <cd:Description>Roll steering harmonic profile index, 1 to 6.</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="OrbitNumber">
+    <cd:Integer>
+      <cd:Description>Absolute orbit number set to "0" at start of the NAV function. This is incremented each time the satellite crosses the ascending node. Whenever the NAV function is re-started this parameter is reset. The parameter is also reset after FDIR Level 4.</cd:Description>
+      <cd:BitSize>32</cd:BitSize>
+      <cd:NativeType>uint32</cd:NativeType>
+    </cd:Integer>
+  </cd:Field>
+  <cd:Field name="padding">
+    <cd:Raw>
+      <cd:Description>Spare data for PAD</cd:Description>
+      <cd:BitSize><![CDATA[ 16 * 8 ]]></cd:BitSize>
+    </cd:Raw>
+  </cd:Field>
+</cd:Record>
