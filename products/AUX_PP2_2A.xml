@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_2A" format="xml" last-modified="2026-01-30">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_2A" format="xml" last-modified="2026-03-18">
   <cd:Record>
     <cd:Field name="auxiliaryL2aProcessingParameters">
       <cd:Record>
@@ -22,6 +22,9 @@
               </cd:Float>
             </cd:Field>
             <cd:Field name="subsettingRule">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="polarisationCombinationMethod">
               <cd:Text/>
             </cd:Field>
           </cd:Record>
@@ -619,6 +622,7 @@
           </cd:Record>
         </cd:Field>
         <cd:Field name="TFH">
+          <cd:Optional /> <!-- DOCS: 'not official BPS product, for debugging purposes only' and 'non-operational' -->
           <cd:Record>
             <cd:Field name="l2aTFHProductDOI">
               <cd:Text/>

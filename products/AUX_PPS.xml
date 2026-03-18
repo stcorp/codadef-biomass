@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PPS" format="xml" last-modified="2025-12-03">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PPS" format="xml" last-modified="2026-03-18">
   <cd:Record>
     <cd:Field name="auxiliarySTAProcessingParameters">
       <cd:Record>
@@ -73,17 +73,6 @@
                   <cd:Record>
                     <cd:Field name="coregistrationMethod">
                       <cd:Text/>
-                    </cd:Field>
-                    <cd:Field name="rangeSpectralFilteringFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
                     </cd:Field>
                     <cd:Field name="residualShiftsQualityThreshold">
                       <cd:Float format="ascii">
@@ -370,9 +359,9 @@
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>
-                <cd:Field name="inSARCalibration">
+                <cd:Field name="multiSquintCalibration">
                   <cd:Record>
-                    <cd:Field name="inSARCalibrationFlag">
+                    <cd:Field name="multiSquintCalibrationFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
                         <cd:Mapping string="FALSE" value="0"/>
@@ -386,17 +375,218 @@
                     <cd:Field name="polarisationUsed">
                       <cd:Text/>
                     </cd:Field>
-                    <cd:Field name="fft2ZeroPaddingUpsamplingFactor">
+                    <cd:Field name="seedRangeCoherenceThreshold">
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="fft2PeakWindowSize">
+                    <cd:Field name="edgeGuard">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint32</cd:NativeType>
                       </cd:Integer>
                     </cd:Field>
-                    <cd:Field name="use32bitFlag">
+                    <cd:Field name="validAzimuthThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="propagationStepInversionMethod">
+                      <cd:Text/>
+                    </cd:Field>
+                    <cd:Field name="minIonoRangeCandidate">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="maxIonoRangeCandidate">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="numIonoRangeCandidates">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="robustLayerEstimationHighResNumSlices">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="robustLayerEstimationLowResNumSlices">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="layerAdditionThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="maxNumIonosphereLayers">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="maxIonoRangeOffset">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="ionoRangeEstimationMaxIterationsDerivative">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="ionoRangeEstimationMaxIterationsProjection">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="ionoRangeEstimationConvergenceThresholdDerivative">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="ionoRangeEstimationConvergenceThresholdProjection">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="ionoRangeSeedingMaxIterationsDerivative">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="ionoRangeSeedingMaxIterationsProjection">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="ionoRangeSeedingConvergenceThresholdDerivative">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="ionoRangeSeedingConvergenceThresholdProjection">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="ionoRangePropagationMaxIterationsDerivative">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="ionoRangePropagationMaxIterationsProjection">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="ionoRangePropagationConvergenceThresholdDerivative">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="ionoRangePropagationConvergenceThresholdProjection">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="forceMultiSquintIonoCorrectionFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="disableMultiSquintIonoCorrectionFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="coherenceAzimuthWindowSize">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="coherenceRangeWindowSize">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceSubbandResolution">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceHighResAzimuthWindowSize">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceHighResRangeWindowSize">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceLowResAzimuthWindowSize">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceLowResRangeWindowSize">
+                      <cd:Float format="ascii">
+                        <cd:Attribute name="units" />
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceValidityThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceImprovementThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="multiSquintCoherenceLowResThreshold">
+                      <cd:Float format="ascii">
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="use32bitEstimationFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="use32bitCorrectionFlag">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint8</cd:NativeType>
                         <cd:Mapping string="FALSE" value="0"/>
@@ -443,24 +633,19 @@
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
-                    <cd:Field name="medianFilterFlag">
-                      <cd:Integer format="ascii">
-                        <cd:NativeType>uint8</cd:NativeType>
-                        <cd:Mapping string="FALSE" value="0"/>
-                        <cd:Mapping string="False" value="0"/>
-                        <cd:Mapping string="false" value="0"/>
-                        <cd:Mapping string="TRUE" value="1"/>
-                        <cd:Mapping string="True" value="1"/>
-                        <cd:Mapping string="true" value="1"/>
-                      </cd:Integer>
+                    <cd:Field name="calibrationPhasePostprocessing">
+                      <cd:Text/>
                     </cd:Field>
-                    <cd:Field name="medianFilterWindowSize">
+                    <cd:Field name="postprocessingFilterWindowSize">
                       <cd:Float format="ascii">
-                        <cd:Attribute name="units">
-                          <cd:FixedValue>m</cd:FixedValue>
-                        </cd:Attribute>
+                        <cd:Attribute name="units" />
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="goldsteinFilterWindowSize">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint32</cd:NativeType>
+                      </cd:Integer>
                     </cd:Field>
                     <cd:Field name="excludeMPMBPolarizationCrossCovarianceFlag">
                       <cd:Integer format="ascii">
@@ -531,6 +716,9 @@
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
                     </cd:Field>
+                    <cd:Field name="l1cQlColourCodingMethod">
+                      <cd:Text/>
+                    </cd:Field>
                     <cd:Field name="qlRangeDecimationFactor">
                       <cd:Integer format="ascii">
                         <cd:NativeType>uint32</cd:NativeType>
@@ -555,6 +743,28 @@
                       <cd:Float format="ascii">
                         <cd:NativeType>float</cd:NativeType>
                       </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="qlExportCoherenceFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
+                    </cd:Field>
+                    <cd:Field name="qlExportInterferogramFlag">
+                      <cd:Integer format="ascii">
+                        <cd:NativeType>uint8</cd:NativeType>
+                        <cd:Mapping string="FALSE" value="0"/>
+                        <cd:Mapping string="False" value="0"/>
+                        <cd:Mapping string="false" value="0"/>
+                        <cd:Mapping string="TRUE" value="1"/>
+                        <cd:Mapping string="True" value="1"/>
+                        <cd:Mapping string="true" value="1"/>
+                      </cd:Integer>
                     </cd:Field>
                   </cd:Record>
                 </cd:Field>

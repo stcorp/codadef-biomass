@@ -268,7 +268,7 @@
   <cd:ProductType name="AUX_PP1___">
     <cd:Description>Auxiliary L1 Processing Parameters</cd:Description>
     <cd:ProductDefinition id="AUX_PP1" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.5.0 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.6.0 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pp1</cd:MatchFilename>
@@ -290,7 +290,7 @@
   <cd:ProductType name="AUX_PPS___">
     <cd:Description>Auxiliary Stack Processing Parameters</cd:Description>
     <cd:ProductDefinition id="AUX_PPS" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.5.0 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.6.0 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pps</cd:MatchFilename>
@@ -332,6 +332,17 @@
       </cd:DetectionRule>
     </cd:ProductDefinition>
   </cd:ProductType>
+  <cd:ProductType name="On_Board_Filters">
+    <cd:Description>On-Board Filters files</cd:Description>
+    <cd:ProductDefinition id="On_Board_Filters" format="hdf5" version="0">
+      <cd:Description>This definition is based on version 3.6.0 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:DetectionRule>
+        <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
+        <cd:MatchFilename offset="4">aux_ins</cd:MatchFilename>
+        <cd:MatchFilename offset="46">_on_board_filters.nc</cd:MatchFilename>
+      </cd:DetectionRule>
+    </cd:ProductDefinition>
+  </cd:ProductType>
   <cd:ProductType name="AUX_ATT___">
     <cd:Description>Auxiliary Attitude Data for BIOMASS</cd:Description>
     <cd:ProductDefinition id="AUX_ATT" format="xml" version="0">
@@ -357,7 +368,7 @@
   <cd:ProductType name="AUX_PP2_2A">
     <cd:Description>Auxiliary L2a Processing Parameters</cd:Description>
     <cd:ProductDefinition id="AUX_PP2_2A" format="xml" version="0">
-      <cd:Description>This definition is based on version 3.2.6 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
+      <cd:Description>This definition is based on version 3.6.0 of the BPS Auxiliary Products Format - BIO-BPS-AUX-FMT-ARE-010163</cd:Description>
       <cd:DetectionRule>
         <cd:MatchFilename offset="0">bio_</cd:MatchFilename>
         <cd:MatchFilename offset="4">aux_pp2_2a</cd:MatchFilename>
