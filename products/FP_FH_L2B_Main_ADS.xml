@@ -332,11 +332,11 @@
                                               </cd:Field>
                                               <cd:Field name="invalidFastIonosphereEstimatesFraction">
                                                 <cd:Text/>
-                                                <cd:Optional/>
+                                                <cd:Optional/> <!-- Deprecated in L2 PFD 3.4.0 (BPS v4.4.0) -->
                                               </cd:Field>
                                               <cd:Field name="fastIonospherePhaseScreenQualityThreshold">
                                                 <cd:Text/>
-                                                <cd:Optional/>
+                                                <cd:Optional/> <!-- Deprecated in L2 PFD 3.4.0 (BPS v4.4.0) -->
                                               </cd:Field>
                                               <cd:Field name="invalidGroundPhasesScreenEstimatesFraction">
                                                 <cd:Text/>
