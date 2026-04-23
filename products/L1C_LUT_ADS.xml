@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_LUT_ADS" format="hdf5" last-modified="2026-04-01">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_LUT_ADS" format="hdf5" last-modified="2026-04-23">
   <cd:Record>
     <cd:Attribute name="mission">
       <cd:Text/>
@@ -1155,6 +1155,146 @@
             </cd:Attribute>
             <cd:Attribute name="units">
               <cd:FixedValue>rad/m</cd:FixedValue>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+              <cd:Conversion numerator="1" denominator="1" invalid="-9999"/>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+    <cd:Field name="interferometry">
+      <cd:Optional/>  <!-- From L1 PFD 1.6.1: only for secondary images -->
+      <cd:Record>
+        <cd:Field name="coherence">
+          <cd:Optional/>  <!-- From L1 PFD 1.6.1: only for secondary images -->
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="FillValue" real_name="_FillValue">
+              <cd:Array>
+                <cd:Dimension>1</cd:Dimension>
+                <cd:Float>
+                  <cd:NativeType>float</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Float>
+              </cd:Array>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Attribute name="units">
+              <cd:Optional/>
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+              <cd:Conversion numerator="1" denominator="1" invalid="-9999"/>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+        <cd:Field name="interferogram">
+          <cd:Optional/>  <!-- From L1 PFD 1.6.1: only for secondary images -->
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>2</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="FillValue" real_name="_FillValue">
+              <cd:Array>
+                <cd:Dimension>1</cd:Dimension>
+                <cd:Float>
+                  <cd:NativeType>float</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Float>
+              </cd:Array>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Attribute name="units">
+              <cd:FixedValue>rad</cd:FixedValue>
+            </cd:Attribute>
+            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Float>
+              <cd:NativeType>float</cd:NativeType>
+              <cd:Conversion numerator="1" denominator="1" invalid="-9999"/>
+            </cd:Float>
+          </cd:Array>
+        </cd:Field>
+      </cd:Record>
+    </cd:Field>
+    <cd:Field name="multiSquintCalibration">
+      <cd:Optional/>  <!-- From L1 PFD 1.6.0 (BPS v4.4.0): only if the MSC's ionosphere correction is activated -->
+      <cd:Record>
+        <cd:Field name="ionospherePhaseScreens">
+          <cd:Optional/>  <!-- From L1 PFD 1.6.0 (BPS v4.4.0): only if the MSC's ionosphere correction is activated -->
+          <cd:Array>
+            <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
+              <cd:Array>
+                <cd:Dimension>3</cd:Dimension>
+                <cd:Integer>
+                  <cd:NativeType>int32</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Integer>
+              </cd:Array>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+              <cd:Integer>
+                <cd:NativeType>int32</cd:NativeType>
+              </cd:Integer>
+              <cd:Optional/>
+              <cd:Hidden/>
+            </cd:Attribute>
+            <cd:Attribute name="FillValue" real_name="_FillValue">
+              <cd:Array>
+                <cd:Dimension>1</cd:Dimension>
+                <cd:Float>
+                  <cd:NativeType>float</cd:NativeType>
+                  <cd:LittleEndian/>
+                </cd:Float>
+              </cd:Array>
+            </cd:Attribute>
+            <cd:Attribute name="description">
+              <cd:Text/>
+            </cd:Attribute>
+            <cd:Attribute name="units">
+              <cd:FixedValue>rad</cd:FixedValue>
             </cd:Attribute>
             <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
             <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
