@@ -195,7 +195,7 @@
         </cd:Float>
       </cd:Array>
     </cd:Field>
-    <cd:Field name="ionosphereRelativeRangeTime">
+    <cd:Field name="ionosphereSlantRangeTime">
       <cd:Optional/>
       <cd:Array>
         <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
@@ -231,7 +231,7 @@
         </cd:Float>
       </cd:Array>
     </cd:Field>
-    <cd:Field name="ionosphereCenteredAzimuthTime">
+    <cd:Field name="ionosphereRelativeAzimuthTime">
       <cd:Optional/>
       <cd:Array>
         <cd:Attribute name="Netcdf4Coordinates" real_name="_Netcdf4Coordinates">
@@ -260,6 +260,29 @@
         </cd:Attribute>
         <cd:Attribute name="units">
           <cd:FixedValue>s</cd:FixedValue>
+        </cd:Attribute>
+        <cd:Dimension/>
+        <cd:Float>
+          <cd:NativeType>float</cd:NativeType>
+        </cd:Float>
+      </cd:Array>
+    </cd:Field>
+    <cd:Field name="ionosphereLayers">
+      <cd:Optional/>
+      <cd:Array>
+        <cd:Attribute name="CLASS">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="NAME">
+          <cd:Text/>
+          <cd:Hidden/>
+        </cd:Attribute>
+        <cd:Attribute name="Netcdf4Dimid" real_name="_Netcdf4Dimid">
+          <cd:Integer>
+            <cd:NativeType>int32</cd:NativeType>
+          </cd:Integer>
+          <cd:Hidden/>
         </cd:Attribute>
         <cd:Dimension/>
         <cd:Float>
@@ -1302,8 +1325,9 @@
             <cd:Attribute name="units">
               <cd:FixedValue>rad</cd:FixedValue>
             </cd:Attribute>
-            <cd:Dimension><![CDATA[$relative_azimuth_time]]></cd:Dimension>
-            <cd:Dimension><![CDATA[$slant_range_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$ionosphere_relative_azimuth_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$ionosphere_slant_range_time]]></cd:Dimension>
+            <cd:Dimension><![CDATA[$ionosphere_layers]]></cd:Dimension>
             <cd:Float>
               <cd:NativeType>float</cd:NativeType>
               <cd:Conversion numerator="1" denominator="1" invalid="-9999"/>
@@ -1402,5 +1426,14 @@
   </cd:ProductVariable>
   <cd:ProductVariable name="relative_azimuth_time">
     <cd:Init><![CDATA[$relative_azimuth_time = dim(/relativeAzimuthTime, 0)]]></cd:Init>
+  </cd:ProductVariable>
+  <cd:ProductVariable name="ionosphere_slant_range_time">
+    <cd:Init><![CDATA[$ionosphere_slant_range_time = dim(/ionosphereSlantRangeTime, 0)]]></cd:Init>
+  </cd:ProductVariable>
+  <cd:ProductVariable name="ionosphere_relative_azimuth_time">
+    <cd:Init><![CDATA[$ionosphere_relative_azimuth_time = dim(/ionosphereRelativeAzimuthTime, 0)]]></cd:Init>
+  </cd:ProductVariable>
+  <cd:ProductVariable name="ionosphere_layers">
+    <cd:Init><![CDATA[$ionosphere_layers = dim(/ionosphereLayers, 0)]]></cd:Init>
   </cd:ProductVariable>
 </cd:ProductDefinition>
