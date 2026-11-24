@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_FH" format="xml" last-modified="2024-06-07">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_FH" format="xml" last-modified="2026-11-20">
   <cd:Record>
     <cd:Field name="auxiliaryL2bFHProcessingParameters">
       <cd:Record>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+          <cd:Optional/>
+        </cd:Attribute>
         <cd:Field name="l2bFHProductDOI">
           <cd:Text/>
         </cd:Field>

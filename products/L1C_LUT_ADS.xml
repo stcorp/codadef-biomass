@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_LUT_ADS" format="hdf5" last-modified="2026-06-15">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1C_LUT_ADS" format="hdf5" last-modified="2026-11-20">
   <cd:Record>
     <cd:Attribute name="mission">
       <cd:Text/>
@@ -119,6 +119,10 @@
     </cd:Attribute>
     <cd:Attribute name="referenceAzimuthTime">
       <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="formatVersion">
+      <cd:Text/>
+      <cd:Optional/>
     </cd:Attribute>
     <cd:Attribute name="NCProperties" real_name="_NCProperties">
       <cd:Text/>

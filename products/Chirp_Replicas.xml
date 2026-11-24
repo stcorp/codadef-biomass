@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="Chirp_Replicas" format="hdf5" last-modified="2024-06-07">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="Chirp_Replicas" format="hdf5" last-modified="2026-11-20">
   <cd:Record>
     <cd:Attribute name="description">
       <cd:Text/>
@@ -18,6 +18,10 @@
     </cd:Attribute>
     <cd:Attribute name="referenceTime">
       <cd:Text/>
+    </cd:Attribute>
+    <cd:Attribute name="formatVersion">
+      <cd:Text/>
+      <cd:Optional/>
     </cd:Attribute>
     <cd:Attribute name="NCProperties" real_name="_NCProperties">
       <cd:Text/>

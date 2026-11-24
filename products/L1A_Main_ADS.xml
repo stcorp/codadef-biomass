@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1A_Main_ADS" format="xml" last-modified="2026-04-01">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="L1A_Main_ADS" format="xml" last-modified="2026-11-20">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+          <cd:Optional/>
+        </cd:Attribute>
         <cd:Field name="acquisitionInformation">
           <cd:Record>
             <cd:Field name="mission">

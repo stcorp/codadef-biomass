@@ -1,10 +1,14 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_AB" format="xml" last-modified="2023-12-04">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="AUX_PP2_AB" format="xml" last-modified="2026-11-20">
   <cd:Record>
     <cd:Field name="auxiliaryL2bABProcessingParameters">
       <cd:Record>
         <cd:Attribute name="noNamespaceSchemaLocation" real_name="http://www.w3.org/2001/XMLSchema-instance noNamespaceSchemaLocation">
           <cd:Text/>
+        </cd:Attribute>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+          <cd:Optional/>
         </cd:Attribute>
         <cd:Field name="l2bAGBProductDOI">
           <cd:Text/>
