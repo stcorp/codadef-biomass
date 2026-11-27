@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FH_L2B_Main_ADS" format="xml" last-modified="2025-06-11">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_FH_L2B_Main_ADS" format="xml" last-modified="2026-11-27">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+          <cd:Optional/>
+        </cd:Attribute>
         <cd:Field name="product">
           <cd:Record>
             <cd:Field name="mission">
@@ -255,6 +259,48 @@
                             </cd:Float>
                           </cd:Array>
                         </cd:Type>
+                      </cd:Field>
+                      <cd:Field name="verticalWavenumbers">
+                        <cd:Record>
+                          <cd:Field name="min">
+                            <cd:Float>
+                              <cd:Attribute name="units">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="max">
+                            <cd:Float>
+                              <cd:Attribute name="units">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                        </cd:Record>
+                        <cd:Optional/>
+                      </cd:Field>
+                      <cd:Field name="heightOfAmbiguity">
+                        <cd:Record>
+                          <cd:Field name="min">
+                            <cd:Float>
+                              <cd:Attribute name="units">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="max">
+                            <cd:Float>
+                              <cd:Attribute name="units">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                        </cd:Record>
+                        <cd:Optional/>
                       </cd:Field>
                       <cd:Field name="acquisitionList">
                         <cd:Record>

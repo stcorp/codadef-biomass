@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
-<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_GN_L2B_Main_ADS" format="xml" last-modified="2025-06-11">
+<cd:ProductDefinition xmlns:cd="http://www.stcorp.nl/coda/definition/2008/07" id="FP_AGB_L2B_Main_ADS" format="xml" last-modified="2026-11-27">
   <cd:Record>
     <cd:Field name="mainAnnotation">
       <cd:Record>
+        <cd:Attribute name="schemaVersion">
+          <cd:Text/>
+          <cd:Optional/>
+        </cd:Attribute>
         <cd:Field name="product">
           <cd:Record>
             <cd:Field name="mission">
@@ -55,6 +59,201 @@
               <cd:Integer format="ascii">
                 <cd:NativeType>uint16</cd:NativeType>
               </cd:Integer>
+            </cd:Field>
+            <cd:Field name="contributingTiles">
+              <cd:Record>
+                <cd:Field name="ID">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Text/>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="calABcoveragePerTile">
+              <cd:Optional/>
+              <cd:Record>
+                <cd:Field name="tile">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Attribute name="ID">
+                        <cd:Text/>
+                      </cd:Attribute>
+                      <cd:Field name="originalCoverage">
+                        <cd:Record>
+                          <cd:Field name="percentage">
+                            <cd:Float>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="pixels">
+                            <cd:Integer format="ascii">
+                              <cd:NativeType>uint32</cd:NativeType>
+                            </cd:Integer>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                      <cd:Field name="filteredCoverage">
+                        <cd:Record>
+                          <cd:Field name="afterGlobalFiltering">
+                            <cd:Record>
+                              <cd:Field name="percentage">
+                                <cd:Float>
+                                  <cd:NativeType>double</cd:NativeType>
+                                </cd:Float>
+                              </cd:Field>
+                              <cd:Field name="pixels">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint32</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                          <cd:Field name="afterAGBvalueFiltering">
+                            <cd:Record>
+                              <cd:Field name="percentage">
+                                <cd:Float>
+                                  <cd:NativeType>double</cd:NativeType>
+                                </cd:Float>
+                              </cd:Field>
+                              <cd:Field name="pixels">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint32</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                          <cd:Field name="afterAGBstdFiltering">
+                            <cd:Record>
+                              <cd:Field name="percentage">
+                                <cd:Float>
+                                  <cd:NativeType>double</cd:NativeType>
+                                </cd:Float>
+                              </cd:Field>
+                              <cd:Field name="pixels">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint32</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                          <cd:Field name="afterAGBrelativeStdFiltering">
+                            <cd:Record>
+                              <cd:Field name="percentage">
+                                <cd:Float>
+                                  <cd:NativeType>double</cd:NativeType>
+                                </cd:Float>
+                              </cd:Field>
+                              <cd:Field name="pixels">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint32</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                          <cd:Field name="afterLCMClassFiltering">
+                            <cd:Record>
+                              <cd:Field name="percentage">
+                                <cd:Float>
+                                  <cd:NativeType>double</cd:NativeType>
+                                </cd:Float>
+                              </cd:Field>
+                              <cd:Field name="pixels">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint32</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="GNcoveragePerTile">
+              <cd:Optional/>
+              <cd:Record>
+                <cd:Field name="tile">
+                  <cd:Array>
+                    <cd:Dimension/>
+                    <cd:Record>
+                      <cd:Attribute name="ID">
+                        <cd:Text/>
+                      </cd:Attribute>
+                      <cd:Field name="GN">
+                        <cd:Record>
+                          <cd:Attribute name="acquisitionID">
+                            <cd:Text/>
+                          </cd:Attribute>
+                          <cd:Field name="originalCoverage">
+                            <cd:Record>
+                              <cd:Field name="percentage">
+                                <cd:Float>
+                                  <cd:NativeType>double</cd:NativeType>
+                                </cd:Float>
+                              </cd:Field>
+                              <cd:Field name="pixels">
+                                <cd:Integer format="ascii">
+                                  <cd:NativeType>uint32</cd:NativeType>
+                                </cd:Integer>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                          <cd:Field name="filteredCoverage">
+                            <cd:Record>
+                              <cd:Field name="afterGlobalFiltering">
+                                <cd:Record>
+                                  <cd:Field name="percentage">
+                                    <cd:Float>
+                                      <cd:NativeType>double</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                  <cd:Field name="pixels">
+                                    <cd:Integer format="ascii">
+                                      <cd:NativeType>uint32</cd:NativeType>
+                                    </cd:Integer>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Field>
+                              <cd:Field name="afterSigmaFiltering">
+                                <cd:Record>
+                                  <cd:Field name="percentage">
+                                    <cd:Float>
+                                      <cd:NativeType>double</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                  <cd:Field name="pixels">
+                                    <cd:Integer format="ascii">
+                                      <cd:NativeType>uint32</cd:NativeType>
+                                    </cd:Integer>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Field>
+                              <cd:Field name="afterAngleFiltering">
+                                <cd:Record>
+                                  <cd:Field name="percentage">
+                                    <cd:Float>
+                                      <cd:NativeType>double</cd:NativeType>
+                                    </cd:Float>
+                                  </cd:Field>
+                                  <cd:Field name="pixels">
+                                    <cd:Integer format="ascii">
+                                      <cd:NativeType>uint32</cd:NativeType>
+                                    </cd:Integer>
+                                  </cd:Field>
+                                </cd:Record>
+                              </cd:Field>
+                            </cd:Record>
+                          </cd:Field>
+                        </cd:Record>
+                      </cd:Field>
+                    </cd:Record>
+                  </cd:Array>
+                </cd:Field>
+              </cd:Record>
             </cd:Field>
           </cd:Record>
         </cd:Field>
@@ -254,6 +453,48 @@
                           </cd:Array>
                         </cd:Type>
                       </cd:Field>
+                      <cd:Field name="verticalWavenumbers">
+                        <cd:Record>
+                          <cd:Field name="min">
+                            <cd:Float>
+                              <cd:Attribute name="units">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="max">
+                            <cd:Float>
+                              <cd:Attribute name="units">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                        </cd:Record>
+                        <cd:Optional/>
+                      </cd:Field>
+                      <cd:Field name="heightOfAmbiguity">
+                        <cd:Record>
+                          <cd:Field name="min">
+                            <cd:Float>
+                              <cd:Attribute name="units">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                          <cd:Field name="max">
+                            <cd:Float>
+                              <cd:Attribute name="units">
+                                <cd:Text/>
+                              </cd:Attribute>
+                              <cd:NativeType>double</cd:NativeType>
+                            </cd:Float>
+                          </cd:Field>
+                        </cd:Record>
+                        <cd:Optional/>
+                      </cd:Field>
                       <cd:Field name="acquisitionList">
                         <cd:Record>
                           <cd:Attribute name="count">
@@ -401,7 +642,8 @@
                   </cd:Integer>
                 </cd:Attribute>
                 <cd:Attribute name="units">
-                  <cd:FixedValue>deg</cd:FixedValue>
+                  <cd:Text/>
+                  <cd:Optional/>
                 </cd:Attribute>
                 <cd:Array format="ascii">
                   <cd:Dimension>int(str(@count))</cd:Dimension>
@@ -412,31 +654,144 @@
               </cd:Type>
             </cd:Field>
             <cd:Field name="backscatterLimits">
-              <cd:Array>
-                <cd:Dimension/>
-                <cd:Text/> <!-- MinMaxType is undefined -->
-              </cd:Array>
+              <cd:Record>
+                <cd:Field name="hh">
+                  <cd:Record>
+                    <cd:Field name="min">
+                      <cd:Float>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="max">
+                      <cd:Float>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="vh">
+                  <cd:Record>
+                    <cd:Field name="min">
+                      <cd:Float>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="max">
+                      <cd:Float>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+                <cd:Field name="vv">
+                  <cd:Record>
+                    <cd:Field name="min">
+                      <cd:Float>
+                        <cd:Attribute name="units">
+                          <cd:Text/>
+                          <cd:Optional/>
+                        </cd:Attribute>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                    <cd:Field name="max">
+                      <cd:Float>
+                        <cd:Attribute name="units">
+                          <cd:Text/>
+                          <cd:Optional/>
+                        </cd:Attribute>
+                        <cd:NativeType>float</cd:NativeType>
+                      </cd:Float>
+                    </cd:Field>
+                  </cd:Record>
+                </cd:Field>
+              </cd:Record>
             </cd:Field>
             <cd:Field name="angleLimits">
-              <cd:Text/> <!-- MinMaxType is undefined -->
+              <cd:Record>
+                <cd:Field name="min">
+                  <cd:Float>
+                    <cd:Attribute name="units">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="max">
+                  <cd:Float>
+                    <cd:Attribute name="units">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+              </cd:Record>
             </cd:Field>
             <cd:Field name="meanAGBLimits">
-              <cd:Text/> <!-- MinMaxType is undefined -->
+              <cd:Record>
+                <cd:Field name="min">
+                  <cd:Float>
+                    <cd:Attribute name="units">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="max">
+                  <cd:Float>
+                    <cd:Attribute name="units">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+              </cd:Record>
             </cd:Field>
             <cd:Field name="stdAGBLimits">
-              <cd:Text/> <!-- MinMaxType is undefined -->
+              <cd:Record>
+                <cd:Field name="min">
+                  <cd:Float>
+                    <cd:Attribute name="units">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="max">
+                  <cd:Float>
+                    <cd:Attribute name="units">
+                      <cd:Text/>
+                    </cd:Attribute>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+              </cd:Record>
             </cd:Field>
             <cd:Field name="relativeAGBLimits">
-              <cd:Text/> <!-- MinMaxType is undefined -->
+              <cd:Record>
+                <cd:Field name="min">
+                  <cd:Float>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+                <cd:Field name="max">
+                  <cd:Float>
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
+              </cd:Record>
+            </cd:Field>
+            <cd:Field name="referenceSelection">
+              <cd:Text/>
             </cd:Field>
             <cd:Field name="indexingL">
-              <cd:Text/> <!-- agbIndexingType is undefined -->
+              <cd:Text/>
             </cd:Field>
             <cd:Field name="indexingA">
-              <cd:Text/> <!-- agbIndexingType is undefined -->
+              <cd:Text/>
             </cd:Field>
             <cd:Field name="indexingN">
-              <cd:Text/> <!-- agbIndexingType is undefined -->
+              <cd:Text/>
             </cd:Field>
             <cd:Field name="useConstantN">
               <cd:Integer format="ascii">
@@ -456,9 +811,6 @@
                     <cd:NativeType>uint32</cd:NativeType>
                   </cd:Integer>
                 </cd:Attribute>
-                <cd:Attribute name="units">
-                  <cd:FixedValue>deg</cd:FixedValue>
-                </cd:Attribute>
                 <cd:Array format="ascii">
                   <cd:Dimension>int(str(@count))</cd:Dimension>
                   <cd:Float>
@@ -467,6 +819,14 @@
                 </cd:Array>
               </cd:Type>
             </cd:Field>
+            <cd:Field name="regressionSolver">
+              <cd:Text/>
+            </cd:Field>
+            <cd:Field name="regressionMatrixSubsamplingFactor">
+              <cd:Integer format="ascii">
+                <cd:NativeType>uint8</cd:NativeType>
+              </cd:Integer>
+            </cd:Field>
             <cd:Field name="minimumPercentageOfFillableVoids">
               <cd:Float format="ascii">
                 <cd:NativeType>float</cd:NativeType>
@@ -474,27 +834,32 @@
             </cd:Field>
             <cd:Field name="estimatedParameters">
               <cd:Record>
+                <cd:Field name="rho">
+                  <cd:Float format="ascii">
+                    <cd:NativeType>float</cd:NativeType>
+                  </cd:Float>
+                </cd:Field>
                 <cd:Field name="Polarisation">
                   <cd:Array>
                     <cd:Dimension/>
-                    <cd:Attribute name="polarisation">
-                      <cd:Text/>
-                    </cd:Attribute>
                     <cd:Record>
+                      <cd:Attribute name="polarisations">
+                        <cd:Text/>
+                      </cd:Attribute>
                       <cd:Field name="LCM">
                         <cd:Array>
                           <cd:Dimension/>
-                          <cd:Attribute name="classes">
-                            <cd:Text/>
-                          </cd:Attribute>
                           <cd:Record>
+                            <cd:Attribute name="classes">
+                              <cd:Text/>
+                            </cd:Attribute>
                             <cd:Field name="date">
                               <cd:Array>
                                 <cd:Dimension/>
-                                <cd:Attribute name="dates">
-                                  <cd:Text/>
-                                </cd:Attribute>
                                 <cd:Record>
+                                  <cd:Attribute name="dates">
+                                    <cd:Text/>
+                                  </cd:Attribute>
                                   <cd:Field name="N">
                                     <cd:Record>
                                       <cd:Field name="mean">
@@ -566,7 +931,7 @@
                         </cd:Field>
                       </cd:Record>
                     </cd:Field>
-                    <cd:Field name="AGBStandardDeviation">
+                    <cd:Field name="AGBstandardDeviation">
                       <cd:Record>
                         <cd:Field name="compressionFactor">
                           <cd:Integer format="ascii">
@@ -624,6 +989,7 @@
           </cd:Record>
         </cd:Field>
         <cd:Field name="annotationLUT">
+          <cd:Optional/> <!-- Removed in BPS v4.5.0 (L2 PFD 3.5.0) -->
           <cd:Record>
             <cd:Attribute name="count">
               <cd:Integer format="ascii">
